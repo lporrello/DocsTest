@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="5512" MadCap:lastWidth="887">
+    <head>
+        <link href="../../../Resources/Stylesheets/Spredfast.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Compose</h1>
+        <h2><a name="Account"></a>Account</h2>
+        <p>The <b>Account</b> pull down control shows a list of Account Sets and accounts that you can use to post the message. </p>
+        <p>Note that the list includes only those accounts for which you (the message creator) have permission to publish. If you have access to only one account in the channel, it is pre-selected. If a different person (someone other than you) is the assignee for the message, the list contains only accounts for which <b>both of you</b> have permission to publish.</p>
+        <p>If the selected account requires an approval path because of the Account Set it is in, the <b>Workflow</b> tab is updated with the number of approvals required. (For more information about approval paths, see <MadCap:xref href="About_Approvals.htm">About Approvals</MadCap:xref>.) </p>
+        <h2><a name="Link"></a>Link Preview (Facebook, Google+, LinkedIn)</h2>
+        <p class="note"><b>Link Preview, Photo, or Video</b>
+            <br />On Facebook and Google+ messages, you can include only one type of link preview. </p>
+        <p>After you type a link in the message, <MadCap:variable name="Spredfast.prod_full" /> obtains web page data (title, description, and images) and provides it as a preview in the message.<MadCap:keyword term="Link: preview (in messages); Link Preview; Facebook: link preview; LinkedIn: link preview; Google+: link preview" /> </p>
+        <p class="note"><b>One Link Preview per Message</b>
+            <br />Though you can embed multiple links in a post, only one can have a link preview. By default, the system uses the first link; you can change by selecting <b>Attach link preview</b> on a different link.</p>
+        <p style="font-family: Arial;font-weight: normal;font-style: normal;font-size: 2pt;letter-spacing: 0em;color: #470066;text-decoration: none;">&#160;</p>
+        <p><b>For Facebook and LinkedIn</b>—You can edit both the title and description before you publish; click on the <b>Edit</b> button (pen icon) to bring up an editable field. If there are multiple image files, you can choose among them by clicking the left/right arrows that appear when you hover on the image. Eliminate the thumbnail by clicking the <b>X</b> icon in the upper right hand corner of the image; return it by clicking <b>Show Photo</b>. To upload a custom image, click in the <b>Add a Photo</b> pane, and, in the <b>Add a Photo From</b> dialog, choose either <b>Computer</b> or <b>Content Center</b>. </p>
+        <p><b>For Google+</b>—The title and description fields cannot be edited. You can change the thumbnail image from among the ones provided, but you cannot turn off the thumbnail or supply your own. </p>
+        <p>To delete the link preview from the message, click the down arrow next to the link in the message and deselect <b>Attach Link Preview</b>. </p>
+        <div MadCap:conditions="Spredfast.admin content">
+            <p>Information that appears in the LinkedIn and Facebook Link Preview is obtained from embed.ly.</p>
+            <p>Information that appears in the Google+ Link Preview is obtained from Google. </p>
+        </div>
+        <h2>Link Creation and Shortening</h2>
+        <p>Within microblogs, <MadCap:variable name="Spredfast.prod_full" /> is able to determine if message text you enter is a link. When link text is recognized, it is automatically tokenized and shortened when you publish the post.<MadCap:keyword term="Link: shortening in messages; Tokenized links; Shortened links" /></p>
+        <div MadCap:conditions="Spredfast.admin content">
+            <p>Automatic link shortening is enabled on a company-wide basis. It is turned ON by default but can be turned OFF in the Admin Panel if a company requests. See <MadCap:xref href="Per_Company_Configuration.htm">Per-Company Configurations—Admin Panel</MadCap:xref>.</p>
+            <p>How does <MadCap:variable name="Spredfast.prod_full" /> determine if a piece of text is a link? We use the same link-detection algorithm as Twitter. </p>
+        </div>
+        <p>Once the link text is tokenized, you can do the following:</p>
+        <ul>
+            <li>Choose NOT to shorten the link—deselect <b>Shorten on Publish</b>. Note that wraps all links with a t.co url, regardless of this setting. By default, <MadCap:variable name="Spredfast.CompanyName_full" /> uses our Bitly account to shorten links, but if a different one has been configured for the Initiative (<b>Initiative Settings</b> &gt; <b>Link Shortening</b>), that one is used instead. </li>
+        </ul>
+        <p class="note"><b>Automatic Link Shortening</b>
+            <br />For the vast majority of organizations using <MadCap:variable name="Spredfast.prod_full" />, link shortening is performed automatically. If your organization has requested that this feature be disabled, the <b>Shorten on Publish</b> link is already deselected. For more information on disabling this feature, contact your Account Manager or Support. </p>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/MetricsLinkShortening.flsnp" />
+        <p class="note"><b>Link Shortening and Kenshoo Integration</b>
+            <br />When Kenshoo tagging is used for an Initiative, all links published through that Initiative must be shortened; users will not have the option to deselect <b>Shorten on Publish</b> when adding links to messages. <br />For more information, see <MadCap:xref href="kenshoo.htm">Third-Party Apps</MadCap:xref>.</p>
+        <ul>
+            <li>Include a link preview (Facebook, Google+, LinkedIn)—<b>Attach link preview</b>. Title, description, and image information obtained from the linked page are inserted in the message. </li>
+            <li>Test the link in a new window—<b>Open link</b>.</li>
+            <li>If you have integrated <MadCap:variable name="Spredfast.prod_acro" /> with Google Analytics or Omniture accounts, you can edit the embedded link tags, either adding new ones or editing the default ones. If embedded link tags have been configured, an additional menu is made available; click <b>Edit Link Tags</b>. </li>
+            <li> Note that if the text is identified as being in a link format, the link <b>will always be made</b>. If you don’t want the text to become a link, you must rewrite it, for example refer to “the Google website” rather than “Google.com.” </li>
+        </ul>
+        <h2><a name="Photo"></a>Photo or Video</h2>
+        <p>You can attach supported media to a microblog message on Facebook, Twitter, Google+, and Weibo. In the <b>Media</b> field, choose either <b>Computer</b> and upload from your desktop, or <b>Content Center</b>. Only one photo or video is allowed per message. Supported photo file types are jpeg, gif, png; size limit is 3MB. Supported video file types include g2, 3gp, 3gpp, asf, avi, dat, divx, dv, f4v, flv, m2ts, m4v, mkv, mod, mov, mp4, mpe, mpeg, mpeg4, mpg, mts, nsv, ogm, ogv, qt, tod, ts, vob, wmv; size limit is 5 GB.<MadCap:keyword term="Photos: in microblog messages" /></p>
+        <h2>Facebook Video Call to Action</h2>
+        <p>You can configure your Facebook video posts so that at the end of each video the viewer will see a call to action with an accompanying URL.</p>
+        <p>The <b>Call to Action</b> pull down control enables you choose the message that appears in the button that appears at the end of the video in the Facebook mobile app and the overlay that appears at the end of a video in the Facebook computer app.</p>
+        <p>The <b>Call to Action Link URL</b> field is where you will enter the URL&#160;that you want viewers to click.</p>
+        <h2>Content Center</h2>
+        <p>To Include assets from the Content Center, in the <b>Media</b> field, click the <b>Content Center</b> icon. In the <b>Select Assets</b> screen, click the <b>Folder Panel</b> button to see available assets, and click on the item. If the selected content includes link text, the link is shortened and tokenized. The Content Center icon appears only if 1) the Content Center has been enabled for your company, 2) The Content Center is in your Workspace and 3) You have permission to publish from the folder in which the item is stored, though the folders will not be visible to you when assets are shown. If the channel you are publishing to does not support attached images, you can access the Content Center, but will see only “Text” assets.<MadCap:keyword term="Content Center: use items from" /></p>
+        <p>For more information, see <MadCap:xref href="ContentCenter.htm">Content Center</MadCap:xref>.</p>
+        <h2><a name="Schedule"></a>Schedule</h2>
+        <p><b>Publish Now</b>—Is always selected by default. If you do not use the <b>Schedule</b> control to choose a schedule, the message will publish as soon as all required approvals have been made. If no approvals are needed, or if they are made quickly, the message can publish within the five minute interval in which it was created. If approvals take longer than five minutes, the message publishes at the next five minute interval after the final approval was given. Also, whenever a “publish as soon as possible” message is edited, the time listed in the agenda is updated to reflect the time it was most recently saved (and consequently, ASAP means as soon as possible <b>after the latest save</b>).</p>
+        <p><b>Schedule</b>—Select a date and time for the message to publish. You can schedule using the Calendar menu or type in terms such as “Next Thursday” or “Wednesday the 3rd” and the platform applies the correct date. If all required approvals are made prior to the scheduled date and time, the message posts at the scheduled time (within a five minute window). If approvals aren’t provided until after the scheduled time, the message will post in the next five-minute interval after the last approval is received. To remove a Schedule and return the message publishing time to As Soon as Possible, click the <b>X</b>. next to the scheduled date and time.<MadCap:keyword term="Scheduling; Messages: scheduling; Publish as soon as possible; Repost" /></p>
+        <p><b>Repost</b>—(Note that this refers to the Repost publishing feature, not the Weibo repost available from the Inbox) allows you to post the identical content, on the same accounts, at a later date and time. You cannot repost within 24 hours (plus five minutes) of the original post, reinforcing Twitter/Facebook rules and good social practices. Once the original post is published, you can no longer edit the content, accounts, path, or assignee of a reposted message, nor can you switch the scheduled time of a repost back to Publish as soon as Possible.</p>
+        <p><b>Time zone</b>—The time zone shown at the upper right of the <b>Schedule</b> field is the one set in the My Account screen. ([Your name] &gt; <b>My Account</b>).<MadCap:keyword term="Time zone: publishing to multiple;" /> See <MadCap:xref href="Time_Zone.htm">Time Zone</MadCap:xref>. </p>
+        <p class="note"><b>Planing projects with multiple time zones</b>
+            <br />If you’re planning a project that spans multiple time zones, remember that <MadCap:variable name="Spredfast.prod_full" /> shows information to each user in his own time zone. Always plan posting based on what the desired time will be is in your time zone. <br />For example. you are in Austin, Texas, on Central Time, and want a message to go out at 8 a.m. in New York City, which is Eastern time. You schedule the message to post at 7 a.m. (in Central Time, which is 8 Eastern). Your colleague who works in Los Angeles will see the item scheduled on the Agenda for 5 a.m.</p>
+        <p><b style="color: #000000;">Copy Message</b>—Once you’ve created a message, Copy Message creates a new message of the same type, with all the information from the original message pre-populated in the new one. Messages are not associated or linked to each other in any way; content from original just prepopulates the copy. </p>
+        <h2><a name="Labels"></a>Labels<MadCap:keyword term="Labels: add to outgoing message;" /></h2>
+        <p>In the Labels field, use the <b>Add labels</b> drop-down to add a label to a message. Click in the field, and begin to type a label. If the label is already present in <MadCap:variable name="Spredfast.prod_full" /> and the active Initiative has permission, it appears in the field; select it to add it to the message. Labels that have been designated as “top labels” appear in bold within the list. Some users are able to create new labels from this screen. Type the new label in the field and click <b>[Enter]</b>; the new label appears in the list and is available for others in the company to use. </p>
+        <h2><a name="Notes"></a>Notes &amp; Activity<MadCap:keyword term="Notes: Spredfast internal, publishing" /></h2>
+        <p>Add internally facing <b>Notes</b> to messages (microblogs) for other users of <MadCap:variable name="Spredfast.prod_acro" /> to read. These are separate from the Notes used on Stream Items in the <b>Inbox</b>. Once saved, notes cannot be edited or deleted. Maximum length is 500 characters per note. You must save the message (<b>Save Draft</b> or <b>Publish</b> on the message creation page) to save a note. Once a note has been added to the message, all users in the Initiative can see it; users with permission to edit the message can add notes to it.</p>
+        <p>The <b>Notes &amp; Activity</b> pane displays publishing actions taken on the message within <MadCap:variable name="Spredfast.prod_full" />. It provides the date, user, and the following actions: create, edit, submitted, approved, rejected, resubmitted.<MadCap:keyword term="Notes and Activity pane; publishing (formerly Audit trail);" /></p>
+    </body>
+</html>

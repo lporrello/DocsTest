@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1847" MadCap:lastWidth="1559">
+    <head>
+        <link href="../../../Resources/Stylesheets/Spredfast.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Labels<MadCap:keyword term="Labels: create" /></h1>
+        <p>Create labels to tag content, track its performance, and associate it with an Initiative or campaign. </p>
+        <p>Labels can be assigned to the whole company or individual Initiatives. By default, labels are assigned to the whole company.</p>
+        <p>From the <b>Labels</b> tab, click <b>Assign Labels to Initiative</b> button. When labels are assigned to Initiatives, they only show up in the labels picker for Messages and Stream Items if the users are in an Initiative the label is assigned to. All labels, regardless of scope, appear in the filters for Analytics and the Content Center. Returning the label scope to company-wide disables the scoping, but does not delete any Initiative scoping settings.</p>
+        <p class="note"><b>Case Sensitivity and Duplicity</b>
+            <br />Labels are not case sensitive. “Open” and “open” are interpreted to be the same label within <MadCap:variable name="Spredfast.prod_full" />. Additionally, labels must be unique; no two labels may have the same name, regardless of their scope.</p>
+        <p>You can designate up to 25 labels as “Top Labels”; these appear at the top of the list when a user clicks in a <b>Label</b> field. </p>
+        <p class="caution"><b>Label Deletion</b>
+            <br />When label is deleted, all metrics data associated with the label are deleted. </p>
+        <h2>Create Labels</h2>
+        <ol>
+            <li>Select <b>[Your name]</b> &gt; <b>My Company</b> &gt; <b>Labels</b>. </li>
+            <li>Click <b>Add Labels</b>. </li>
+            <li>In the <b>Label Name(s)</b> field, enter one or more labels, separated by commas. </li>
+            <li>Click <b>Save</b>. </li>
+            <li>To designate a label as a Top Label, click the checkbox to the right of the label, in the <b>Top Label</b> column. </li>
+        </ol>
+        <h2>Scope a Label to an Initiative</h2>
+        <ol>
+            <li>Select <b>[Your name]</b> &gt; <b>My Company</b> &gt; <b>Labels</b>. </li>
+            <li>To the right of the label, click the pencil icon. Initiative-scoping must be enabled for this icon to appear. Click <b>Assign Labels</b> to Initiative at the top of the page to enable Initiative-scoping.</li>
+            <li>Click the <b>Initiatives</b> drop-down menu.</li>
+            <li>To allow any Initiative to use the label, select <b>All Initiatives</b>.</li>
+            <li>To scope to a specific Initiative(s), select <b>Individual Initiatives</b>, and then check each Initiative.</li>
+        </ol>
+        <h2>Group a Set of Labels </h2>
+        <p>You can create “Groups” of labels that are mutually exclusive, such that only one label from the group can be applied to an item at any given time (such as open/in process/closed; at any time, an item cannot be more than one of these). Label groups can not be scoped as group; each label must be scoped individually. Groups of labels can contain labels that are scoped differently from one another.<MadCap:keyword term="Groups: label" /></p>
+        <ol>
+            <li>Select <b>[Your name]</b> &gt; <b>My Company</b> &gt; <b>Labels</b>. </li>
+            <li>Choose the labels to include in the group; click the checkbox to the left of each label. </li>
+            <li>Click <b>Create Group</b>.</li>
+            <li>In the <b>Group name</b> field, enter a name.</li>
+            <li>Click <b>Save</b>. </li>
+        </ol>
+        <p>You can replace labels with new ones. All content that had the original label is updated with the replacement label. </p>
+        <h2>Replace a Label </h2>
+        <ol>
+            <li>Select <b>[Your name]</b> &gt; <b>My Company</b> &gt; <b>Labels</b>. </li>
+            <li>Choose the label to replace; click the checkbox to the left of the label. </li>
+            <li>Click <b>Replace</b></li>
+            <li>In the <b>Replace these label(s) on the same content</b> field, enter the replacement label.</li>
+            <li>Click <b>Replace</b>. </li>
+        </ol>
+        <p>By default, users assign labels to content as part of the publishing or monitoring process (from within the publishing screens, Calendar and the Inbox). Users can also create new labels from those screens. To prohibit non-administrators from creating new labels, click the <b>Restrict label creation to Company Administrators on this page</b> checkbox. When using Initiative-scoped labels, this option changes from optional to required.<MadCap:keyword term="Labels: restrict creation of" /></p>
+        <div>
+            <p class="note"><b>Crimson Hexagon Category Labels</b>
+                <br />When a user applies a Crimson Hexagon category to a stream item from the Inbox, the category is added as a label in <MadCap:variable name="Spredfast.prod_full" />, with the text “CH:” prepended to it. The label is added to <MadCap:variable name="Spredfast.prod_acro" /> even if the <b>Restrict label creation to Company Administrators on this page</b> is checked, and the user is a non-admin, because within the system, the categories already exist because of the Crimson Hexagon integration, and the label is only being “surfaced” by the user, not created. See <MadCap:xref href="campaign-settings-crimso.htm">Crimson Hexagon</MadCap:xref>.</p>
+        </div>
+        <p>On the Labels tab, the <b>Messages</b> column shows the number of times the label has been applied to an outgoing message, company-wide (“Outbound”). The <b>Stream Items</b> column displays the number of times the label has been applied to an item in the Inbox (“Inbound”), company-wide.<MadCap:keyword term="Labels: number of times applied" /> </p>
+    </body>
+</html>

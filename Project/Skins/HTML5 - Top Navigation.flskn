@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultSkin
+  Version="2"
+  SkinType="WebHelp2"
+  ComponentType="MasterPage"
+  TemplateName="Fluid"
+  Comment="HTML5 Top Navigation skin"
+  EnableResponsiveOutput="True">
+  <WebHelpOptions
+    NavigationPanePosition="Right"
+    TopMenuDepth="7" />
+  <Stylesheet>
+    <Styles>
+      <Style
+        Name="Logo">
+        <Properties>
+          <Property
+            Name="BackgroundImage">url('SF_Logo_White_small.png')</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Menu">
+        <Properties>
+          <Property
+            Name="Float">right</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Submit Button">
+        <Properties>
+          <Property
+            Name="BackgroundColor">#dc392c</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Header">
+        <Properties>
+          <Property
+            Name="BackgroundColor">#2e2e2e</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Input">
+        <Properties>
+          <Property
+            Name="Color">#525252</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Filter Drop-down">
+        <Properties>
+          <Property
+            Name="Color">#041a26</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Filter Drop-down (hover)">
+        <Properties>
+          <Property
+            Name="Color">#041a26</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Heading">
+        <Properties>
+          <Property
+            Name="Color">#03273c</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Result Abstract">
+        <Properties>
+          <Property
+            Name="Color">#041a26</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Pagination Item (hover)">
+        <Properties>
+          <Property
+            Name="Color"> #2fc8fb</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Pagination Item (selected)">
+        <Properties>
+          <Property
+            Name="Color"> #2fc8fb</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Pagination Item">
+        <Properties>
+          <Property
+            Name="Color"> #2fc8fb</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Result Link (hover)">
+        <Properties>
+          <Property
+            Name="Color"> #2fc8fb</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Result Link">
+        <Properties>
+          <Property
+            Name="Color"> #2fc8fb</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Result Link (active)">
+        <Properties>
+          <Property
+            Name="Color"> #075068</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Result Link (focus)">
+        <Properties>
+          <Property
+            Name="Color"> #075068</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Result Link (visited)">
+        <Properties>
+          <Property
+            Name="Color"> #075068</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Result Path">
+        <Properties>
+          <Property
+            Name="Color"> #0f903b</Property>
+        </Properties>
+      </Style>
+    </Styles>
+    <Resources>
+      <Resource
+        Name="SF_Logo_White_small.png">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</Resource>
+    </Resources>
+  </Stylesheet>
+  <Strings>
+    <Stylesheet
+      lang="en-us">
+      <Stylesheet>
+        <Styles>
+          <Style
+            Name="Logo">
+            <Properties>
+              <Property
+                Name="BackgroundImage">url('SF_Logo_White_small.png')</Property>
+              <Property
+                Name="AltText">Spredfast</Property>
+            </Properties>
+          </Style>
+          <Style
+            Name="Menu">
+            <Properties>
+              <Property
+                Name="Float">right</Property>
+            </Properties>
+          </Style>
+        </Styles>
+        <Resources>
+          <Resource
+            Name="SF_Logo_White_small.png">H4sIAAAAAAAEAAHiBx34iVBORw0KGgoAAAANSUhEUgAAAIAAAAAeCAYAAADkUhb4AAAHqUlEQVR42u1ba2xURRRuWaQgLRQBgRYjRnnUF2is8ihqoJAYSVE0hCj+MBWIgX+KiPQHigq/TMSQKCZUjRKLJCKxGg1gKkXlJUJDBFoEbFFoS1u27ba77e76HXKmHseZu3e33TZ0d5KT2Xvndeacb2bOOXM3JcUhhcPhcaC9oEAoFDqBfHZKMiVOgsJHh/+fBiYlkzgAGGMAwA1JySQOAG4ElbPicQqEPkGempRM4gFhqd/vvzMpicRU/kDQs6A5MbQdABoOGtXU1DQCeVo/kcnQYDD4mqLOzs5nHOqOBb2Mej8gPw86gt+vI8+6HiY6BFQjzv9SN0cA6kwAvYkjo0U3IPDuJ2SFdLxcrwDo6OiYB/47xbT2WuRwO8jHdQKgJpCfn1v7pREI4SwQdYNQuJcmjvwq8g5VgHqzrvNdYAhW8skIAChl0FcquUmZ4li9u18BAGXZamVg0r8jm2LoL9QfAEAJANhpAwDJScisUCsrwbGxGnlGL+lxBvPxaLwBsJmVT6t+sKXO8QQBwHghszl9zOf63gLAHgbALoc6G0n/gUBgZhIAvZOgj6pYAXCz2rKVDecGAEhlUYwxFTSNaYyyskHTIeBvwPwR/H61tbU1W2uXLtpN5XepoBy0203tGPke/ewG+B5E2VdcZxu1sUU4qc/29vaJqPcO1Qd9iXe5ZMSaAMCeD/E0X8htueB1GvWnjTGJeEXfh5inXdw+00FuGaA84ofbHMCxsgR9T1LeFvLbUPaz4GMZ83Af09CICkKnz5Eli47qoYSsCMr8WAyW70L5HjYMFch2YrwVYXsqEm2XSHA2NzcTWE8Z2gyTgsY8AgLMisIQ4J8EDgN/FdoCCAmP5m8dAOzuOia0K1fg4uNS9R1kkosu1yC3gghtirleewRW8nra2JjFzKi0s66uLsPFVrpPE7KPVoHX6x0FQDxPLpPwHrqY9vl8t7B71eV1gM5S0ErwMUysGGWg1iG7gwH+gnLNyEXV+HpfeDOnCRC1tbXpeH9YA67cATx0vKHfRYop/F5F7xQp6x/9rBFzzhJ93Crcx30G1/JaG7TfrJUVSwBgrOk0nuoL9VcyDzOIrhmhtB3xpc9NNgU1NDQM17dSB2UWaSAI8+Cf2fogg1DUKzIAK130WaKVHeX37fJ4wu82DQBHWckXDP3L7XoKvxsneCqxnK2nu2MDsHvYif4/Ney8L6nGWr8v8jz2G8bMkQAQ43itNgALTm0lP2plgxg9qvwXlzsBrZLz+s6nVqgTAGyuEd5/wBM/ZwIAxivT3qfxOefhZx/vIAUWZTTx+G8xT4/xc5vDPA901whkuyXV8H6OSSb4vY7fHbL0l6bbaZEAIM+Oy90NBOm+MLbp8VDO8f8egaG6GACwXEXU3ABAq5Mr+r/LUqecmdvNz1v4uTaeAHDouwsAV65ckXbMU2JBnXRzPR8JAE3xAoAhclYizq8tUQLgScuW6AYAhZqdYCK1EEq5TRk/X+wNANCdAhT1K+qeAV0gvVsAQIbpMW0+tLv9gWPj6VgAcD+DoKatrW2CpZxSI0X6euBiqUH1FyUAnugGAJaHXSYI6wtuc5j7PRgvALAya0w2k0wSACLKuEDcK8jd9ZJ+pEQCQCoz4nFy13oweLKJOW2OEgCruN2lGACwUMTfp7gEa2k8dwBaDHw/QnPyk3VObjZ7K7RQ5toAoMcDMKd7Mf+PBAoqowFACSqcQgcUu59oKL+HfGTQMd1P1upNZot2TwTBbmMmr0YDAPRbbHLV3ACAXDfR/+MuAbBRyT9OABguyrPd2gDkQjY2NmZaYjYrTJ/uRWME1mhlo7TtKWAzOmhlsYJaHASWqYITUNh3JgDALZ1sEhbtGFzl7WgBwEI4J27mPC4AMFO58RRkMgh7sXA1YwHACCfQ493XJgCw60l6GGBoM9oJAJDzXNNEgz1hBCoAsDLe08OYfE18RrlWJADLDuBH+w+rq6uHqKCI8CLI2BkZCwBQZaXg7yCFRFVZS0vLWAr6gL4V9YeJ+rUUdFJuFp4/l1fbPbADrNGM3bM2G0DEHmbrxzR/a0GpQgN/PYP/ewUcHDcU55hHhVvFRHdrnQ7GuzMyxGj7IEQCQETPmtl49In3FNV7xMENVOFLv/4NAX2ZJHjLR/lfAsCd5LLRxQfO01zLMbJVjzgyP119yCtsNrSktd0qPgQ5K0BFY19EvpiUhXGqeN5dc+boYyUBTSisQZzb9dxGXZcXqF2Py4o1ANCn+ucorExHEfqtF7t0psWeUbw0s35+U8Ge+cbt4d/LjUWmmLTBmKTw4mr+L4GMQ3dgMPokapnX6x3pFAjiyOR6ZSAp3xzZQwbffruFchz4zAft0Cxocrs2ADgPGOrnQbj7xSKpwvZPlyppvIrkuPn8Ie12B1orDTi2bYLqGh3Pb6iwMPJ3Rbt1witbJ1a7klE1sldMEV1ayKBNSid0H4JxdlxzG0mwbHH2+JUlR6XSTOeVm0AQt/WkxCExsNPcxjXUXOLEy8BY+uZFR3wNinLOA+T5UMfbAVnw2/vivtqNF5BMcUpOoeAkABIDAJfl/XYfjL+W7QOVKKCxAefT0qR2ekcBC7H1V7A79XAfjO+3hGRPJLUT//QPdkCvrbGhETAAAAAASUVORK5CYIKgzTQz4gcAAA==</Resource>
+        </Resources>
+      </Stylesheet>
+    </Stylesheet>
+  </Strings>
+</CatapultSkin>

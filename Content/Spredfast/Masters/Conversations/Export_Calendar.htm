@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1700.667" MadCap:lastWidth="1533">
+    <head>
+        <link href="../../../Resources/TableStyles/_Standard.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/Stylesheets/Spredfast.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Export Calendar</h1>
+        <p>Export items that appear on your calendar based on the filters you have set; up to 13 months of data can be included in a single export. Data is provided in a CSV file; once the file has been generated, a link to it is sent to the email address associated with your <MadCap:variable name="Spredfast.prod_full" /> account. (Unlike some types of emails from <MadCap:variable name="Spredfast.prod_full" />, this one cannot be disabled.) Depending on the number of items contained in the export, it may take a few moments for the file to be created. You must be logged in to <MadCap:variable name="Spredfast.prod_full" /> when you download the file using the email link.<MadCap:keyword term="Export: Calendar items" /></p>
+        <p>The ability to Export Calendar data is controlled by a user’s role. See <MadCap:xref href="User_Roles_and_Permissio.htm">User Roles and Permissions</MadCap:xref></p>
+        <p class="note"><b>Message Importer vs. Export Calendar</b>
+            <br />You cannot export calendar data, then re-import it with the Message Importer; these features operate independently. </p>
+        <h2>Export Data from the Calendar</h2>
+        <p>Configure the calendar filters to include the appropriate Initiatives and other criteria.</p>
+        <ul>
+            <li>Click the <b>Export</b> icon. </li>
+            <li>Use the calendars to set a date range. </li>
+            <li>Click <b>Export</b>. </li>
+        </ul>
+        <p>For each message, the file contains the following data.</p>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/_Standard.css');margin-left: 0;margin-right: auto;caption-side: top;" class="TableStyle-_Standard" cellspacing="0">
+            <caption valign="top" style="padding-bottom: 6pt;">Calendar Export Data </caption>
+            <col class="TableStyle-_Standard-Column-Column1" />
+            <col class="TableStyle-_Standard-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-_Standard-Head-Header1">
+                    <td class="TableStyle-_Standard-HeadE-Column1-Header1">
+                        <p>Item</p>
+                    </td>
+                    <td class="TableStyle-_Standard-HeadD-Column1-Header1">
+                        <p>Definition</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-_Standard-Body-Body1">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">
+                        <p>Initiative</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body1">
+                        <p>The Initiative through which the item is published.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body2">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">
+                        <p>Channel</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body2">
+                        <p>The channel through which the item is published. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body1">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">
+                        <p>Account Sets and Accounts</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body1">
+                        <p>The Account Set(s) and Account(s) through which the item publishes, separated by commas if there are multiple, in the following format: Account Set: Account, Account Set2:Account, Account Set2:Account</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body2">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">
+                        <p>Date </p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body2">
+                        <p>The date on which the message has published, or is scheduled to publish, in MM/DD/YYYY format.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body1">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">
+                        <p>Time </p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body1">
+                        <p>The time at which the message published, or is scheduled to publish, in HH:MM AM/PM format. Note that times shown in the Export file reflect the time zone of the user requesting the export.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body2">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">
+                        <p>Title</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body2">
+                        <p>The <MadCap:variable name="Spredfast.prod_acro" />-internal (not published) title of the message.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body1">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">
+                        <p>Content</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body1">
+                        <p>The text of the message.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body2">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">
+                        <p>Labels</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body2">
+                        <p>Labels that have been added to the message, separated by commas.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body1">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">
+                        <p>Notes</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body1">
+                        <p><MadCap:variable name="Spredfast.prod_acro" />-internal notes on the message, separated by commas. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body2">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">
+                        <p>Status</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body2">
+                        <p>Publishing status of the message. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body1">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">
+                        <p>Promoted</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body1">
+                        <p>(Facebook only) If the message was Promoted on Facebook, this column reads Yes.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body2">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">
+                        <p>Promoted Budget</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body2">
+                        <p>(Facebook only) The lifetime budget set for the promotion on the message.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body1">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">
+                        <p>Promoted Spend</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body1">
+                        <p>(Facebook only) The amount spent to date on all promotions associated with the message.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body2">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">
+                        <p>Target Profile</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body2">
+                        <p>(Facebook only) The name of the (saved) <MadCap:variable name="Spredfast.prod_acro" /> targeting profile used for the message. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body1">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">
+                        <p>Auto-imported</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body1">
+                        <p>If the message was auto-imported into <MadCap:variable name="Spredfast.prod_full" />, this column reads Yes.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body2">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">
+                        <p>Reply </p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body2">
+                        <p>If the message was published as a response from <MadCap:variable name="Spredfast.prod_full" /> this column reads Yes. (See the <MadCap:xref href="publishing-filter.htm">Basic/Advanced Filter</MadCap:xref> for a definition of responses).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body1">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">
+                        <p>Assignee (email)</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body1">
+                        <p>Email address of the <MadCap:variable name="Spredfast.prod_full" /> user assigned to the message. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body2">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">
+                        <p>Approval path</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body2">
+                        <p>Approval team next in line to approve the message; this field is blank for messages that have published; </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body1">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">
+                        <p>Image Name</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body1">
+                        <p>File name for an image attached to the message. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body2">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">
+                        <p>Published Image Link</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body2">
+                        <p>If the message has been published, a link to the image on the channel. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body1">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">
+                        <p>Video Name</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body1">
+                        <p>The title of the video (if one has been given) or the file name, if no title is present. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body2">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">
+                        <p>Log </p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body2">
+                        <p>Entries made about the message in the <MadCap:variable name="Spredfast.prod_full" /> log, in the format of Action: User: Date Time, for example: Created: John Doe: 1/12/2013 10:46 AM. Note that times shown in the Export file reflect the time zone of the user requesting the export. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body1">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">
+                        <p>Link Preview Title</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body1">
+                        <p>If available, the Link Preview Title (headline) is provided for microblogs</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body2">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">
+                        <p>Link Preview Description</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body2">
+                        <p>If available, the Link Preview Description is provided for microblogs</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body1">
+                    <td class="TableStyle-_Standard-BodyB-Column1-Body1">
+                        <p>Permalink</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyA-Column1-Body1">
+                        <p>If available, a permanent link to the message on the native channel. For Facebook and Twitter microblogs, Facebook photo albums and videos. Provides Account Set and account information, in this format: Account Set:Account:Permalink</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p MadCap:conditions="Spredfast.admin content">Calendar Export data is obtained from a database replica, not the production databases; in some cases there may be discrepancies between production status and exported data. Any latency should be short (1-5 minutes).</p>
+    </body>
+</html>

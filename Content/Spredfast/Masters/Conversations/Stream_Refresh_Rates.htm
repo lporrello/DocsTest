@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="7" MadCap:lastHeight="1665.667" MadCap:lastWidth="1171">
+    <head>
+        <link href="../../../Resources/TableStyles/_Standard.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/Stylesheets/Spredfast.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Stream Refresh Rates<MadCap:keyword term="Inbox: refresh rate" /></h1>
+        <p>Stream content is updated as follows: </p>
+        <ul>
+            <li>Streams, On screen (in view, active user)—2 minutes</li>
+            <li>Streams, On screen (in view, idle user)—15 minutes</li>
+            <li>Streams, Off screen—Every two hours or less, depending on channel.</li>
+            <li>Collections, On screen (Including Inbox)—Requests for new data sent every 2 minutes, but can take longer if there are many streams in the Collection. </li>
+            <li>Recent Engagement and All Activity—Update frequency depends upon the age of the item. </li>
+        </ul>
+        <p>See <MadCap:xref href="Content_Metrics.htm">Content Metrics</MadCap:xref>. </p>
+        <div MadCap:conditions="Spredfast.admin content">
+            <h2>When Streams Are Not “In View” by a User</h2>
+            <p>(Offline—Updating is handled by <MadCap:variable name="Spredfast.CompanyName_full" /> internally, rather than the user’s browser.) Every 30 minutes we check to see if any streams are “stale” (older than one hour by default, but varies by channel). If there are stale streams that haven’t been fetched either online (meaning through the user’s browser when the stream is in view) or offline (meaning that <MadCap:variable name="Spredfast.CompanyName_full" /> has asked the channel for fresh data using the API) in the last 12 minutes, we queue fetches for them. So most streams are fetched automatically no more often than once every 30 minutes, but the rate varies by channel. For Facebook and Twitter, the “12 minute” window does not apply; when offline, the system checks every 30 minutes for Facebook and Twitter streams not fetched within the previous minute. </p>
+            <table style="mc-table-style: url('../../../Resources/TableStyles/_Standard.css');margin-left: 0;margin-right: auto;caption-side: top;" class="TableStyle-_Standard" cellspacing="0">
+                <caption valign="top" style="padding-bottom: 6pt;">Stream “Stale” Designation by Channel</caption>
+                <col class="TableStyle-_Standard-Column-Column1" />
+                <col class="TableStyle-_Standard-Column-Column1" />
+                <thead>
+                    <tr class="TableStyle-_Standard-Head-Header1">
+                        <td class="TableStyle-_Standard-HeadE-Column1-Header1">
+                            <p>On Channel</p>
+                        </td>
+                        <td class="TableStyle-_Standard-HeadD-Column1-Header1">
+                            <p>A stream is stale after</p>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-_Standard-Body-Body1">
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">
+                            <p>Bazaarvoice</p>
+                        </td>
+                        <td class="TableStyle-_Standard-BodyD-Column1-Body1">
+                            <p>10 minutes</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-_Standard-Body-Body2">
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">
+                            <p>Brandwatch</p>
+                        </td>
+                        <td class="TableStyle-_Standard-BodyD-Column1-Body2">
+                            <p>1 hour</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-_Standard-Body-Body1">
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">
+                            <p>Twitter</p>
+                        </td>
+                        <td class="TableStyle-_Standard-BodyD-Column1-Body1">
+                            <p>60 seconds from end of last successful fetch. Mentions and Retweets of me are 2 minutes from end of last successful fetch. </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-_Standard-Body-Body2">
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">
+                            <p>Facebook</p>
+                        </td>
+                        <td class="TableStyle-_Standard-BodyD-Column1-Body2">
+                            <p>60 seconds from end of last successful fetch.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-_Standard-Body-Body1">
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">
+                            <p>Google+</p>
+                        </td>
+                        <td class="TableStyle-_Standard-BodyD-Column1-Body1">
+                            <p>60 seconds from end of last successful fetch</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-_Standard-Body-Body2">
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">
+                            <p>Instagram</p>
+                        </td>
+                        <td class="TableStyle-_Standard-BodyD-Column1-Body2">
+                            <p>60 seconds from end of last successful fetch</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-_Standard-Body-Body1">
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">
+                            <p>Weibo</p>
+                        </td>
+                        <td class="TableStyle-_Standard-BodyD-Column1-Body1">
+                            <p>60 seconds from end of last successful fetch</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-_Standard-Body-Body2">
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">
+                            <p>Social Mention</p>
+                        </td>
+                        <td class="TableStyle-_Standard-BodyD-Column1-Body2">
+                            <p>6 hours</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-_Standard-Body-Body1">
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">
+                            <p>Crimson Hexagon</p>
+                        </td>
+                        <td class="TableStyle-_Standard-BodyD-Column1-Body1">
+                            <p>1 day</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-_Standard-Body-Body2">
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">
+                            <p>LinkedIn (all)</p>
+                        </td>
+                        <td class="TableStyle-_Standard-BodyD-Column1-Body2">
+                            <p>15 minutes</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-_Standard-Body-Body1">
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">
+                            <p>Boardreader</p>
+                        </td>
+                        <td class="TableStyle-_Standard-BodyD-Column1-Body1">
+                            <p>6 hours</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-_Standard-Body-Body2">
+                        <td class="TableStyle-_Standard-BodyB-Column1-Body2">
+                            <p>Google Blog Search</p>
+                        </td>
+                        <td class="TableStyle-_Standard-BodyA-Column1-Body2">
+                            <p>1 day</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>When Streams Are “In View” by a User</h2>
+            <p>(Online—Updating is handled by the user’s browser). When a user is idle (meaning no keyboard/mouse/page input activity for 10 minutes), fetches are done every 15 minutes. When the user is not idle, the streams they have on screen are done every 2 minutes. These fetches work whether the stream is stale or not, effectively bypassing <MadCap:variable name="Spredfast.CompanyName_full" />’s internal fetching system entirely, so long as there's a browser sending requests. (The only exceptions are Facebook and Twitter streams, for which the “stale” time is always honored, and the manual “refresh” button has no effect on data fetching if it is used more than once within the “stale” time.) In these fetches the browser keeps an open connection while its web server accesses the services and returns any new items. These fetches can time out after 5 minutes, but that’s not a problem for a single stream fetch. One exception is Social Mention, however, which we only fetch offline because of the channel’s very slow response times. </p>
+            <p>A Collection, such as the Inbox, or a user-defined collection, is a group of multiple streams. At least every two minutes (but also when a user clicks Refresh) the browser sends a request to <MadCap:variable name="Spredfast.CompanyName_full" /> for updated data for all streams in visible collections. Immediately, <MadCap:variable name="Spredfast.CompanyName_full" /> provides any data it has collected since the last request, and if there are no fetches currently executing, queues up a batch of stream fetches to the channels of all constituent streams to obtain fresh data. Once these fetches are completed, it begins again after two minutes or the next time the user requests an update to the collection. </p>
+            <p>For both offline fetches and collection fetches, there is some latency associated with queued requests; it can take anywhere from a few seconds to up to 10 minutes for a server to be available. So refresh times could take up to an extra 10 minutes beyond the scheduled “fetch time” to provide new data to the stream.</p>
+        </div>
+    </body>
+</html>

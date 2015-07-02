@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc>
+  <TocEntry
+    Title="Title_Page"
+    Link="/Content/Spredfast/Masters/Conversations/Title_Page.htm"
+    conditions="Default.PDF"
+    BreakType="chapter"
+    PageType="title"
+    StartSection="false"
+    PageNumberReset="continue"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue">
+    <TocEntry
+      Title="Table of Contents"
+      Link="/Content/Spredfast/Masters/Title_Page.htm"
+      conditions="Default.PDF"
+      ChapterNumberReset="reset"
+      ChapterNumber="1"
+      ChapterNumberFormat="lower-roman"
+      VolumeNumberReset="reset"
+      BreakType="chapter"
+      PageNumberReset="reset"
+      PageNumberFormat="lower-roman"
+      StartSection="false"
+      PageNumber="1"
+      PageLayout="/Content/Resources/PageLayouts/Body.flpgl"
+      SectionNumberReset="continue" />
+  </TocEntry>
+  <TocEntry
+    Title="Introduction to [%=Spredfast.prod_full%]"
+    Link="/Content/Spredfast/Masters/Conversations/Introduction.htm"
+    BreakType="chapter"
+    PageNumberReset="reset"
+    StartSection="false"
+    PageNumber="1"
+    ReplaceMergeNode="false"
+    ChapterNumber="1"
+    ChapterNumberReset="reset"
+    SectionNumberReset="same"
+    VolumeNumberReset="same"
+    PageLayout="/Content/Resources/PageLayouts/Body.flpgl"
+    PageNumberFormat="decimal"
+    ComputeToc="false"
+    ChapterNumberFormat="decimal"
+    AutoEndOnLeftPage="disabled">
+    <TocEntry
+      Title="Logging in to [%=Spredfast.prod_full%]"
+      Link="/Content/Spredfast/Masters/Conversations/Logging_in_to_.htm" />
+    <TocEntry
+      Title="UI Overview"
+      Link="/Content/Spredfast/Masters/Conversations/UI_Overview.htm"></TocEntry>
+    <TocEntry
+      Title="My Account"
+      Link="/Content/Spredfast/Masters/Conversations/My_Account.htm">
+      <TocEntry
+        Title="Email, Password and Picture"
+        Link="/Content/Spredfast/Masters/Conversations/Email__Password_and_Pict.htm" />
+      <TocEntry
+        Title="Time Zone"
+        Link="/Content/Spredfast/Masters/Conversations/Time_Zone.htm" />
+      <TocEntry
+        Title="Email Subscriptions"
+        Link="/Content/Spredfast/Masters/Conversations/Email_Subscriptions.htm" />
+      <TocEntry
+        Title="Changing Companies"
+        Link="/Content/Spredfast/Masters/Conversations/Changing_Companies.htm" />
+      <TocEntry
+        Title="To-Do List"
+        Link="/Content/Spredfast/Masters/Conversations/To_Do_List.htm" />
+      <TocEntry
+        Title="Set Home Page"
+        Link="/Content/Spredfast/Masters/Conversations/Set_Home_Page.htm" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Internal Administration"
+    Link="/Content/Spredfast/Masters/Conversations/AdminPanel.htm"
+    conditions="Spredfast.admin content,Spredfast.admin content"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    ChapterNumber=""
+    ChapterNumberFormat="decimal"
+    SectionNumberReset="continue"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    AutoEndOnLeftPage="disabled"
+    PageLayout="/Content/Resources/PageLayouts/Body.flpgl">
+    <TocEntry
+      Title="Internal Roles and Permissions"
+      Link="/Content/Spredfast/Masters/Conversations/Internal_Roles_and_Permi.htm"
+      conditions="Spredfast.admin content" />
+    <TocEntry
+      Title="Admin Settings"
+      Link="/Content/Spredfast/Masters/Conversations/Admin_Settings.htm"
+      conditions="Spredfast.admin content">
+      <TocEntry
+        Title="Parent Company"
+        Link="/Content/Spredfast/Masters/Conversations/Parent_Company.htm"
+        conditions="Spredfast.admin content" />
+      <TocEntry
+        Title="Add a New Company"
+        Link="/Content/Spredfast/Masters/Conversations/Add_a_New_Company.htm"
+        conditions="Spredfast.admin content" />
+      <TocEntry
+        Title="Per-Company Configurations—Admin Panel"
+        Link="/Content/Spredfast/Masters/Conversations/Per_Company_Configuration.htm"
+        conditions="Spredfast.admin content"></TocEntry>
+      <TocEntry
+        Title="Users"
+        Link="/Content/Spredfast/Masters/Conversations/Users.htm"
+        conditions="Spredfast.admin content" />
+      <TocEntry
+        Title="Change User Role"
+        Link="/Content/Spredfast/Masters/Conversations/Change_User_Role.htm"
+        conditions="Spredfast.admin content" />
+      <TocEntry
+        Title="Export Users (Detailed)"
+        Link="/Content/Spredfast/Masters/Conversations/Export_Users__Detailed_.htm"
+        conditions="Spredfast.admin content" />
+      <TocEntry
+        Title="Export Recent Logins"
+        Link="/Content/Spredfast/Masters/Conversations/Export_Recent_Logins.htm"
+        conditions="Spredfast.admin content" />
+      <TocEntry
+        Title="Impersonate"
+        Link="/Content/Spredfast/Masters/Conversations/Impersonate.htm"
+        conditions="Spredfast.admin content" />
+      <TocEntry
+        Title="View Event Error"
+        Link="/Content/Spredfast/Masters/Conversations/View_Event_Error.htm"
+        conditions="Spredfast.admin content" />
+    </TocEntry>
+  </TocEntry>
+</CatapultToc>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PageStyles>
+    <Page Name="Normal" Width="800" Height="800" Padding="1in" PageSize="Letter" PaddingLeft="1in" PaddingRight="1in" PaddingTop="1in" PaddingBottom="1in" PageType="normal" BackgroundImage="none">
+        <Frame Flow="header" Height="0.5in" Right="0px" X="0px" Y="-0.75in" ColumnCount="1" Width="6.5in" Bottom="888px" TextAlign="right" Anchors="">
+            <Content>
+                <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body>
+                        <xhtml:p xhtml:style="font-size: 10pt;color: #f36f34;text-align: left;"><MadCap:variable xhtml:name="Spredfast.prod_full" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> <MadCap:conditionalText MadCap:conditions="Spredfast.user front matter" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">User Guide, <MadCap:variable xhtml:name="Spredfast.Confidential_External" /></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Spredfast.admin front matter" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Admin Guide, <MadCap:variable xhtml:name="Spredfast.DocVersion" /> <MadCap:variable xhtml:name="Spredfast.Confidential_Internal" /></MadCap:conditionalText></xhtml:p>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame Flow="footer" Height="0.5in" Right="0px" Bottom="-72px" X="0px" Y="9.25in" Width="6.5in" TextAlign="center" VerticalAlign="middle" Anchors="">
+            <Content>
+                <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body>
+                        <xhtml:table xhtml:style="width: 100%;">
+                            <xhtml:col />
+                            <xhtml:col />
+                            <xhtml:tbody>
+                                <xhtml:tr>
+                                    <xhtml:td>
+                                        <xhtml:p xhtml:style="font-size: 10pt;color: #f36f61;">© <MadCap:variable xhtml:name="Spredfast.Copyright_Date" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> Spredfast. All Rights Reserved.</xhtml:p>
+                                    </xhtml:td>
+                                    <xhtml:td xhtml:style="text-align: right;">
+                                        <xhtml:p xhtml:style="font-size: 10pt;color: #f36f34;"><MadCap:variable xhtml:name="System.Title" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> – <MadCap:variable xhtml:name="System.PageNumber" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /></xhtml:p>
+                                    </xhtml:td>
+                                </xhtml:tr>
+                            </xhtml:tbody>
+                        </xhtml:table>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame Flow="body" ColumnCount="1" ColumnGap="0.25in" ColumnDivider="Solid 1pt Black" Width="6.5in" Height="9in" X="0px" Y="0px" Right="0px" Bottom="0px">
+        </Frame>
+    </Page>
+</PageStyles>

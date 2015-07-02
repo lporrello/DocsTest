@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="1739" MadCap:lastWidth="1124">
+    <head>
+        <link href="../../../Resources/Stylesheets/Spredfast.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Password and Account Security</h1>
+        <p>These general rules apply to how passwords and email addresses are changed and managed in <MadCap:variable name="Spredfast.prod_full" />. </p>
+        <ul>
+            <li>Users cannot change their passwords without entering their current password</li>
+            <li>When a user (with appropriate permissions) changes another person’s password, she must enter her own password first</li>
+            <li>Only Company Owners can change other users’ email addresses. Company Admins cannot.</li>
+            <li MadCap:conditions="spredfast.admin content"><MadCap:variable name="Spredfast.CompanyName_full" /> Admins cannot change a person’s password while in impersonation mode. (<b>Admin Panel</b> &gt; <b>Users</b>  &gt; <b>Impersonate</b>). Instead, <MadCap:variable name="Spredfast.CompanyName_full" /> Admins can edit a user’s password through the Admin Panel by finding the user within his company, and clicking the <b>Edit</b> icon.</li>
+        </ul>
+        <p>These requirements are implemented differently for companies that require Single Sign On (the <b>Make Single Sign On mandatory</b> checkbox on the <b>My Company</b>  &gt; <b>Security</b> tab is checked) and those that do not. </p>
+        <h2>Companies that Require Single Sign On</h2>
+        <h3>Company Owners</h3>
+        <ul>
+            <li>Can change their own passwords on the <b>My Account</b> page.</li>
+            <li>Can change their own passwords on the <b>My Company</b> &gt; <b>Users</b> tab.</li>
+            <li>Cannot change other users’ passwords using <MadCap:variable name="Spredfast.prod_full" />.</li>
+            <li>Can change their own email address on the <b>My Account</b> page and the <b>My Company</b> &gt; <b>Users</b> tab.</li>
+            <li>Can change email addresses of other users on the <b>My Company</b> &gt; <b>Users</b> tab. </li>
+        </ul>
+        <h3>Company Admins</h3>
+        <ul>
+            <li>Cannot change their own passwords on the <b>My Account</b> page or the <b>My Company</b> &gt; <b>Users</b> tab.</li>
+            <li>Cannot change other users’ passwords on the <b>My Company</b> &gt; <b>Users</b> tab.</li>
+            <li>Cannot change their email address on the <b>My Account</b> page or the <b>My Company</b> &gt; <b>Users</b> tab.</li>
+            <li>Cannot change other users’ email addresses on the <b>My Company</b> &gt; <b>Users</b> tab.</li>
+        </ul>
+        <h3>Users</h3>
+        <ul>
+            <li>Cannot change their own password, or the passwords of others, from any location. Users must contact their administrator or the third-party password manager.</li>
+            <li>Cannot change their email address, or the email addresses of other users, from any location. </li>
+        </ul>
+        <h2>Companies with Optional Single Sign On, or No Single Sign On</h2>
+        <h3>Company Owners</h3>
+        <ul>
+            <li>Can change their own passwords on the <b>My Account</b> page.</li>
+            <li>Can change other users’ passwords on the <b>My Company</b> &gt; <b>Users</b> tab. </li>
+            <li>Can change their own passwords on the <b>My Company</b> &gt; <b>Users</b> tab.</li>
+            <li>Can change their own email address on the <b>My Account</b> page and the <b>My Company</b> &gt; <b>Users</b> tab.</li>
+            <li>Can change email addresses of other users on the <b>My Company</b> &gt; <b>Users</b> tab. </li>
+        </ul>
+        <h3>Company Admins</h3>
+        <ul>
+            <li>Can change their own passwords on the <b>My Account</b> page or the <b>My Company</b> &gt; <b>Users</b> tab.</li>
+            <li>Can change other users’ passwords on the <b>My Company</b> &gt; <b>Users</b> tab.</li>
+            <li>Cannot change their email address on the <b>My Account</b> page or the <b>My Company</b> &gt; <b>Users</b> tab.</li>
+            <li>Cannot change other users’ email addresses on the <b>My Company</b> &gt; <b>Users</b> tab.</li>
+        </ul>
+        <h3>Users</h3>
+        <ul>
+            <li>Can change their own passwords on the <b>My Account</b> page, but cannot change passwords for any other users. </li>
+            <li>Cannot change their email addresses, or the email addresses of other users, from any location. </li>
+        </ul>
+        <div MadCap:conditions="spredfast.admin content">
+            <h2><MadCap:variable name="Spredfast.CompanyName_full" /> Admins</h2>
+            <ul>
+                <li>Can change their own passwords from any location. </li>
+                <li>Can change other users’ passwords from the <b>My Company</b> &gt; <b>Users</b> tab or the <b>Admin Panel</b> (<b>Admin Panel</b> &gt; <b>Companies</b> &gt; <b>[company name]</b> &gt; <b>Users</b> &gt; <b>Edit</b>).</li>
+                <li>Can change their own email address from any location. </li>
+                <li>Can change others’ email addresses from the <b>My Company</b> &gt; <b>Users</b> tab or the <b>Admin Panel</b>.</li>
+            </ul>
+        </div>
+    </body>
+</html>

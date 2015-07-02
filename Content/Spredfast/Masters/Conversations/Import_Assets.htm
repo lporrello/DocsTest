@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1415.667" MadCap:lastWidth="1233">
+    <head>
+        <link href="../../../Resources/TableStyles/_Standard.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/Stylesheets/Spredfast.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Import Assets<MadCap:keyword term="Import: assets to Content Center" /></h1>
+        <p>The following rules pertain to the Asset Import tool: </p>
+        <ul>
+            <li>You must upload assets into a specific, named folder (not the All Assets view). </li>
+            <li>Assets are uploaded using a CSV file. All columns of the CSV are optional.</li>
+            <li>You can import up to 200 assets at a time; each row in the CSV contains one asset.</li>
+            <li>Image files are uploaded individually <b>after</b> the CSV file is uploaded; take time to organize your image files so you can easily associate each file with the appropriate row in the CSV file.</li>
+        </ul>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/_Standard.css');margin-left: 0;margin-right: auto;caption-side: top;" class="TableStyle-_Standard" cellspacing="0">
+            <caption valign="top" style="padding-bottom: 6pt;">Asset Importer CSV Field Definitions </caption>
+            <col class="TableStyle-_Standard-Column-Column1" />
+            <col class="TableStyle-_Standard-Column-Column1" />
+            <col class="TableStyle-_Standard-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-_Standard-Head-Header1">
+                    <td class="TableStyle-_Standard-HeadE-Column1-Header1">
+                        <p>Column</p>
+                    </td>
+                    <td class="TableStyle-_Standard-HeadE-Column1-Header1">
+                        <p>Notes</p>
+                    </td>
+                    <td class="TableStyle-_Standard-HeadD-Column1-Header1">
+                        <p>Example</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-_Standard-Body-Body1">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">
+                        <p>Title (IN CSV) /ASSET NAME (IN UI)</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body2">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">
+                        <p>Text (IN CSV) TEXT OR IMAGE (IN UI, also appears before Name in UI)</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body2">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body1">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">
+                        <p>Description (IN CSV) or ASSET DESCRIPTION (IN UI)</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body2">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">
+                        <p>Labels</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">
+                        <p>Provide labels, separated by commas. If the labels do not already exist in <MadCap:variable name="Spredfast.prod_full" />, they are created during the import process (unless <MadCap:variable name="Spredfast.prod_acro" /> has been configured to allow creation only from the <b>Labels</b> tab).</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body2">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body1">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">
+                        <p>Start Date</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">
+                        <p>DD/MM/YYYY hh:mm</p>
+                        <p>If you use Microsoft Excel to edit the CSV, you can enforce formatting as follows: Select the column, right-click <b>Format Cells</b>. In the <b>Number</b> tab, <b>Category:</b> field, select <b>Custom</b>. In the <b>Type:</b> field, enter <code>mm/dd/yyyy HH:mm</code> and click <b>OK</b>.</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body1">
+                        <p>08/15/2014 14:30</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body2">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">
+                        <p>End Date</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">
+                        <p>DD/MM/YYYY hh:mm</p>
+                        <p>If you use Microsoft Excel to edit the CSV, you can enforce formatting as follows: Select the column, right-click <b>Format Cells</b>. In the <b>Number</b> tab, <b>Category:</b> field, select <b>Custom</b>. In the <b>Type:</b> field, enter <code>mm/dd/yyyy HH:mm</code> and click <b>OK</b>.</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body2">
+                        <p>08/15/2014 14:30</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body1">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">
+                        <p>Suitable For</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body2">
+                    <td class="TableStyle-_Standard-BodyB-Column1-Body2">
+                        <p>Intended Use</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyB-Column1-Body2">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyA-Column1-Body2">
+                        <p>For both, type publication, moderation (no “and”)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Import Multiple Assets to the Content Center:</h2>
+        <ol>
+            <li>In the <b>Management</b> bar of the Content Center, click <b>Import Assets</b> (cloud) icon.</li>
+            <li>Select a folder (other than the All Assets folder) and click <b>Choose</b>. </li>
+            <li>Click <b>Download CSV template</b>, open it using Excel or another spreadsheet or text editor, and complete a row for each asset. Remember that image files will be uploaded separately. For each image asset, complete the text and properties fields. </li>
+            <li>Click <b>Upload New File</b>. The messages are evaluated by <MadCap:variable name="Spredfast.prod_full" />. </li>
+            <li>On the <b>Import Assets</b> page, review the messages. Ones that are incorrectly formatted or have other errors are identified. </li>
+            <li>Correct Invalid Entries Before Importing</li>
+            <li>If validation errors are found, we recommend you cancel the import, fix the errors in the CSV, then import the corrected CSV file into <MadCap:variable name="Spredfast.prod_full" />. If you import a partial CSV file (import just the valid entries), then correct the errors in the CSV file and re-import it, the valid assets that have already been imported will be duplicated in <MadCap:variable name="Spredfast.prod_full" />.</li>
+            <li>If the asset includes an image, click <b>Add Image</b> within the row, and upload the file. </li>
+            <li>Click <b>Import [#] Entries</b> to finish uploading them in to <MadCap:variable name="Spredfast.prod_full" />.</li>
+        </ol>
+    </body>
+</html>

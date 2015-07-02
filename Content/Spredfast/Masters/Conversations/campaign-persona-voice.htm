@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="7015" MadCap:lastWidth="1060">
+    <head>
+        <link href="../../../Resources/Stylesheets/Spredfast.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Accounts</h1>
+        <p>All social media accounts must be placed in an Account Set. An Account Set:</p>
+        <ul>
+            <li>Includes one or more social media accounts</li>
+            <li>Is associated with one or more users of <MadCap:variable name="Spredfast.prod_acro" />, who have permission to publish content using the Account Set</li>
+            <li>Is associated with one or more Initiatives</li>
+            <li>Can use an approval team to ensure that only approved content is published through the Account Set</li>
+        </ul>
+        <p>In the <b>Accounts</b> page, click <b>Create New Account Set</b>. Provide a name (and, optionally, a description and thumbnail image, which appears in the Calendar when the Account Set is used to publish).<MadCap:keyword term="Users: adding to Account Set; Authentication; Avatar: adding for Account Set" /> </p>
+        <p>Add social media accounts to the Account Set. Select the social network from the drop-down list and click <b>Authenticate</b>. Follow the login/authentication process for the social network so that the Account Set will be able to publish content to it. In most cases, only the user name and password must be provided. </p>
+        <p class="note"><b>Record your Username and Password</b>
+            <br />Most social media services use open authentication, which means that <MadCap:variable name="Spredfast.CompanyName_full" /> receives a token granting permission to publish through those accounts. Consequently, <MadCap:variable name="Spredfast.CompanyName_full" /> developers have no access to your usernames or passwords, because they are not stored anywhere in our databases.</p>
+        <p MadCap:conditions="Spredfast.admin content">Most Social Channels use token-based authentication (Open Authentication, or OA); Wordpress and SlideShare do not.</p>
+        <p>Enable <MadCap:variable name="Spredfast.prod_acro" /> users to publish content through the Account Set. In the heading for the Account Set, click <b>Edit Users</b>. Use the + and - icons to add users to or remove them from the Account Set. Click <b>Save</b>. </p>
+        <p>When an Account Set is created, it is automatically added to the Initiative in which it was created. Initiatives can also include Account Sets created in other Initiatives. At the top of the <b>Accounts</b> page, click <b>Assign Account Sets to This Initiative</b>, and use the + icon to add an Account Set to the Initiative. Click <b>Close</b>. </p>
+        <p>To remove the Account Set from the Initiative, go to the header and click <b>Remove</b>. </p>
+        <p>You may want to use approval teams for an Account Set, so that content is reviewed and approved by a designated series of review teams prior to publication. To create an approval team, go to <b>My Company</b> &gt; <b>Approvals</b>. </p>
+        <p>To assign an approval team to an Account Set, go to an Initiative, then click <b>Imitative Settings</b> &gt; <b>Approval Setup</b>. </p>
+        <p>To change the name or description of the Account Set, click the pen icon (<b>Edit</b>) next to the name, and provide new ones. To replace the Thumbnail (avatar), click the avatar, browse and select a new image file. </p>
+        <p>To delete an Account Set (so that it is no longer available to use in any Initiative) go to the header and click <b>Delete</b>. </p>
+        <p MadCap:conditions="Spredfast.tooltips">For channel-specific information on authenticating accounts, see the User Guide.</p>
+        <h2>Facebook<MadCap:keyword term="Facebook: authentication" /></h2>
+        <p>You can authenticate on Facebook using a business account (giving access to a Business page) or through a personal account.</p>
+        <p>Log in using your email and password. When you set up authentication, you must agree to give access (Allow Access) to all Accounts associated with that identity in Facebook, but you can modify the settings later by designating which accounts you want to access for each Account Set. </p>
+        <p>Brands that have multiple Facebook pages using the same account name can identify them easily in <MadCap:variable name="Spredfast.prod_full" />. If you have assigned a Username for your Facebook Page account, that name is displayed in parentheses in most places the account name appears, so long as the username and account name are not identical. (If the account name and username are the same, both are displayed on the<b> Account Sets and Accounts</b> page only.) The Facebook account name on the <b>Account Sets and Accounts</b> page is a hyperlink to the page on Facebook, so that you can quickly verify that you’re working with the correct account</p>
+        <p>When a Facebook user re-authenticates a Facebook account in <MadCap:variable name="Spredfast.prod_acro" />, the system examines all Account Sets in the company to see if that user is the admin for any of the other pages or groups, that were authenticated under the current app. If so, <MadCap:variable name="Spredfast.prod_acro" /> automatically re-authenticates for those other accounts as well. </p>
+        <p>To authenticate accounts for Facebook Content Promotion, see <MadCap:xref href="facebookPagePromotion.htm">Content Promotion</MadCap:xref>.</p>
+        <h2>Google+<MadCap:keyword term="Google+: authentication" /></h2>
+        <p>You can authenticate only Google+ Company pages—no personal user accounts are supported. Log in with your personal account and select pages for which you are an owner or manager to authenticate.</p>
+        <div MadCap:conditions="Spredfast.admin content">
+            <h3>Google+ Personal Accounts</h3>
+            <p>If customers have Google+ personal accounts enabled in the Admin Panel, (see <MadCap:xref href="Per_Company_Configuration.htm">Per-Company Configurations—Admin Panel</MadCap:xref>) <MadCap:variable name="Spredfast.prod_full" /> users can authenticate those accounts. For authenticated personal accounts, <MadCap:variable name="Spredfast.prod_full" /> auto-imports posts, displays them on the Calendar, and collects metrics for them, which are aggregated with the other Google+ (Company page) data. No publishing to personal accounts is supported, and streams cannot be created in the Inbox. </p>
+            <p>Due to the way that Google+ provides data through their API, there are the following limits to metrics data and auto-import in <MadCap:variable name="Spredfast.prod_full" />: </p>
+            <ul>
+                <li>Metrics are only collected on the 500 most recent Google+ posts to a page (approximately).</li>
+                <li>Only the 200 most recent posts to a Google+ page are auto-imported (approximately).</li>
+            </ul>
+            <p>These numbers are approximate because Google+ provides posts out of order. We might collect metrics for, or auto-import, older items instead of newer items in some cases. We will collect metrics for 500 and auto-import 200, but they may not always be precisely the most recent. </p>
+        </div>
+        <h2>LinkedIn</h2>
+        <p>
+            <MadCap:keyword term="LinkedIn: authentication" />Authenticate on LinkedIn using a personal profile. As part of configuration, you identify which groups and/or companies associated with the profile should be accessible from <MadCap:variable name="Spredfast.prod_full" />. To authenticate a LinkedIn company in <MadCap:variable name="Spredfast.prod_acro" />, the account holder must be a company page admin in LinkedIn.</p>
+        <h2>Weibo</h2>
+        <p>Authenticate on Weibo using a valid account.</p>
+        <h2>Twitter</h2>
+        <p>A “restricted” Twitter account is one that has been authenticated in <MadCap:variable name="Spredfast.prod_full" /> for the sole purpose of assignment to Twitter search-based and Twitter Users streams. These accounts cannot be used for publishing or for responding to stream items in the Inbox, you cannot use them to create account-based Twitter streams, and no metrics data is collected for them. You cannot auto-import data for a restricted Twitter account. Restricted Twitter accounts help provide capacity to include more Twitter streams in the Inbox.</p>
+        <p class="note"><b>“Restricted” Setting Applies per Account Set</b>
+            <br />A Twitter account can be restricted in one Account Set, but non-restricted in a different Account Set. </p>
+        <h3>Switching an Account from Non-Restricted to Restricted</h3>
+        <p>If you do so, the following pertains:</p>
+        <ul>
+            <li>If there are account-based streams already associated with the account, you must delete the streams before switching; you cannot use restricted Twitter accounts for account-based streams.</li>
+            <li>Metrics data that was collected for messages published using this account prior to the change won’t be deleted, but no additional data will be collected after the change is made.</li>
+            <li>Any messages that have already been scheduled to publish using the account will fail to publish. Before you change the account, you should go to the <b>Calendar</b> screen, and use the <b>Advanced</b> filter to find any messages scheduled to publish using the account, and change them to use to a different account. </li>
+        </ul>
+        <h3>Switching an Account from Restricted to Non-Restricted</h3>
+        <p>When you change an account from restricted to non-restricted, you can use the account to publish Tweets and respond to items in the Inbox, and create account-based streams. Metrics data will be collected. You can also continue to use the account for Twitter Users and Twitter search-based streams.</p>
+        <h2>YouTube</h2>
+        <p>If you want to use <MadCap:variable name="Spredfast.prod_full" /> to comment on your account’s YouTube videos, you must link your YouTube and Google+ accounts (natively), then re-authenticate your YouTube account in <MadCap:variable name="Spredfast.prod_full" />.</p>
+        <h2>Wordpress (Blog)<MadCap:keyword term="Blog: authentication of services" /></h2>
+        <p>When authenticating blog services in <MadCap:variable name="Spredfast.prod_full" />, you may need to provide the access point (or end point) in the URL field for the blog to authenticate properly. For Wordpress, the access point is: http://YOURSITE/PATH/TO/xmlrpc.php.</p>
+        <h2>Brandwatch<MadCap:keyword term="Brandwatch: authentication" /></h2>
+        <p>Brandwatch accounts are authenticated by Spredfast. Contact Spredfast Support to initiate the process.</p>
+        <h2>Sysomos</h2>
+        <p>Sysomos accounts are authenticated by Spredfast. Contact Spredfast Support to initiate the process.</p>
+        <h2>Synthesio</h2>
+        <p>Synthesio accounts are authenticated by Spredfast. Contact Spredfast Support to initiate the process.</p>
+        <h2>Instagram<MadCap:keyword term="Instagram: authenticate" /></h2>
+        <p>If you are currently logged in to Instagram when you authenticate, the Account Sets page refreshes and the account is added without having to provide credentials. If you are not logged in, the Instagram log-in screen appears; enter credentials to authenticate the account in <MadCap:variable name="Spredfast.prod_full" />. Auto-import is supported for videos and photos. </p>
+        <h2>Pinterest<MadCap:keyword term="Pinterest: authenticate" /></h2>
+        <p>Enter credentials to authenticate a Pinterest account in <MadCap:variable name="Spredfast.prod_full" />; select the Boards to authenticate. Auto-import is supported; all pins from selected Boards are auto-imported. </p>
+        <p class="note"><b>Fetching Limitation</b>
+            <br />Pinterest auto-import and metrics fetching is limited to 2500 items per request. If your Board has a great deal of content, the system may not be able to retrieve all items. </p>
+        <h2>Auto-import<MadCap:keyword term="Auto-import feature; Metrics: fetching, auto-import" /></h2>
+        <p>The Auto-import feature, available on most accounts, allows you to automatically import content published natively on a social media account into <MadCap:variable name="Spredfast.prod_full" />. For example, messages you post directly on Twitter or Facebook are treated as though they were published through <MadCap:variable name="Spredfast.prod_acro" />, so that they are tracked and measured. Auto-imported account metrics are fetched every hour.</p>
+        <p>For Twitter (non-restricted accounts only), Slideshare, and YouTube, <MadCap:variable name="Spredfast.prod_full" /> imports all photos, tweets, presentations (PDF, PowerPoint (.ppt and .pptx), and videos posted by the authenticated account. </p>
+        <p>For LinkedIn, auto-import is supported for Companies and Users, all items published by the account are imported. Auto-import is not supported for LinkedIn Groups.</p>
+        <p>For Facebook, <MadCap:variable name="Spredfast.prod_full" /> auto-imports microblogs, Unpublished Page Posts (‘dark’ posts), private messages (as responses), individual photos, link previews, photo albums, and videos.</p>
+        <div MadCap:conditions="Spredfast.admin content">
+            <p class="note"><b>Auto-Import of Facebook Comments</b>
+                <br />If an account configured for auto-import posts a comment on Facebook that appears in the account’s newsfeed, the comment is imported to <MadCap:variable name="Spredfast.prod_full" /> as a microblog message. Similarly, if a comment made elsewhere in Facebook is made into a story by Facebook, it is imported as a microblog message. Otherwise, Facebook comments are not auto-imported. </p>
+            <p class="note"><b>Facebook Albums are imported as Updates</b>
+                <br />Unlike Facebook Videos, Facebook Albums are auto-imported as Facebook Updates (microblogs).</p>
+        </div>
+        <p>For Google+, <MadCap:variable name="Spredfast.prod_full" /> auto-imports posts (microblogs), individual images, link previews, and comments posted by the authenticated account.</p>
+        <div MadCap:conditions="Spredfast.admin content">
+            <h3>Google+ Personal Accounts</h3>
+            <p>If customers have Google+ personal accounts enabled in the Admin Panel, (see <MadCap:xref href="Per_Company_Configuration.htm">Per-Company Configurations—Admin Panel</MadCap:xref>) <MadCap:variable name="Spredfast.prod_full" /> users can authenticate those accounts. For authenticated personal accounts, <MadCap:variable name="Spredfast.prod_full" /> auto-imports posts, displays them on the Calendar, and collects metrics for them, which are aggregated with the other Google+ (Company page) data. No publishing to personal accounts is supported, and streams cannot be created in the Inbox. </p>
+        </div>
+        <p>For Weibo, <MadCap:variable name="Spredfast.prod_full" /> auto-imports natively published microblogs (Weibos), comments, replies, and reposts.</p>
+        <p>For Instagram, <MadCap:variable name="Spredfast.prod_full" /> auto-imports natively published photos and videos.</p>
+        <p>For Pinterest, <MadCap:variable name="Spredfast.prod_full" /> auto-imports all pins published on a Board. </p>
+        <p>For YouTube, <MadCap:variable name="Spredfast.prod_full" /> auto-imports videos and video thumbnails. </p>
+        <p>To use this feature, click the <b>Auto Import</b> checkbox on the account, which appears on the <b>Account Sets and Accounts</b> page after the account has been created. </p>
+        <p class="note"><b>Credentials</b>
+            <br />We recommend that you do not configure auto-import on credentials used to publish through <MadCap:variable name="Spredfast.prod_full" />. </p>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/MetricsLinkShortening.flsnp" />
+        <h2>Deauthentication<MadCap:keyword term="Deauthentication" /></h2>
+        <p>When deauthentication occurs, the account is marked inactive. While marked as inactive, <MadCap:variable name="Spredfast.CompanyName_full" /> still attempts to send/track messages for the account (in case the deauthentication was in error) but may be unable to. </p>
+        <p>One common cause of deauthentication of an account by a social channel (especially Facebook) is a change to the user name or password associated with the account. When we discover an account has been deauthenticated, an email is sent to the company owner and to Support, and the account appears in red in the <b>Accounts</b> page and affected Inbox streams. To <MadCap:keyword term="Re-authentication" />re-enable use of the account, click the <b>Re-authenticate</b> button to go to the re-authentication page for the channel. Once you have re-authorized the account, <MadCap:variable name="Spredfast.prod_full" /> uses the updated credentials company-wide. </p>
+        <h3>The Deauthentication Process</h3>
+        <p>This is how deauthentication discovery and notification is managed within <MadCap:variable name="Spredfast.prod_full"></MadCap:variable>:</p>
+        <ol>
+            <li><MadCap:variable name="Spredfast.CompanyName_full"></MadCap:variable> receives an error from the channel that is categorized as an authentication error. </li>
+            <li>If the error comes from Facebook or Twitter, <MadCap:variable name="Spredfast.CompanyName_full"></MadCap:variable> performs a check to see if we still have access to the account. If so, we recognize that the account has not been deauthenticated, and no further action is taken. If we do not have access to the account, we consider the authentication error as valid.</li>
+            <li>After five deauthentication failures (authentication error messages) in a 12-hour period, on any channel, we send a message to the company owner and Support. </li>
+        </ol>
+        <p class="note"><b>Re-authentication of Facebook and LinkedIn Groups</b>
+            <br />If the re-authenticating user is a member of a Facebook or LinkedIn Group, the credentials will only be updated if the user has authenticated (or re-authenticated) for the group account previously. This is to keep author attribution for Group posts consistent when credentials are updated. </p>
+    </body>
+</html>

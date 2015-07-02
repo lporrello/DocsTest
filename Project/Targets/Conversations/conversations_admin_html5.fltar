@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="MadCap HTML5 Target"
+  Type="WebHelp2"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  DisableAutoSync="true"
+  MasterStylesheet="/Content/Resources/Stylesheets/Spredfast.css"
+  MakeFileLowerCase="true"
+  ExcludeUnreferencedContent="true"
+  MoveOutputContentToRoot="true"
+  MasterToc="/Project/TOCs/Conversations/conversations.fltoc"
+  UseDeviceWidth="false"
+  TabletBreakpoint="3000"
+  Skin="/Project/Skins/HTML5 - Top Navigation.flskn"
+  GenerateWebSafeImages="false"
+  ReplaceSpacesWithUnderscores="true"
+  InsertMOTW="true"
+  ConditionTagExpression="exclude[Default.PDF or Spredfast.draft or Spredfast.tooltips or &quot;Spredfast.user front matter&quot;] "
+  PartialWordSearch="true"
+  MobileBreakpoint="2000"
+  OutputFile="index">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+  <Glossaries />
+</CatapultTarget>

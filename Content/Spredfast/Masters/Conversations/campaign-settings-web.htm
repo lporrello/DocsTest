@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1141.333" MadCap:lastWidth="1286">
+    <head>
+        <link href="../../../Resources/TableStyles/_Standard.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/Stylesheets/Spredfast.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Web Analytics<MadCap:keyword term="Link tagging: Google Analytics; Link tagging: Omniture; Omniture; Google Analytics" /></h1>
+        <p>Integrate the web analytics package you use to monitor website traffic, so that you can take full advantage of the link tagging capabilities of <MadCap:variable name="Spredfast.prod_full" />.</p>
+        <p>By tagging the links you embed in your social media messages, and integrating with your web analytics engine, you can track the visitors to your website all the way from the individual tweet or post that brought them there.</p>
+        <p>Currently, <MadCap:variable name="Spredfast.prod_acro" /> supports integration with Google Analytics and Omniture. To integrate your account, click the button for the appropriate service, then provide the requested authentication data. You may need to speak to your IT department to get specific API key information for Omniture.</p>
+        <table style="caption-side: top;mc-table-style: url('../../../Resources/TableStyles/_Standard.css');" class="TableStyle-_Standard" cellspacing="0">
+            <caption valign="top" style="padding-bottom: 6pt;">
+                Google Analytics Tags Compared to Omniture Tags
+            </caption>
+            <col class="TableStyle-_Standard-Column-Column1" />
+            <col class="TableStyle-_Standard-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-_Standard-Head-Header1">
+                    <td class="TableStyle-_Standard-HeadE-Column1-Header1">Google Analytics</td>
+                    <td class="TableStyle-_Standard-HeadD-Column1-Header1">Omniture</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-_Standard-Body-Body1">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">Recognizes five tag variables to pass values to its analytics engine.</td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body1">Uses a single variable that, depending on the client implementation, may pass any number of values for gathering and reporting metadata.</td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body2">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">Requires four tags in the URL for GA to pass information back to <MadCap:variable name="Spredfast.CompanyName_full" /></td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body2">Requires all values declared in the variable to be present for proper parsing.</td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body1">
+                    <td class="TableStyle-_Standard-BodyB-Column1-Body1">Requires that each of the five tags adhere to a simple syntax.</td>
+                    <td class="TableStyle-_Standard-BodyA-Column1-Body1">The syntax for the variable and its values may vary for each client implementation.</td>
+                </tr>
+            </tbody>
+        </table>
+        <table style="caption-side: top;mc-table-style: url('../../../Resources/TableStyles/_Standard.css');" class="TableStyle-_Standard" cellspacing="0">
+            <caption valign="top" style="padding-bottom: 6pt;">
+                Google Analytics Link Tags
+            </caption>
+            <col class="TableStyle-_Standard-Column-Column1" />
+            <col class="TableStyle-_Standard-Column-Column1" />
+            <col class="TableStyle-_Standard-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-_Standard-Head-Header1">
+                    <td class="TableStyle-_Standard-HeadE-Column1-Header1">Link Tag</td>
+                    <td class="TableStyle-_Standard-HeadE-Column1-Header1">Usage Suggested by Google</td>
+                    <td class="TableStyle-_Standard-HeadD-Column1-Header1">Implementation in <MadCap:variable name="Spredfast.prod_full" /></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-_Standard-Body-Body1">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">*utm_medium</td>
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">Method of link delivery (postcard, email, banner ad, etc.).</td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body1">
+                        <p>utm_medium=Spredfast</p>
+                        <p>Establishes that all content generated in <MadCap:variable name="Spredfast.prod_acro" /> can be traced back to <MadCap:variable name="Spredfast.CompanyName_full" />.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body2">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">*utm_content</td>
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">For testing and content-targeted ads.</td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body2">
+                        <p>utm_content=ID of post</p>
+                        <p>Specifies the system-generated, unique identifier for the post. (The unique ID relates the post to an account, action, event, schedule, and labels.)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body1">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">utm_source</td>
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">Where the link originates. Examples: name of email list, banner ad location (citysearch, yellow pages, and so on), or pay-per-click service. </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body1">
+                        <p>utm_source=[Channel]</p>
+                        <p>Lists the media channel carrying the content and link (Facebook, Twitter, etc.). </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body2">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">utm_campaign</td>
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">To identify a specific product promotion or strategic campaign</td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body2">
+                        <p>utm_campaign=Initiative Name</p>
+                        <p>Carries the name of the Initiative associated with the content.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body1">
+                    <td class="TableStyle-_Standard-BodyB-Column1-Body1">utm_term</td>
+                    <td class="TableStyle-_Standard-BodyB-Column1-Body1">Identifies paid keywords (like shoes, monitors, etc.). </td>
+                    <td class="TableStyle-_Standard-BodyA-Column1-Body1">Optional. Can be used as a custom tag.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="caution"><b>Metrics Tags</b>
+            <br />Do not change the variables utm_medium and utm_content. These tags and their stated values are required for the system to calculate metrics.</p>
+        <p>Once the account integration process is complete, click <b>Enable Link Tracking</b>.</p>
+        <p>You can also edit or remove account integration using the <b>Edit</b> and <b>Remove</b> buttons.</p>
+    </body>
+</html>

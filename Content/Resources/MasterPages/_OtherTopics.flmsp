@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="7" MadCap:lastHeight="156" MadCap:lastWidth="1139">
+    <head>
+		<script type="text/javascript">
+			WebFontConfig = {
+			google: { families: [ 'Open+Sans::latin' ] }
+			};
+			(function() {
+			var wf = document.createElement('script');
+			wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+			'://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+			wf.type = 'text/javascript';
+			wf.async = 'true';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(wf, s);
+		})(); </script>
+		
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title></title>
+        <link href="../Stylesheets/HTMLHeaderStyles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="content">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                        <div class="clearfix">
+                            <MadCap:topicToolbarProxy />
+                        </div>
+                        <MadCap:menuProxy style="mc-context-sensitive: True;" data-mc-skin="/Project/Skins/SideMenu.flskn" />
+                    </div>
+                    <MadCap:breadcrumbsProxy />
+                    <MadCap:bodyProxy />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

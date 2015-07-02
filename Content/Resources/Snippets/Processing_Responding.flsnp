@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="note"><b>Processing vs. Responding</b>
+            <br />For the purpose of describing actions in the Inbox, “processing” refers to actions taken to manage items within <MadCap:variable name="Spredfast.prod_full" />, such as adding labels, highlighting for others, and adding notes; “Responding” refers to actions taken in <MadCap:variable name="Spredfast.prod_full" /> that appear on a channel platform, such as Liking, Replying, Hiding, and Deleting.</p>
+    </body>
+</html>

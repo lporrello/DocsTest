@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="1542" MadCap:lastWidth="887">
+    <head>
+        <link href="../../../Resources/Stylesheets/Spredfast.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Link Shortening</h1>
+        <p><MadCap:variable name="Spredfast.prod_full" /> supports link shortening by Bitly and BudURL. Both are configured similarly.</p>
+        <p>Add a custom Bitly or BudURL account for link shortening: </p>
+        <ol>
+            <li>From <b>Initiative Settings</b>, click the <b>Link Shortening</b> tab.</li>
+            <li>Click <b><MadCap:variable name="Spredfast.CompanyName_full" />'s Bitly Account</b> or <b>Authenticate Your Own Account</b>.</li>
+            <li>Use the pull-down control to select <b>Bitly</b> or <b>BudURL</b>.</li>
+            <li>Click <b>Authenticate and Save</b> to authenticate your account, and then sign in using your account.</li>
+            <li>Click <b>Allow</b>.</li>
+        </ol>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/MetricsLinkShortening.flsnp" />
+        <h2>Bitly</h2>
+        <p>By default, <MadCap:variable name="Spredfast.prod_acro" /> uses <MadCap:variable name="Spredfast.CompanyName_full" />’s Bitly account to shorten the links embedded in social media content. If your organization prefers to use its own Bitly account, authenticate it here and <MadCap:variable name="Spredfast.prod_acro" /> will use it both to shorten your links and to report click-through metrics on auto-imported content. Each Initiative can have one account associated with it. </p>
+        <p MadCap:conditions="Spredfast.admin content">Bitly uses OAuth to authenticate accounts. If Bitly cannot be accessed during publishing, <MadCap:variable name="Spredfast.prod_full" /> publishes the long URL instead. In this case, click metrics cannot be collected on the message. </p>
+        <h2>BudURL</h2>
+        <p>When you configure BudURL for your initiative, <MadCap:variable name="Spredfast.prod_acro" /> will no longer use the default Bitly account to shorten links but will instead use their BudURL account (and short link domain. BudURL provides the following support:</p>
+        <ul>
+            <li>Shortening links via BudURL at publish time.</li>
+            <li>Counting clicks on links shortened by BudURL in <MadCap:variable name="Spredfast.CompanyName_full" /> content (published by <MadCap:variable name="Spredfast.CompanyName_full" /> or auto-imported).</li>
+            <li>You can see additional metrics at <a href="https://app.budurl.com/" target="_blank">app.budurl.com</a>.</li>
+        </ul>
+        <p class="note"><b>What API URL&#160;Should I Use?</b>
+            <br />The API URL must match the field called "API Primary Base URL", or the integration will not work. Do not use sfast.budurl.com.</p>
+    </body>
+</html>

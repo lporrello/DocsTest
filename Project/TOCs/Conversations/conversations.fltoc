@@ -1,0 +1,1127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc>
+  <TocEntry
+    Title="Title_Page"
+    Link="/Content/Spredfast/Masters/Conversations/Title_Page.htm"
+    conditions="Default.PDF"
+    BreakType="chapter"
+    PageType="title"
+    StartSection="false"
+    PageNumberReset="reset"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    PageNumberFormat="lower-roman"
+    PageNumber="1"
+    PageLayout="/Content/Resources/PageLayouts/Title.flpgl"
+    ReplaceMergeNode="false">
+    <TocEntry
+      Title="Table of Contents"
+      Link="/Content/Spredfast/Masters/Title_Page.htm"
+      conditions="Default.PDF"
+      ChapterNumberReset="reset"
+      ChapterNumber="1"
+      ChapterNumberFormat="lower-roman"
+      VolumeNumberReset="reset"
+      BreakType="chapter"
+      PageNumberReset="reset"
+      PageNumberFormat="lower-roman"
+      StartSection="false"
+      PageNumber="1"
+      PageLayout="/Content/Resources/PageLayouts/Body.flpgl"
+      SectionNumberReset="continue" />
+  </TocEntry>
+  <TocEntry
+    Title="Introduction to Spredfast Conversations"
+    Link="/Content/Spredfast/Masters/Conversations/Introduction.htm"
+    BreakType="chapter"
+    PageNumberReset="reset"
+    StartSection="false"
+    PageNumber="1"
+    ReplaceMergeNode="false"
+    ChapterNumber="1"
+    ChapterNumberReset="reset"
+    SectionNumberReset="reset"
+    VolumeNumberReset="same"
+    PageLayout="/Content/Resources/PageLayouts/Body.flpgl"
+    PageNumberFormat="decimal"
+    ComputeToc="false"
+    ChapterNumberFormat="decimal"
+    AutoEndOnLeftPage="disabled"
+    SectionNumber="1"
+    SectionNumberFormat="decimal">
+    <TocEntry
+      Title="Logging in to [%=Spredfast.prod_full%]"
+      Link="/Content/Spredfast/Masters/Conversations/Logging_in_to_.htm"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue"
+      StartSection="false" />
+    <TocEntry
+      Title="UI Overview"
+      Link="/Content/Spredfast/Masters/Conversations/UI_Overview.htm"></TocEntry>
+    <TocEntry
+      Title="My Account"
+      Link="/Content/Spredfast/Masters/Conversations/My_Account.htm">
+      <TocEntry
+        Title="Email, Password, and Picture"
+        Link="/Content/Spredfast/Masters/Conversations/Email__Password_and_Pict.htm" />
+      <TocEntry
+        Title="Time Zone"
+        Link="/Content/Spredfast/Masters/Conversations/Time_Zone.htm" />
+      <TocEntry
+        Title="Email Subscriptions"
+        Link="/Content/Spredfast/Masters/Conversations/Email_Subscriptions.htm" />
+      <TocEntry
+        Title="Changing Companies"
+        Link="/Content/Spredfast/Masters/Conversations/Changing_Companies.htm" />
+      <TocEntry
+        Title="To-Do List"
+        Link="/Content/Spredfast/Masters/Conversations/To_Do_List.htm" />
+      <TocEntry
+        Title="Set Home Page"
+        Link="/Content/Spredfast/Masters/Conversations/Set_Home_Page.htm" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Internal Administration"
+    Link="/Content/Spredfast/Masters/Conversations/AdminPanel.htm"
+    conditions="Spredfast.admin content"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    ChapterNumber=""
+    ChapterNumberFormat="decimal"
+    SectionNumberReset="continue"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    AutoEndOnLeftPage="disabled"
+    PageLayout="/Content/Resources/PageLayouts/Body.flpgl"
+    ComputeToc="false">
+    <TocEntry
+      Title="Internal Roles and Permissions"
+      Link="/Content/Spredfast/Masters/Conversations/Internal_Roles_and_Permi.htm"
+      conditions="Spredfast.admin content" />
+    <TocEntry
+      Title="Admin Settings"
+      Link="/Content/Spredfast/Masters/Conversations/Admin_Settings.htm"
+      conditions="Spredfast.admin content">
+      <TocEntry
+        Title="Parent Company"
+        Link="/Content/Spredfast/Masters/Conversations/Parent_Company.htm"
+        conditions="Spredfast.admin content" />
+      <TocEntry
+        Title="Companies"
+        Link="/Content/Spredfast/Masters/Conversations/Add_a_New_Company.htm"
+        conditions="Spredfast.admin content" />
+      <TocEntry
+        Title="Per-Company Configurations—Admin Panel"
+        Link="/Content/Spredfast/Masters/Conversations/Per_Company_Configuration.htm"
+        conditions="Spredfast.admin content"></TocEntry>
+      <TocEntry
+        Title="Users"
+        Link="/Content/Spredfast/Masters/Conversations/Users.htm"
+        conditions="Spredfast.admin content" />
+      <TocEntry
+        Title="Change User Role"
+        Link="/Content/Spredfast/Masters/Conversations/Change_User_Role.htm"
+        conditions="Spredfast.admin content" />
+      <TocEntry
+        Title="Export Users (Detailed)"
+        Link="/Content/Spredfast/Masters/Conversations/Export_Users__Detailed_.htm"
+        conditions="Spredfast.admin content" />
+      <TocEntry
+        Title="Export Recent Logins"
+        Link="/Content/Spredfast/Masters/Conversations/Export_Recent_Logins.htm"
+        conditions="Spredfast.admin content" />
+      <TocEntry
+        Title="Impersonate"
+        Link="/Content/Spredfast/Masters/Conversations/Impersonate.htm"
+        conditions="Spredfast.admin content" />
+      <TocEntry
+        Title="View Event Error"
+        Link="/Content/Spredfast/Masters/Conversations/View_Event_Error.htm"
+        conditions="Spredfast.admin content" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Supported Social Media Services"
+    Link="/Content/Spredfast/Masters/Conversations/Channels.htm"
+    conditions="Spredfast.admin content,Spredfast.admin content"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Body.flpgl"
+    AutoEndOnLeftPage="disabled">
+    <TocEntry
+      Title="Bazaarvoice"
+      Link="/Content/Spredfast/Masters/Conversations/Bazaarvoice.htm"
+      conditions="Spredfast.admin content" />
+    <TocEntry
+      Title="Brandwatch"
+      Link="/Content/Spredfast/Masters/Conversations/Brandwatch.htm"
+      conditions="Spredfast.admin content" />
+    <TocEntry
+      Title="Board Reader"
+      Link="/Content/Spredfast/Masters/Conversations/Board_Reader.htm"
+      conditions="Spredfast.admin content" />
+    <TocEntry
+      Title="Crimson Hexagon"
+      Link="/Content/Spredfast/Masters/Conversations/Crimson_Hexagon.htm"
+      conditions="Spredfast.admin content" />
+    <TocEntry
+      Title="Facebook"
+      Link="/Content/Spredfast/Masters/Conversations/Facebook.htm"
+      conditions="Spredfast.admin content" />
+    <TocEntry
+      Title="Flickr"
+      Link="/Content/Spredfast/Masters/Conversations/Flickr.htm"
+      conditions="Spredfast.admin content" />
+    <TocEntry
+      Title="Google+"
+      Link="/Content/Spredfast/Masters/Conversations/Google_.htm"
+      conditions="Spredfast.admin content" />
+    <TocEntry
+      Title="Google/Google Blog Search"
+      Link="/Content/Spredfast/Masters/Conversations/Google_Google_Blog_Searc.htm"
+      conditions="Spredfast.admin content" />
+    <TocEntry
+      Title="Instagram"
+      Link="/Content/Spredfast/Masters/Conversations/Instagram.htm"
+      conditions="Spredfast.admin content" />
+    <TocEntry
+      Title="LinkedIn"
+      Link="/Content/Spredfast/Masters/Conversations/LinkedIn.htm"
+      conditions="Spredfast.admin content" />
+    <TocEntry
+      Title="Pinterest"
+      Link="/Content/Spredfast/Masters/Conversations/Pinterest.htm"
+      conditions="Spredfast.admin content" />
+    <TocEntry
+      Title="SlideShare"
+      Link="/Content/Spredfast/Masters/Conversations/SlideShare.htm"
+      conditions="Spredfast.admin content" />
+    <TocEntry
+      Title="Social Mention"
+      Link="/Content/Spredfast/Masters/Conversations/Social_Mention.htm"
+      conditions="Spredfast.admin content"></TocEntry>
+    <TocEntry
+      Title="Synthesio"
+      Link="/Content/Spredfast/Masters/Conversations/Synthesio_admin.htm"
+      conditions="Spredfast.admin content"
+      StartSection="false"></TocEntry>
+    <TocEntry
+      Title="Sysomos"
+      Link="/Content/Spredfast/Masters/Conversations/Sysomos_admin.htm"
+      conditions="Spredfast.admin content" />
+    <TocEntry
+      Title="Twitter"
+      Link="/Content/Spredfast/Masters/Conversations/Twitter.htm"
+      conditions="Spredfast.admin content" />
+    <TocEntry
+      Title="Weibo"
+      Link="/Content/Spredfast/Masters/Conversations/Weibo.htm"
+      conditions="Spredfast.admin content" />
+    <TocEntry
+      Title="WordPress"
+      Link="/Content/Spredfast/Masters/Conversations/WordPress.htm"
+      conditions="Spredfast.admin content" />
+    <TocEntry
+      Title="YouTube"
+      Link="/Content/Spredfast/Masters/Conversations/YouTube.htm"
+      conditions="Spredfast.admin content" />
+  </TocEntry>
+  <TocEntry
+    Title="Company Settings"
+    Link="/Content/Spredfast/Masters/Conversations/CompanySettings.htm"
+    conditions="Spredfast.Manual"
+    VolumeNumberReset="continue"
+    BreakType="chapter"
+    AutoEndOnLeftPage="disabled"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Body.flpgl"
+    SectionNumberReset="continue"
+    ChapterNumberReset="continue">
+    <TocEntry
+      Title="Info"
+      Link="/Content/Spredfast/Masters/Conversations/Info.htm">
+      <TocEntry
+        Title="Edit Company Name, Parent Company"
+        Link="/Content/Spredfast/Masters/Conversations/Edit_Company_Name__Paren.htm"
+        conditions="Spredfast.admin content" />
+      <TocEntry
+        Title="Twitter Admin Settings"
+        Link="/Content/Spredfast/Masters/Conversations/twitter_search_stream_he.htm"></TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Security"
+      Link="/Content/Spredfast/Masters/Conversations/Security.htm">
+      <TocEntry
+        Title="Security Settings"
+        Link="/Content/Spredfast/Masters/Conversations/saml.htm"></TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Users"
+      Link="/Content/Spredfast/Masters/Conversations/companyusers.htm">
+      <TocEntry
+        Title="User Roles and Permissions"
+        Link="/Content/Spredfast/Masters/Conversations/User_Roles_and_Permissio.htm" />
+      <TocEntry
+        Title="Privileges"
+        Link="/Content/Spredfast/Masters/Conversations/Privileges.htm"
+        conditions="Spredfast.admin content" />
+    </TocEntry>
+    <TocEntry
+      Title="Workspaces"
+      Link="/Content/Spredfast/Masters/Conversations/appview.htm" />
+    <TocEntry
+      Title="Approvals"
+      Link="/Content/Spredfast/Masters/Conversations/Approvals.htm">
+      <TocEntry
+        Title="About Approvals"
+        Link="/Content/Spredfast/Masters/Conversations/About_Approvals.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Custom Channels"
+      Link="/Content/Spredfast/Masters/Conversations/Custom_Channels.htm" />
+    <TocEntry
+      Title="Labels"
+      Link="/Content/Spredfast/Masters/Conversations/Labels.htm" />
+    <TocEntry
+      Title="Highlight Teams"
+      Link="/Content/Spredfast/Masters/Conversations/Highlight_Teams.htm" />
+    <TocEntry
+      Title="Analytics"
+      Link="/Content/Spredfast/Masters/Conversations/Analytics.htm">
+      <TocEntry
+        Title="Social Care Business Hours"
+        Link="/Content/Spredfast/Masters/Conversations/Social_Care_Business_Hou.htm" />
+      <TocEntry
+        Title="Social Care Flexible Report Configuration"
+        Link="/Content/Spredfast/Masters/Conversations/metrics-labels.htm" />
+      <TocEntry
+        Title="Schedule Reports"
+        Link="/Content/Spredfast/Masters/Conversations/Schedule_Reports.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Macro"
+      Link="/Content/Spredfast/Masters/Conversations/macros.htm" />
+    <TocEntry
+      Title="Third-Party Apps"
+      Link="/Content/Spredfast/Masters/Conversations/kenshoo.htm">
+      <TocEntry
+        Title="Kenshoo"
+        Link="/Content/Spredfast/Masters/Conversations/kenshoo.htm" />
+      <TocEntry
+        Title="SalesForce"
+        Link="/Content/Spredfast/Masters/Conversations/SalesForce.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Content Promotion"
+      Link="/Content/Spredfast/Masters/Conversations/facebookPagePromotion.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="Initiatives"
+    Link="/Content/Spredfast/Masters/Conversations/Initiatives.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Body.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue">
+    <TocEntry
+      Title="Create an Initiative"
+      Link="/Content/Spredfast/Masters/Conversations/Create_an_Initiative.htm" />
+    <TocEntry
+      Title="Initiative Settings"
+      Link="/Content/Spredfast/Masters/Conversations/Initiative_Settings.htm">
+      <TocEntry
+        Title="Info"
+        Link="/Content/Spredfast/Masters/Conversations/initiative-info-tab.htm" />
+      <TocEntry
+        Title="Users"
+        Link="/Content/Spredfast/Masters/Conversations/campaign-settings-users.htm" />
+      <TocEntry
+        Title="Accounts"
+        Link="/Content/Spredfast/Masters/Conversations/campaign-persona-voice.htm"></TocEntry>
+      <TocEntry
+        Title="Web Analytics"
+        Link="/Content/Spredfast/Masters/Conversations/campaign-settings-web.htm" />
+      <TocEntry
+        Title="Link Tagging"
+        Link="/Content/Spredfast/Masters/Conversations/campaign-settings-link.htm"></TocEntry>
+      <TocEntry
+        Title="Link Shortening"
+        Link="/Content/Spredfast/Masters/Conversations/campaign-settings-bit.htm" />
+      <TocEntry
+        Title="Crimson Hexagon"
+        Link="/Content/Spredfast/Masters/Conversations/campaign-settings-crimso.htm" />
+      <TocEntry
+        Title="Influencers"
+        Link="/Content/Spredfast/Masters/Conversations/campaign-settings-influe.htm" />
+      <TocEntry
+        Title="Approval Setup"
+        Link="/Content/Spredfast/Masters/Conversations/approval-permissions.htm"></TocEntry>
+      <TocEntry
+        Title="Keywords"
+        Link="/Content/Spredfast/Masters/Conversations/campaign-settings-keywor.htm" />
+      <TocEntry
+        Title="Values"
+        Link="/Content/Spredfast/Masters/Conversations/campaign-settings-target.htm" />
+      <TocEntry
+        Title="Targeting Profiles"
+        Link="/Content/Spredfast/Masters/Conversations/campaign-settings-target_1.htm" />
+      <TocEntry
+        Title="Twitter-Based Streams"
+        Link="/Content/Spredfast/Masters/Conversations/campaign-twitter-streams.htm" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Publish"
+    Link="/Content/Spredfast/Masters/Conversations/Publishing.htm"
+    BreakType="chapter"
+    AutoEndOnLeftPage="disabled"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Body.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue">
+    <TocEntry
+      Title="Publishing Icons"
+      Link="/Content/Spredfast/Masters/Conversations/Publishing_Icons.htm" />
+    <TocEntry
+      Title="Post to Facebook, Twitter, Google+, LinkedIn, YouTube, or Weibo"
+      Link="/Content/Spredfast/Masters/Conversations/Post_to_Facebook__Twitte.htm">
+      <TocEntry
+        Title="Compose"
+        Link="/Content/Spredfast/Masters/Conversations/labels_1.htm"></TocEntry>
+      <TocEntry
+        Title="Targeting"
+        Link="/Content/Spredfast/Masters/Conversations/Targeting.htm"></TocEntry>
+      <TocEntry
+        Title="Retweet"
+        Link="/Content/Spredfast/Masters/Conversations/publishing-retweet.htm" />
+      <TocEntry
+        Title="Promotion"
+        Link="/Content/Spredfast/Masters/Conversations/publishing-promote.htm" />
+      <TocEntry
+        Title="Workflow"
+        Link="/Content/Spredfast/Masters/Conversations/publishing-approvals.htm"></TocEntry>
+      <TocEntry
+        Title="Message Import"
+        Link="/Content/Spredfast/Masters/Conversations/Message_Import.htm" />
+      <TocEntry
+        Title="Multiple Microblog Posts"
+        Link="/Content/Spredfast/Masters/Conversations/Multiple_Microblog_Posts.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Pinterest"
+      Link="/Content/Spredfast/Masters/Conversations/Pinterest_.htm" />
+    <TocEntry
+      Title="Other Message Types"
+      Link="/Content/Spredfast/Masters/Conversations/Other_Message_Types.htm">
+      <TocEntry
+        Title="Blog Post"
+        Link="/Content/Spredfast/Masters/Conversations/Blog_Post.htm" />
+      <TocEntry
+        Title="Photo"
+        Link="/Content/Spredfast/Masters/Conversations/Photo.htm" />
+      <TocEntry
+        Title="Video"
+        Link="/Content/Spredfast/Masters/Conversations/Video.htm" />
+      <TocEntry
+        Title="Discussion Topic"
+        Link="/Content/Spredfast/Masters/Conversations/Discussion_Topic.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Microblog Series"
+      Link="/Content/Spredfast/Masters/Conversations/Microblog_Series.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="Inbox"
+    Link="/Content/Spredfast/Masters/Conversations/list.htm"
+    BreakType="chapter"
+    AutoEndOnLeftPage="disabled"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Body.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue">
+    <TocEntry
+      Title="Tabs"
+      Link="/Content/Spredfast/Masters/Conversations/Tabs.htm" />
+    <TocEntry
+      Title="Stream Library"
+      Link="/Content/Spredfast/Masters/Conversations/Stream_Library.htm" />
+    <TocEntry
+      Title="Streams"
+      Link="/Content/Spredfast/Masters/Conversations/Streams.htm"
+      conditions="Spredfast.tooltips" />
+    <TocEntry
+      Title="Create Streams"
+      Link="/Content/Spredfast/Masters/Conversations/Create_Streams.htm">
+      <TocEntry
+        Title="Account-Based Streams"
+        Link="/Content/Spredfast/Masters/Conversations/Account_Based_Streams.htm" />
+      <TocEntry
+        Title="Bazaarvoice Streams"
+        Link="/Content/Spredfast/Masters/Conversations/Bazaarvoice_Stream.htm" />
+      <TocEntry
+        Title="Brandwatch Streams"
+        Link="/Content/Spredfast/Masters/Conversations/Brandwatch_Stream.htm" />
+      <TocEntry
+        Title="Sysomos Streams"
+        Link="/Content/Spredfast/Masters/Conversations/Sysomos_Streams.htm" />
+      <TocEntry
+        Title="Synthesio Streams"
+        Link="/Content/Spredfast/Masters/Conversations/Synthesio_Streams.htm" />
+      <TocEntry
+        Title="Instagram Streams"
+        Link="/Content/Spredfast/Masters/Conversations/Instagram_Stream.htm" />
+      <TocEntry
+        Title="Twitter Users Streams"
+        Link="/Content/Spredfast/Masters/Conversations/Twitter_Users_Streams.htm" />
+      <TocEntry
+        Title="Weibo Streams"
+        Link="/Content/Spredfast/Masters/Conversations/Weibo_Stream.htm" />
+      <TocEntry
+        Title="Search Streams"
+        Link="/Content/Spredfast/Masters/Conversations/Search_Streams.htm" />
+      <TocEntry
+        Title="RSS Streams"
+        Link="/Content/Spredfast/Masters/Conversations/RSS_Streams.htm" />
+      <TocEntry
+        Title="LinkedIn Group Streams"
+        Link="/Content/Spredfast/Masters/Conversations/LinkedIn_Group_Stream.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Stream Names and Aliases"
+      Link="/Content/Spredfast/Masters/Conversations/Stream_Names_and_Aliases.htm" />
+    <TocEntry
+      Title="Collections"
+      Link="/Content/Spredfast/Masters/Conversations/Collections.htm" />
+    <TocEntry
+      Title="Inbox Stream Icons"
+      Link="/Content/Spredfast/Masters/Conversations/Inbox_Stream_Icons.htm" />
+    <TocEntry
+      Title="Source Stream Display"
+      Link="/Content/Spredfast/Masters/Conversations/Source_Stream_Display.htm" />
+    <TocEntry
+      Title="Stream Details View"
+      Link="/Content/Spredfast/Masters/Conversations/Stream_Details_View.htm" />
+    <TocEntry
+      Title="Sysomos Stream Details"
+      Link="/Content/Spredfast/Masters/Conversations/Sysomos_Stream_Details.htm" />
+    <TocEntry
+      Title="Synthesio Stream Details"
+      Link="/Content/Spredfast/Masters/Conversations/Synthesio_Stream_Details.htm" />
+    <TocEntry
+      Title="Change Time Display on Stream Items"
+      Link="/Content/Spredfast/Masters/Conversations/Change_Time_Display_on_S.htm" />
+    <TocEntry
+      Title="Jump to..."
+      Link="/Content/Spredfast/Masters/Conversations/Jump_to___.htm" />
+    <TocEntry
+      Title="Actions on Streams"
+      Link="/Content/Spredfast/Masters/Conversations/Actions_on_Streams.htm">
+      <TocEntry
+        Title="Filter a Stream"
+        Link="/Content/Spredfast/Masters/Conversations/Filter_a_Stream.htm" />
+      <TocEntry
+        Title="Delete a Stream"
+        Link="/Content/Spredfast/Masters/Conversations/Delete_a_Stream.htm" />
+      <TocEntry
+        Title="Edit a Stream"
+        Link="/Content/Spredfast/Masters/Conversations/Edit_a_Stream.htm" />
+      <TocEntry
+        Title="Export a Single Stream"
+        Link="/Content/Spredfast/Masters/Conversations/Export_a_Single_Stream.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Stream Views"
+      Link="/Content/Spredfast/Masters/Conversations/Stream_Views.htm">
+      <TocEntry
+        Title="Stream Refresh Rates"
+        Link="/Content/Spredfast/Masters/Conversations/Stream_Refresh_Rates.htm" />
+      <TocEntry
+        Title="Standard Streams"
+        Link="/Content/Spredfast/Masters/Conversations/Standard_Streams.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Export Stream Content or Activity"
+      Link="/Content/Spredfast/Masters/Conversations/Export_Stream_Content_or.htm" />
+    <TocEntry
+      Title="Process Individual Stream Items"
+      Link="/Content/Spredfast/Masters/Conversations/Process_Individual_Strea.htm">
+      <TocEntry
+        Title="Add Label"
+        Link="/Content/Spredfast/Masters/Conversations/Add_Label_.htm" />
+      <TocEntry
+        Title="Highlight"
+        Link="/Content/Spredfast/Masters/Conversations/Highlight.htm" />
+      <TocEntry
+        Title="Add, Move, Remove Shared Bookmark"
+        Link="/Content/Spredfast/Masters/Conversations/Add__Move__Remove_Shared.htm" />
+      <TocEntry
+        Title="Add a Note"
+        Link="/Content/Spredfast/Masters/Conversations/Add_a_Note.htm" />
+      <TocEntry
+        Title="View Social Profile and Add to Influencers"
+        Link="/Content/Spredfast/Masters/Conversations/View_Social_Profile__Add.htm" />
+      <TocEntry
+        Title="Amplify"
+        Link="/Content/Spredfast/Masters/Conversations/Amplify.htm" />
+      <TocEntry
+        Title="Translate"
+        Link="/Content/Spredfast/Masters/Conversations/Translate_.htm" />
+      <TocEntry
+        Title="Accept/Release Item"
+        Link="/Content/Spredfast/Masters/Conversations/Accept_Release_Item.htm" />
+      <TocEntry
+        Title="Archive"
+        Link="/Content/Spredfast/Masters/Conversations/Archive.htm" />
+      <TocEntry
+        Title="View Item Details"
+        Link="/Content/Spredfast/Masters/Conversations/View_Item_Details.htm"></TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Process Multiple Stream Items"
+      Link="/Content/Spredfast/Masters/Conversations/Process_Multiple_Stream_.htm" />
+    <TocEntry
+      Title="Respond to Stream Items"
+      Link="/Content/Spredfast/Masters/Conversations/Respond_to_Stream_Items.htm">
+      <TocEntry
+        Title="Facebook"
+        Link="/Content/Spredfast/Masters/Conversations/Facebook_1.htm" />
+      <TocEntry
+        Title="Google+"
+        Link="/Content/Spredfast/Masters/Conversations/Google__1.htm" />
+      <TocEntry
+        Title="Twitter"
+        Link="/Content/Spredfast/Masters/Conversations/Twitter_1.htm" />
+      <TocEntry
+        Title="LinkedIn"
+        Link="/Content/Spredfast/Masters/Conversations/LinkedIn_1.htm" />
+      <TocEntry
+        Title="Weibo"
+        Link="/Content/Spredfast/Masters/Conversations/Weibo_1.htm" />
+      <TocEntry
+        Title="YouTube"
+        Link="/Content/Spredfast/Masters/Conversations/YouTube_1.htm" />
+      <TocEntry
+        Title="Bazaarvoice"
+        Link="/Content/Spredfast/Masters/Conversations/Bazaarvoice_1.htm" />
+      <TocEntry
+        Title="Brandwatch"
+        Link="/Content/Spredfast/Masters/Conversations/Brandwatch_1.htm" />
+      <TocEntry
+        Title="Instagram"
+        Link="/Content/Spredfast/Masters/Conversations/Instagram_1.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="[%=Spredfast.prod_full%] Streams"
+      Link="/Content/Spredfast/Masters/Conversations/streams-inbox.htm">
+      <TocEntry
+        Title="Primary Collection"
+        Link="/Content/Spredfast/Masters/Conversations/StreamsInbox_Primary.htm" />
+      <TocEntry
+        Title="All Activity Stream"
+        Link="/Content/Spredfast/Masters/Conversations/streams-standard.htm"></TocEntry>
+      <TocEntry
+        Title="Highlighted Stream"
+        Link="/Content/Spredfast/Masters/Conversations/streams-highlighted.htm" />
+      <TocEntry
+        Title="Recent Engagement Stream"
+        Link="/Content/Spredfast/Masters/Conversations/streams-user-engagement.htm" />
+      <TocEntry
+        Title="Hidden/Deleted Stream"
+        Link="/Content/Spredfast/Masters/Conversations/streams-spam.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Available Account"
+      Link="/Content/Spredfast/Masters/Conversations/wdtmavailable.htm"
+      conditions="Spredfast.tooltips" />
+    <TocEntry
+      Title="Add a Stream to your Inbox"
+      Link="/Content/Spredfast/Masters/Conversations/wdtmsocialinbox.htm"
+      conditions="Spredfast.tooltips" />
+    <TocEntry
+      Title="Twitter Users Stream"
+      Link="/Content/Spredfast/Masters/Conversations/wdtmtwitterhandle.htm"
+      conditions="Spredfast.tooltips" />
+    <TocEntry
+      Title="Bazaarvoice Stream"
+      Link="/Content/Spredfast/Masters/Conversations/wdtmbazaarvoice.htm"
+      conditions="Spredfast.tooltips" />
+    <TocEntry
+      Title="Review Feedback"
+      Link="/Content/Spredfast/Masters/Conversations/bvreviewfeedback.htm"
+      conditions="Spredfast.tooltips" />
+    <TocEntry
+      Title="Stream Not Added"
+      Link="/Content/Spredfast/Masters/Conversations/Stream_Not_Added.htm"
+      conditions="Spredfast.tooltips" />
+  </TocEntry>
+  <TocEntry
+    Title="Calendar"
+    Link="/Content/Spredfast/Masters/Conversations/calendar.htm"
+    BreakType="chapter"
+    AutoEndOnLeftPage="disabled"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Body.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue">
+    <TocEntry
+      Title="Show Items from Other Initiatives on Your Calendar"
+      Link="/Content/Spredfast/Masters/Conversations/Show_Items_from_Other_In.htm" />
+    <TocEntry
+      Title="Search Your Calendar for Title or Text Content"
+      Link="/Content/Spredfast/Masters/Conversations/Search_Your_Calendar_for.htm" />
+    <TocEntry
+      Title="Calendar Icons"
+      Link="/Content/Spredfast/Masters/Conversations/Calendar_Icons.htm"></TocEntry>
+    <TocEntry
+      Title="Agenda View"
+      Link="/Content/Spredfast/Masters/Conversations/Agenda_View.htm" />
+    <TocEntry
+      Title="Week View"
+      Link="/Content/Spredfast/Masters/Conversations/Week_View.htm">
+      <TocEntry
+        Title="Add a Non-Publishing Calendar Entry"
+        Link="/Content/Spredfast/Masters/Conversations/AddNonPublishingCalendarEntry.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Process Individual Items on the Calendar"
+      Link="/Content/Spredfast/Masters/Conversations/Process_Individual_Items.htm">
+      <TocEntry
+        Title="Edit a Message"
+        Link="/Content/Spredfast/Masters/Conversations/Edit_a_Message.htm" />
+      <TocEntry
+        Title="Delete a Message"
+        Link="/Content/Spredfast/Masters/Conversations/Delete_a_Message.htm" />
+      <TocEntry
+        Title="Approve or Reject a Message"
+        Link="/Content/Spredfast/Masters/Conversations/Approve_Reject_a_Message.htm" />
+      <TocEntry
+        Title="Copy a Message within an Initiative"
+        Link="/Content/Spredfast/Masters/Conversations/Copy_a_Message_Within_Initiative.htm" />
+      <TocEntry
+        Title="Copy a Message from Another Initiative"
+        Link="/Content/Spredfast/Masters/Conversations/Copy_a_Message_Another_Initiative.htm" />
+      <TocEntry
+        Title="Star a Message"
+        Link="/Content/Spredfast/Masters/Conversations/Star_a_Message.htm" />
+      <TocEntry
+        Title="Add a Note"
+        Link="/Content/Spredfast/Masters/Conversations/Add_a_Note_1.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Process Multiple Items in the Agenda"
+      Link="/Content/Spredfast/Masters/Conversations/Process_Multiple_Items_i.htm">
+      <TocEntry
+        Title="Label Messages"
+        Link="/Content/Spredfast/Masters/Conversations/Label_Messages.htm" />
+      <TocEntry
+        Title="Add Notes to Multiple Messages"
+        Link="/Content/Spredfast/Masters/Conversations/Add_Notes_to_Messages.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Pause or Resume a Promotion"
+      Link="/Content/Spredfast/Masters/Conversations/Pause_Resume_a_Promotion.htm" />
+    <TocEntry
+      Title="Basic/Advanced Filter"
+      Link="/Content/Spredfast/Masters/Conversations/publishing-filter.htm" />
+    <TocEntry
+      Title="Message Details"
+      Link="/Content/Spredfast/Masters/Conversations/Message_Details.htm">
+      <TocEntry
+        Title="Message Details—Message"
+        Link="/Content/Spredfast/Masters/Conversations/Message_Details_Message.htm" />
+      <TocEntry
+        Title="Message Details—Metrics"
+        Link="/Content/Spredfast/Masters/Conversations/event-calendar-fbpost.htm"></TocEntry>
+      <TocEntry
+        Title="Message Details—Conversation"
+        Link="/Content/Spredfast/Masters/Conversations/Message_Details_Conversa.htm" />
+      <TocEntry
+        Title="Message Details—Promotion"
+        Link="/Content/Spredfast/Masters/Conversations/Message_Details_Promotio.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Export Calendar"
+      Link="/Content/Spredfast/Masters/Conversations/Export_Calendar.htm" />
+    <TocEntry
+      Title="Publishing"
+      Link="/Content/Spredfast/Masters/Conversations/publishing_1.htm"
+      conditions="Spredfast.tooltips">
+      <TocEntry
+        Title="Agenda"
+        Link="/Content/Spredfast/Masters/Conversations/Agenda.htm"
+        conditions="Spredfast.tooltips" />
+      <TocEntry
+        Title="Basic/Advanced Filter"
+        Link="/Content/Spredfast/Masters/Conversations/Basic_Advanced_Filter.htm"
+        conditions="Spredfast.tooltips" />
+      <TocEntry
+        Title="Create Messages"
+        Link="/Content/Spredfast/Masters/Conversations/Create_Messages.htm"
+        conditions="Spredfast.tooltips" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Content Center"
+    Link="/Content/Spredfast/Masters/Conversations/ContentCenter.htm"
+    BreakType="chapter"
+    AutoEndOnLeftPage="disabled"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Body.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue">
+    <TocEntry
+      Title="Layout/Structure"
+      Link="/Content/Spredfast/Masters/Conversations/Layout_Structure.htm" />
+    <TocEntry
+      Title="Create and Manage Folders"
+      Link="/Content/Spredfast/Masters/Conversations/Create_and_Manage_Folder.htm"></TocEntry>
+    <TocEntry
+      Title="Create and Manage Assets"
+      Link="/Content/Spredfast/Masters/Conversations/Create_and_Manage_Assets.htm">
+      <TocEntry
+        Title="Filter Assets"
+        Link="/Content/Spredfast/Masters/Conversations/Filter_Assets.htm" />
+      <TocEntry
+        Title="Sort Assets"
+        Link="/Content/Spredfast/Masters/Conversations/Sort_Assets.htm" />
+      <TocEntry
+        Title="Search Assets"
+        Link="/Content/Spredfast/Masters/Conversations/Search_Assets.htm" />
+      <TocEntry
+        Title="Create an Asset"
+        Link="/Content/Spredfast/Masters/Conversations/Create_an_Asset.htm" />
+      <TocEntry
+        Title="Publish an Asset"
+        Link="/Content/Spredfast/Masters/Conversations/Publish_an_Asset.htm" />
+      <TocEntry
+        Title="Resize an Asset (Image Studio)"
+        Link="/Content/Spredfast/Masters/Conversations/Resize_an_Asset__Image_S.htm" />
+      <TocEntry
+        Title="Edit an Asset"
+        Link="/Content/Spredfast/Masters/Conversations/Edit_an_Asset.htm" />
+      <TocEntry
+        Title="Delete an Asset"
+        Link="/Content/Spredfast/Masters/Conversations/Delete_an_Asset.htm" />
+      <TocEntry
+        Title="Move an Asset"
+        Link="/Content/Spredfast/Masters/Conversations/Move_an_Asset.htm" />
+      <TocEntry
+        Title="Download an Asset"
+        Link="/Content/Spredfast/Masters/Conversations/Download_an_Asset.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Manage Multiple Assets"
+      Link="/Content/Spredfast/Masters/Conversations/Manage_Multiple_Assets_.htm">
+      <TocEntry
+        Title="All Assets Folder"
+        Link="/Content/Spredfast/Masters/Conversations/All_Assets_Folder.htm" />
+      <TocEntry
+        Title="Move Multiple Assets"
+        Link="/Content/Spredfast/Masters/Conversations/Move_Multiple_Assets.htm" />
+      <TocEntry
+        Title="Delete Multiple Assets"
+        Link="/Content/Spredfast/Masters/Conversations/Delete_Multiple_Assets.htm" />
+      <TocEntry
+        Title="Import Assets"
+        Link="/Content/Spredfast/Masters/Conversations/Import_Assets.htm" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Company Analytics"
+    Link="/Content/Spredfast/Masters/Conversations/CompanyAnalyticsReorient.htm"
+    BreakType="chapter"
+    AutoEndOnLeftPage="disabled"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Body.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue">
+    <TocEntry
+      Title="Comparing Company-wide/Initiative-level Analytics"
+      Link="/Content/Spredfast/Masters/Conversations/Comparing_Company_wide_I.htm" />
+    <TocEntry
+      Title="Company-wide Analytics"
+      Link="/Content/Spredfast/Masters/Conversations/Company_ analytics.htm">
+      <TocEntry
+        Title="Company-wide Analytics Filters"
+        Link="/Content/Spredfast/Masters/Conversations/Company_wide_Analytics_F.htm" />
+      <TocEntry
+        Title="Scheduled Reports"
+        Link="/Content/Spredfast/Masters/Conversations/Scheduled_Reports.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Channel Analytics—All Channels"
+      Link="/Content/Spredfast/Masters/Conversations/Channel_Analytics_All_Ch.htm">
+      <TocEntry
+        Title="All Channels Performance"
+        Link="/Content/Spredfast/Masters/Conversations/All_Channels_Performance.htm"></TocEntry>
+      <TocEntry
+        Title="Messages"
+        Link="/Content/Spredfast/Masters/Conversations/Messages.htm"></TocEntry>
+      <TocEntry
+        Title="Account Explorer"
+        Link="/Content/Spredfast/Masters/Conversations/Account_Explorer.htm" />
+      <TocEntry
+        Title="All Channels [%=Spredfast.message_explorer%]"
+        Link="/Content/Spredfast/Masters/Conversations/All_Channels_.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Channel Analytics—Facebook"
+      Link="/Content/Spredfast/Masters/Conversations/Channel_Analytics_Facebook.htm">
+      <TocEntry
+        Title="Accounts"
+        Link="/Content/Spredfast/Masters/Conversations/Channel_Analytics_Facebook_Accounts.htm" />
+      <TocEntry
+        Title="Account Explorer"
+        Link="/Content/Spredfast/Masters/Conversations/Account_Explorer_1.htm" />
+      <TocEntry
+        Title="Messages"
+        Link="/Content/Spredfast/Masters/Conversations/Messages_1.htm"></TocEntry>
+      <TocEntry
+        Title="Facebook [%=Spredfast.message_explorer%]"
+        Link="/Content/Spredfast/Masters/Conversations/Facebook_.htm"></TocEntry>
+      <TocEntry
+        Title="Videos"
+        Link="/Content/Spredfast/Masters/Conversations/Videos_1.htm"></TocEntry>
+      <TocEntry
+        Title="Video Trends"
+        Link="/Content/Spredfast/Masters/Conversations/Video_Trends_1.htm"></TocEntry>
+      <TocEntry
+        Title="Video Explorer"
+        Link="/Content/Spredfast/Masters/Conversations/Video_Explorer_1.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Channel Analytics—Twitter"
+      Link="/Content/Spredfast/Masters/Conversations/Channel_Analytics_Twitter.htm">
+      <TocEntry
+        Title="Accounts"
+        Link="/Content/Spredfast/Masters/Conversations/Channel_Analytics_Twitter_Accounts.htm" />
+      <TocEntry
+        Title="Account Explorer"
+        Link="/Content/Spredfast/Masters/Conversations/Account_Explorer_2.htm" />
+      <TocEntry
+        Title="Messages"
+        Link="/Content/Spredfast/Masters/Conversations/Messages_2.htm"></TocEntry>
+      <TocEntry
+        Title="Twitter [%=Spredfast.message_explorer%]"
+        Link="/Content/Spredfast/Masters/Conversations/Twitter_.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Channel Analytics—LinkedIn"
+      Link="/Content/Spredfast/Masters/Conversations/Channel_Analytics_Linkedin.htm">
+      <TocEntry
+        Title="Accounts"
+        Link="/Content/Spredfast/Masters/Conversations/Channel_Analytics_Linkedin_Accounts.htm" />
+      <TocEntry
+        Title="Account Explorer"
+        Link="/Content/Spredfast/Masters/Conversations/Account_Explorer_3.htm" />
+      <TocEntry
+        Title="Messages"
+        Link="/Content/Spredfast/Masters/Conversations/Messages_3.htm"></TocEntry>
+      <TocEntry
+        Title="LinkedIn [%=Spredfast.message_explorer%]"
+        Link="/Content/Spredfast/Masters/Conversations/LinkedIn_.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Channel Analytics—Google+"
+      Link="/Content/Spredfast/Masters/Conversations/Channel_Analytics_Google.htm">
+      <TocEntry
+        Title="Accounts"
+        Link="/Content/Spredfast/Masters/Conversations/Accounts.htm"></TocEntry>
+      <TocEntry
+        Title="Account Explorer"
+        Link="/Content/Spredfast/Masters/Conversations/Account_Explorer_4.htm" />
+      <TocEntry
+        Title="Messages"
+        Link="/Content/Spredfast/Masters/Conversations/Messages_4.htm"></TocEntry>
+      <TocEntry
+        Title="Google+ [%=Spredfast.message_explorer%]"
+        Link="/Content/Spredfast/Masters/Conversations/Google__.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Channel Analytics—Instagram"
+      Link="/Content/Spredfast/Masters/Conversations/Channel_Analytics_Instagram.htm">
+      <TocEntry
+        Title="Instagram Performance Dashboard"
+        Link="/Content/Spredfast/Masters/Conversations/Channel_Analytics_Instagram_Performance.htm" />
+      <TocEntry
+        Title="Accounts"
+        Link="/Content/Spredfast/Masters/Conversations/Accounts_1.htm"></TocEntry>
+      <TocEntry
+        Title="Account Explorer"
+        Link="/Content/Spredfast/Masters/Conversations/Account_Explorer_5.htm" />
+      <TocEntry
+        Title="Media"
+        Link="/Content/Spredfast/Masters/Conversations/Media.htm"></TocEntry>
+      <TocEntry
+        Title="Instagram Media Explorer"
+        Link="/Content/Spredfast/Masters/Conversations/Instagram_Media_Explorer.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Channel Analytics—Pinterest"
+      Link="/Content/Spredfast/Masters/Conversations/Channel_Analytics_Pinter.htm">
+      <TocEntry
+        Title="Pinterest Performance Dashboard"
+        Link="/Content/Spredfast/Masters/Conversations/Pinterest_Performance_Da.htm"></TocEntry>
+      <TocEntry
+        Title="Pinterest Boards"
+        Link="/Content/Spredfast/Masters/Conversations/Pinterest_Boards.htm"></TocEntry>
+      <TocEntry
+        Title="Board Explorer"
+        Link="/Content/Spredfast/Masters/Conversations/Board_Explorer.htm" />
+      <TocEntry
+        Title="Pinterest Pins"
+        Link="/Content/Spredfast/Masters/Conversations/Pinterest_Pins.htm"></TocEntry>
+      <TocEntry
+        Title="Pinterest Pin Explorer"
+        Link="/Content/Spredfast/Masters/Conversations/Pinterest_Pin_Explorer.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Channel Analytics—YouTube"
+      Link="/Content/Spredfast/Masters/Conversations/Channel_Analytics_YouTube.htm">
+      <TocEntry
+        Title="Channels"
+        Link="/Content/Spredfast/Masters/Conversations/Channel_Analytics_YouTube_Channel.htm" />
+      <TocEntry
+        Title="Channel Explorer"
+        Link="/Content/Spredfast/Masters/Conversations/Channel_Explorer_YouTube.htm"></TocEntry>
+      <TocEntry
+        Title="Videos"
+        Link="/Content/Spredfast/Masters/Conversations/Videos_2.htm"></TocEntry>
+      <TocEntry
+        Title="Video Explorer"
+        Link="/Content/Spredfast/Masters/Conversations/Video_Explorer_2.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Cross-Channel Analytics—Accounts"
+      Link="/Content/Spredfast/Masters/Conversations/Cross_Channel_Analytics_.htm">
+      <TocEntry
+        Title="Account Sets and Accounts"
+        Link="/Content/Spredfast/Masters/Conversations/Account_Sets.htm"></TocEntry>
+      <TocEntry
+        Title="Initiatives"
+        Link="/Content/Spredfast/Masters/Conversations/Initiatives_1.htm"></TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Cross-Channel Analytics—Messages"
+      Link="/Content/Spredfast/Masters/Conversations/Cross_Channel_Analytics_1.htm"></TocEntry>
+    <TocEntry
+      Title="Cross-Channel Analytics—Social Care"
+      Link="/Content/Spredfast/Masters/Conversations/Cross_Channel_Analytics_2.htm">
+      <TocEntry
+        Title="Weekly"
+        Link="/Content/Spredfast/Masters/Conversations/Weekly.htm" />
+      <TocEntry
+        Title="Responses"
+        Link="/Content/Spredfast/Masters/Conversations/Responses.htm" />
+      <TocEntry
+        Title="User"
+        Link="/Content/Spredfast/Masters/Conversations/User.htm" />
+      <TocEntry
+        Title="Volume"
+        Link="/Content/Spredfast/Masters/Conversations/Volume.htm" />
+      <TocEntry
+        Title="Count Data"
+        Link="/Content/Spredfast/Masters/Conversations/Count_Data.htm" />
+      <TocEntry
+        Title="Duration Data"
+        Link="/Content/Spredfast/Masters/Conversations/Duration_Data.htm" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Initiative Analytics"
+    Link="/Content/Spredfast/Masters/Conversations/dashboard.htm"
+    BreakType="chapter"
+    AutoEndOnLeftPage="disabled"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Body.flpgl">
+    <TocEntry
+      Title="Dashboard Panels"
+      Link="/Content/Spredfast/Masters/Conversations/total_impressions.htm"></TocEntry>
+    <TocEntry
+      Title="[%=Spredfast.init_explorer%]"
+      Link="/Content/Spredfast/Masters/Conversations/InitativeAnalytics.htm">
+      <TocEntry
+        Title="[%=Spredfast.init_explorer%] FAQ"
+        Link="/Content/Spredfast/Masters/Conversations/_FAQ.htm" />
+      <TocEntry
+        Title="Activity Metrics"
+        Link="/Content/Spredfast/Masters/Conversations/Activity_Metrics.htm" />
+      <TocEntry
+        Title="Content Metrics"
+        Link="/Content/Spredfast/Masters/Conversations/Content_Metrics.htm" />
+      <TocEntry
+        Title="Credential Metrics"
+        Link="/Content/Spredfast/Masters/Conversations/Credential_Metrics.htm" />
+      <TocEntry
+        Title="[%=Spredfast.init_explorer%] Filter"
+        Link="/Content/Spredfast/Masters/Conversations/metrics-filter.htm" />
+      <TocEntry
+        Title="Detailed Analytics"
+        Link="/Content/Spredfast/Masters/Conversations/metrics-detailed.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Sentiment"
+      Link="/Content/Spredfast/Masters/Conversations/metrics-sentiment.htm" />
+    <TocEntry
+      Title="Group Analytics"
+      Link="/Content/Spredfast/Masters/Conversations/Group_Analytics.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="Additional Analytics"
+    Link="/Content/Spredfast/Masters/Conversations/AdditionalAnalytics.htm"
+    BreakType="chapter"
+    AutoEndOnLeftPage="disabled"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Body.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue">
+    <TocEntry
+      Title="Conversions"
+      Link="/Content/Spredfast/Masters/Conversations/metrics-fbmessage-conver.htm"
+      conditions="Spredfast.tooltips" />
+  </TocEntry>
+  <TocEntry
+    Title="App Builder"
+    Link="/Content/Spredfast/Masters/Conversations/Tools.htm"
+    BreakType="chapter"
+    AutoEndOnLeftPage="disabled"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Body.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"></TocEntry>
+  <TocEntry
+    Title="Glossary"
+    Link="/Content/Spredfast/Masters/Conversations/Glossary.htm"
+    BreakType="chapter"
+    AutoEndOnLeftPage="disabled"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Body.flpgl"
+    conditions="Default.PDF" />
+</CatapultToc>

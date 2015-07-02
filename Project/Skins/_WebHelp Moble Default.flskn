@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultSkin
+  Version="1"
+  SkinType="WebHelpMobile"
+  Comment="WebHelp Mobile default skin"
+  Tabs=""
+  EnableAboutBox="false"
+  EnableSubItemsToc="false"
+  EnableSubItemsBrowseSequence="false"
+  EnableSubItemsIndex="false">
+  <Stylesheet />
+</CatapultSkin>

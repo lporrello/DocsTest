@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet>
+  <ConditionTag
+    BackgroundColor="#ff0000"
+    Name="admin content"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#8b008b"
+    Name="user content"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#008000"
+    Name="tooltips"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ffc0cb"
+    Name="draft"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#0000ff"
+    Name="user front matter"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ffa500"
+    Name="admin front matter"
+    Comment="" />
+</CatapultConditionTagSet>

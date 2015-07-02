@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="2175" MadCap:lastWidth="1197">
+    <head>
+        <link href="../../../Resources/Stylesheets/Spredfast.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Basic / Advanced Filter</h1>
+        <p>The Calendar uses two filter mechanisms: Basic and Advanced. </p>
+        <ul>
+            <li>Filter is inclusive, not exclusive. If you click Twitter, only Twitter items are returned in the results.</li>
+            <li>Filter searches across day/days displayed on the page; if you are looking at a week, the filter searches across the week. </li>
+            <li>Filters are additive. You can apply multiple criteria. </li>
+            <li>You can use Basic and Advanced filters together; selections you make and Apply in the Basic filter are remembered in the Advanced filter. </li>
+            <li>You can save, name, and reuse filters. From the Advanced filter screen, build a filter, click <b>Save And Apply</b>, and provide a name. The saved filter is per user, per Initiative, and also per screen in <MadCap:variable name="Spredfast.prod_full" />; filters you create in the Calendar, for example, are not available in the Inbox, and filters you create in one Initiative are not available in another Initiative. Your list of saved filters appears in the <b>Filters</b> drop-down menu. </li>
+            <li>To edit a saved filter, from the <b>Advanced</b> filter dialog box, select the saved filter, make appropriate changes, and click <b>Save and Apply</b>.</li>
+            <li>Whenever a filter is on, the <b>Filter On x</b> label appears in the Calendar tool-bar. If you hover over the label, a popup describes the attributes of the current filter. Click the <b>x</b> to the right of the label to remove the filter. </li>
+            <li>When a filter has been applied, it remains until it has been removed, even when a user logs out and logs in again, or changes browsers.</li>
+            <li>The filter searches 180 days before and after the selected date (360 total days). </li>
+        </ul>
+        <h2>Basic Filters</h2>
+        <p><b>The Basic filter includes the most commonly used filter criteria:</b>
+            <MadCap:keyword term="Filters: Basic (Agenda); Basic filter (Agenda)" />
+        </p>
+        <ul>
+            <li><b>Initiative</b>—select one, several, or all the Initiatives you have access to; items from these Initiatives appear with italicized names. If you want a company-wide Calendar, make sure you have access to all Initiatives.<MadCap:keyword term="Initiative: view multiple in Calendar" /> </li>
+            <li><b>Message status</b>—Where the message is in the review/approval process.</li>
+            <li><b>"Starred" status</b>—Items that have been “starred” by me in the Agenda</li>
+            <li><b>Assigned to me</b>
+            </li>
+            <li><b>Exclude Responses</b>—"Response" includes all items scheduled from the Inbox, plus responses to Inbox items that were published outside of <MadCap:variable name="Spredfast.prod_full" />, then auto-imported.<MadCap:keyword term="Responses: in Agenda filters" /> </li>
+            <li> <b>The following are counted as Responses in <MadCap:variable name="Spredfast.prod_full" />:</b> <ul><li>Messages published using the “Amplify” feature in the Inbox</li><li>Twitter Replies and Direct Messages made from the Inbox</li><li>Facebook Private Messages (published through <MadCap:variable name="Spredfast.prod_full" /> or auto-imported).</li><li>Twitter Retweets (both types, Editable and ‘native’) made from the Inbox</li><li>Comments made from the Inbox on Facebook, YouTube, LinkedIn, Weibo, Instagram, or Google+ Posts. Facebook and Weibo Replies are counted as Comments.</li><li>For Tweets published outside of <MadCap:variable name="Spredfast.prod_full" />, then auto-imported, <MadCap:variable name="Spredfast.prod_full" /> considers the Tweet a “response” if the Tweet begins with “RT” or if Twitter identifies the Tweet as a response within the metadata it provides (the in_reply_to_status_id value is set).</li><li>Weibo Reposts made from the Inbox</li></ul></li>
+            <li><b>Social channels</b>—Blog, Facebook, Google+, LinkedIn, Twitter, Weibo, YouTube</li>
+            <li><b>Promoted</b>—items that have a Facebook promotion created through <MadCap:variable name="Spredfast.prod_full" /> associated with them (in any status). Appears only if Content Promotion has been enabled for your company.</li>
+        </ul>
+        <h2>Advanced Filters</h2>
+        <p><b>The Advanced filter includes the options from the Basic filter, plus additional criteria:<MadCap:keyword term="Filters: Advanced (Agenda); Advanced filter (Agenda)" /></b>
+        </p>
+        <ul>
+            <li><b>User</b>
+            </li>
+            <li><b>Promoted Content</b>—If the message has a Facebook promotion created through <MadCap:variable name="Spredfast.prod_full" /> associated with it: No Promoted Content filter (Removes Promoted Content as a filter criterion), Promotions on all Published and Pending Messages, Promotions on Published Messages (original message has been posted), Active Promos (The Promotion is in Active status), Completed Promos (The Promotion is in Complete status), Promos pending FB Review (The Promotion is being reviewed by Facebook), Paused Promos (The Promotion is in Paused status), Promos with Errors (The Promotion is in Error status), Promos pending Billing info (The Promotion is pending Facebook Billing/Account issues), Failed Promos (The Promotion is in Failed status), Promotions on Pending Messages (The original message has not yet been published, so it has not been sent to Facebook for review).</li>
+            <li><b>Approval Team</b>
+            </li>
+            <li><b>Response</b>—”Response” includes all items scheduled from the Inbox, plus auto-imported responses. By default responses are included; click <b>Exclude responses</b> to delete them from the display, or <b>Responses only</b> to show only scheduled responses in the display. </li>
+            <li><b>Account Set</b>
+            </li>
+            <li><b>Message type</b> (blog, comment, event, message (microblogs and Pinterest pins), photo album, presentation, video) Note that In February, 2015, <MadCap:variable name="Spredfast.prod_full" /> began using an updated version of the Facebook API (2.2) which no longer supports Facebook Notes (blogs), or Events. Information about these message types published prior to the change is still maintained in the platform, but no new data is available. </li>
+            <li><b>Account</b>
+            </li>
+            <li><b>Labels</b>—By Outbound label (labels applied to outgoing content). </li>
+            <li><b>Publish type</b>—How the message was created or discovered: as an Announcement (from a blog post, video, photo, discussion topic), Auto-imported (published on the native channel, then imported into <MadCap:variable name="Spredfast.prod_full" />), Automated Retweet (a scheduled reposting of a published tweet by a different account), From Message Importer (message was uploaded using the Message Importer), Scheduled Content (microblog and non-microblog messages published through <MadCap:variable name="Spredfast.prod_acro" />), Show Unpublished Posts Only (the message was created as a "Dark Post") or Show Visible Posts Only (any message that was not created as an unpublished post). <br />Note that within this filter, when you use the Auto Imported plus Unpublished Page Post filters, the results include items that meet both criteria. (That is, the results are “and”, not “or” in this one instance.)</li>
+            <li><b>Targeting type</b>—Whether or not targeting was applied to the message.</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="7" MadCap:lastHeight="2125.667" MadCap:lastWidth="1273">
+    <head>
+        <link href="../../../Resources/TableStyles/_Standard.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/Stylesheets/Spredfast.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Macro</h1>
+        <p>A macro is a defined, repeatable series of actions that are applied to one or more items in a stream. Macros are defined by a company administrator, and appear to users working in the <b>Inbox</b>. Macros...<MadCap:keyword term="Macros; Labels: apply with macros; Responses: automated in Inbox (macros)" /></p>
+        <ul>
+            <li>can be assigned to one Initiative, multiple Initiatives, or all Initiatives. </li>
+            <li>can be applied to single items in a stream, or to groups of selected items using the multiple items processing menu.</li>
+            <li>are limited to 100 total for each company within <MadCap:variable name="Spredfast.prod_full" />.</li>
+            <li>can include content specified by the administrator who created them (Administrator input), or content provided the user applying the macro (User input). </li>
+            <li>are limited to a single channel when the macro includes a channel-specific action. For example, if “retweet” is part of a macro, you cannot apply that macro to a Facebook item. </li>
+            <li>can be created putting the items in any order. When the macro is applied, all actions must be processed successfully, or the entire macro fails.</li>
+            <li>contain actions that belong to one of three categories (No input, Administrator input, and User input) as follows: <ul><li><b>No input</b>—archive (from Inbox or Highlight stream), accept item, hide on Facebook.</li><li><b>Administrator input</b>—add note, add label, highlight for individual or team. The administrator creating the macro defines the note content, label text, and persons/teams for whom the item is highlighted. When a user processes the macro, she can choose to add supplemental notes, labels, and highlighted users. </li><li><b>User input</b>—comment (Facebook, Google+, YouTube, LinkedIn, Instagram, Weibo), direct message, reply, retweet, repost, delete (which requires user confirmation), amplify. The administrator builds the macro to include the type of response, but the user applying the macro must supply the content when the item is processed. </li></ul></li>
+        </ul>
+        <p>To see the macros that are available for a specific Initiative, go to the Initiative filter in the upper right-hand corner of the screen, and select the Initiative from the drop-down menu. </p>
+        <div MadCap:conditions="Spredfast.admin content">
+            <p>Some macro actions are prohibited (grayed out) when a user tries to run them from certain standard stream types; The matrix below sets out macro actions that are allowed (Yes) and not allowed (No) for each standard stream. </p>
+            <table style="caption-side: top;mc-table-style: url('../../../Resources/TableStyles/_Standard.css');" class="TableStyle-_Standard" cellspacing="0">
+                <caption valign="top" style="padding-bottom: 6pt;">
+                    Macro/Stream Compatibility
+                </caption>
+                <col class="TableStyle-_Standard-Column-Column1" />
+                <col class="TableStyle-_Standard-Column-Column1" />
+                <col class="TableStyle-_Standard-Column-Column1" />
+                <col class="TableStyle-_Standard-Column-Column1" />
+                <col class="TableStyle-_Standard-Column-Column1" />
+                <col class="TableStyle-_Standard-Column-Column1" />
+                <col class="TableStyle-_Standard-Column-Column1" />
+                <thead>
+                    <tr class="TableStyle-_Standard-Head-Header1">
+                        <td class="TableStyle-_Standard-HeadE-Column1-Header1">Action</td>
+                        <td class="TableStyle-_Standard-HeadE-Column1-Header1">Highlighted</td>
+                        <td class="TableStyle-_Standard-HeadE-Column1-Header1">Archived: Inbox</td>
+                        <td class="TableStyle-_Standard-HeadE-Column1-Header1">Archived/Highlighted</td>
+                        <td class="TableStyle-_Standard-HeadE-Column1-Header1">Accepted</td>
+                        <td class="TableStyle-_Standard-HeadE-Column1-Header1">Hidden</td>
+                        <td class="TableStyle-_Standard-HeadD-Column1-Header1">Deleted</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-_Standard-Body-Body1">
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Highlight item</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyD-Column1-Body1">Yes</td>
+                    </tr>
+                    <tr class="TableStyle-_Standard-Body-Body2">
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Add label</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyD-Column1-Body2">Yes</td>
+                    </tr>
+                    <tr class="TableStyle-_Standard-Body-Body1">
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Add note</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyD-Column1-Body1">Yes</td>
+                    </tr>
+                    <tr class="TableStyle-_Standard-Body-Body2">
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Archive: Inbox</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">No</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">No</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyD-Column1-Body2">Yes</td>
+                    </tr>
+                    <tr class="TableStyle-_Standard-Body-Body1">
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Archive: Highlighted</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">No</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">No</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyD-Column1-Body1">Yes</td>
+                    </tr>
+                    <tr class="TableStyle-_Standard-Body-Body2">
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Accept item</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">No</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">No</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyD-Column1-Body2">Yes</td>
+                    </tr>
+                    <tr class="TableStyle-_Standard-Body-Body1">
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Facebook: <br />Comment</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">No</td>
+                        <td class="TableStyle-_Standard-BodyD-Column1-Body1">No</td>
+                    </tr>
+                    <tr class="TableStyle-_Standard-Body-Body2">
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Google+:<br />Comment</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">No</td>
+                        <td class="TableStyle-_Standard-BodyD-Column1-Body2">No</td>
+                    </tr>
+                    <tr class="TableStyle-_Standard-Body-Body1">
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">YouTube: <br />Comment</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">No</td>
+                        <td class="TableStyle-_Standard-BodyD-Column1-Body1">No</td>
+                    </tr>
+                    <tr class="TableStyle-_Standard-Body-Body2">
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">LinkedIn: <br />Comment</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">No</td>
+                        <td class="TableStyle-_Standard-BodyD-Column1-Body2">No</td>
+                    </tr>
+                    <tr class="TableStyle-_Standard-Body-Body1">
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Instagram: <br />Comment</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">No</td>
+                        <td class="TableStyle-_Standard-BodyD-Column1-Body1">No</td>
+                    </tr>
+                    <tr class="TableStyle-_Standard-Body-Body2">
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Weibo:<br />Comment</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">No</td>
+                        <td class="TableStyle-_Standard-BodyD-Column1-Body2">No</td>
+                    </tr>
+                    <tr class="TableStyle-_Standard-Body-Body1">
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Twitter: Direct Message</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">No</td>
+                        <td class="TableStyle-_Standard-BodyD-Column1-Body1">No</td>
+                    </tr>
+                    <tr class="TableStyle-_Standard-Body-Body2">
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Twitter: Reply</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">No</td>
+                        <td class="TableStyle-_Standard-BodyD-Column1-Body2">No</td>
+                    </tr>
+                    <tr class="TableStyle-_Standard-Body-Body1">
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Twitter: Retweet</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">No</td>
+                        <td class="TableStyle-_Standard-BodyD-Column1-Body1">No</td>
+                    </tr>
+                    <tr class="TableStyle-_Standard-Body-Body2">
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Weibo<br />Repost</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">No</td>
+                        <td class="TableStyle-_Standard-BodyD-Column1-Body2">No</td>
+                    </tr>
+                    <tr class="TableStyle-_Standard-Body-Body1">
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Facebook: Hide on Facebook </td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">No</td>
+                        <td class="TableStyle-_Standard-BodyD-Column1-Body1">No</td>
+                    </tr>
+                    <tr class="TableStyle-_Standard-Body-Body2">
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Amplify on Twitter</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">No</td>
+                        <td class="TableStyle-_Standard-BodyD-Column1-Body2">No</td>
+                    </tr>
+                    <tr class="TableStyle-_Standard-Body-Body1">
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Amplify on Facebook</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">No</td>
+                        <td class="TableStyle-_Standard-BodyD-Column1-Body1">No</td>
+                    </tr>
+                    <tr class="TableStyle-_Standard-Body-Body2">
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Amplify on LinkedIn </td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body2">No</td>
+                        <td class="TableStyle-_Standard-BodyD-Column1-Body2">No</td>
+                    </tr>
+                    <tr class="TableStyle-_Standard-Body-Body1">
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Amplify on Google+</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">Yes</td>
+                        <td class="TableStyle-_Standard-BodyE-Column1-Body1">No</td>
+                        <td class="TableStyle-_Standard-BodyD-Column1-Body1">No</td>
+                    </tr>
+                    <tr class="TableStyle-_Standard-Body-Body2">
+                        <td class="TableStyle-_Standard-BodyB-Column1-Body2">Delete</td>
+                        <td class="TableStyle-_Standard-BodyB-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyB-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyB-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyB-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyB-Column1-Body2">Yes</td>
+                        <td class="TableStyle-_Standard-BodyA-Column1-Body2">No</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h2>Create a Macro</h2>
+        <ol>
+            <li>Select <b>[Your name]</b> &gt; <b>My Company</b> &gt; <b>Macros</b>. </li>
+            <li>Click <b>Create Macro</b>.</li>
+            <li>In the <b>Name</b> field, provide a descriptive name for the macro, so that it can be easily identified. </li>
+            <li>In the <b>Initiative</b> field, choose whether the macro should be available for all Initiatives, or individual ones. If specific Initiatives, select them using the checkboxes. </li>
+            <li>From the <b>Available Actions</b> column, select an action to include in the macro by dragging/dropping it to the <b>Selected Actions</b> column. </li>
+            <li>If the macro item is an Administrator input item, provide the details in the panes below, such as note text, label text, or users/teams to receive the highlighted item. </li>
+            <li>In the <b>Tooltip summary</b> field, enter text that appears when a user hovers over the macro. Users cannot see macro content when applying macros. When writing the description, you should include <b>all the actions contained in the macro, as well as the content/text of any labels or notes</b>. For example, a macro description might be “Add Label “Research” and Archive Item (Inbox)”. </li>
+            <li>Click <b>Create</b>. </li>
+        </ol>
+    </body>
+</html>

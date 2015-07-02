@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="MadCap HTML5 Target"
+  Type="WebHelp2"
+  Destinations=""
+  GlossaryTermConversion="first"
+  DisableAutoSync="true"
+  MasterStylesheet="/Content/Resources/Stylesheets/Spredfast.css"
+  MakeFileLowerCase="false"
+  ExcludeUnreferencedContent="true"
+  MoveOutputContentToRoot="true"
+  MasterToc="/Project/TOCs/Conversations/conversations_html5.fltoc"
+  UseDeviceWidth="false"
+  TabletBreakpoint="1000"
+  Skin="/Project/Skins/HTML5 - Top Navigation.flskn"
+  GenerateWebSafeImages="false"
+  ReplaceSpacesWithUnderscores="true"
+  InsertMOTW="true"
+  ConditionTagExpression="exclude[Default.PDF or &quot;Spredfast.admin content&quot; or &quot;Spredfast.admin front matter&quot; or Spredfast.draft or Spredfast.tooltips] "
+  PartialWordSearch="true"
+  UseCustomTopicFileExtension="true"
+  CustomTopicFileExtension="html"
+  MasterPage="/Content/Resources/MasterPages/SpredfastMain.flmsp"
+  EnableSitemap="false"
+  OutputFile="index">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+  <Glossaries />
+  <Variables>
+    <Variable
+      Name="Spredfast/DocVersion">2015-27</Variable>
+    <Variable
+      Name="Spredfast/DocTitle_Internal">Conversations User Guide</Variable>
+    <Variable
+      Name="Spredfast/Confidential_External">Licensed Customer Use Only.</Variable>
+    <Variable
+      Name="Spredfast/Confidential_Internal">Licensed Customer Use Only.</Variable>
+  </Variables>
+</CatapultTarget>

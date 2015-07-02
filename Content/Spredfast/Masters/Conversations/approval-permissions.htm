@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1292" MadCap:lastWidth="1559">
+    <head>
+        <link href="../../../Resources/Stylesheets/Spredfast.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Approval Setup</h1>
+        <p>To configure approvals for outgoing content, you need to understand approval paths, approval teams, and writer approval teams.</p>
+        <p>For more information about approval paths, see <MadCap:xref href="About_Approvals.htm">About Approvals</MadCap:xref>.</p>
+        <p MadCap:conditions="Spredfast.tooltips">For more information about approval paths, see the User Guide.</p>
+        <h2>Approval Teams<MadCap:keyword term="Approval teams: configuring" /></h2>
+        <p>Approval teams identify a sequence of reviewers that examine and approve content before it is published. For example, your legal department might need to review all content that comes from the “Corporate” Account Set. If you have the correct privileges, you can configure approval teams in <b>My Company</b> &gt; <b>Approvals</b>.</p>
+        <p>On the <b>Initiative Settings</b> &gt; <b>Approval Setup</b> screen, you select which approval team, if any, to use for each Account Set within this Initiative (or for all activity, regardless of Account Set). </p>
+        <p>In the <b>Approval Teams</b> table, use the checkboxes to assign Approval Teams (shown at the top of the columns) to each Account Set, or All Account Sets (listed in the first column of the table). </p>
+        <p>If you can see an approval team but cannot select it, it means that no members of the approval team have been added to this Initiative. Add users to the Initiative in the <b>Initiative Settings</b> &gt; <b>Users</b> screen, or in the <b>My Company</b> &gt; <b>Users</b> tab &gt; <b>Edit User</b> dialog. You can see which users belong to each approval team by accessing <b>My Company</b> &gt; <b>Approval Teams</b>.</p>
+        <h2>Writer Approval Team<MadCap:keyword term="Approval teams: writer; Writer Approval team" /></h2>
+        <p>When enabled, the Writer Approval Team feature ensures that when content is written by a user in the writer role, a notification email is sent to members of the Writer Approval Team indicating that there is content that needs attention. This review occurs <b>prior</b> to the regular review sequence for the Account Set and Initiative in which the content was created. Unlike the other approval teams, which are configured at the Company level, Writer Approval Teams are created at the Initiative level. To use a Writer Approval Team for this Initiative, click <b>Enable Writer Approval Team</b>.</p>
+        <p class="note"><b>Using Writer Approval Teams</b>
+            <br />A writer approval team is required in order for content written by writers to be submitted for approval, thus entering the publishing queue. If a writer approval team is not used, then content written by writers remains in a “Ready for review” state, no email notifications are sent to editors, and reviewers must seek out the content to submit it for publishing.</p>
+        <p class="note"><b>Using filters if there is no Writer Approval Team</b>
+            <br />If you’re not using a writer approval team, you might want to create a “Ready for Review” state filter in the Agenda Calendar to make sure that content doesn’t get overlooked. (<b>Calendar</b> &gt; <b>Filter</b> &gt; <b>Advanced Filter &gt; Message status</b> &gt; <b>Ready for review</b>).</p>
+        <p>The notification email is sent to all users on the Writer Approval Team. However, each team member can choose whether or not to receive these email notifications in the <b>My Account</b> &gt; <b>Email Subscriptions</b> field. </p>
+        <p MadCap:conditions="Spredfast.tooltips">To use a writer approval team, click <b>Enable Writer Approval Team</b>. In the dialog that appears, add reviewers to the team by clicking the + icon. Click <b>Save</b>.</p>
+        <h3>Add a Writer Approval Team </h3>
+        <ol>
+            <li>Select <b>Initiative Settings</b> &gt; <b>Approval Setup</b>.</li>
+            <li>Click <b>Enable Writer Approval Team</b>.</li>
+            <li>In the dialog that appears, add reviewers to the team by clicking the + icon.</li>
+            <li>Click <b>Save</b>. </li>
+        </ol>
+    </body>
+</html>

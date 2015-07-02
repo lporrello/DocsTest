@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="2542.667" MadCap:lastWidth="1286">
+    <head>
+        <link href="../../../Resources/TableStyles/_Standard.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/Stylesheets/Spredfast.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Message Import <MadCap:keyword term="Message Importer; Upload: See Import; Import: messages" /></h1>
+        <img src="../../Images/Conversations/MessageImporter7_1.png" style="width: 46.08px;height: 48.6384px;float: left;padding-top: 0px;margin-right: 10px;margin-bottom: 0.261203px;" />
+        <p>Upload a CSV file of up to 200 messages to post to Facebook, Twitter, Google+, Weibo, or LinkedIn. You can include preview links (for channels that support them), notes, and labels along with the text of the message. </p>
+        <p> The CSV must conform to the formatting specified in the CSV template, which you can download from within the application. </p>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/_Standard.css');margin-left: 0;margin-right: auto;caption-side: top;" class="TableStyle-_Standard" cellspacing="0">
+            <caption valign="top" style="padding-bottom: 6pt;">
+                Message Upload CSV Field Definitions
+            </caption>
+            <col class="TableStyle-_Standard-Column-Column1" />
+            <col class="TableStyle-_Standard-Column-Column1" />
+            <col class="TableStyle-_Standard-Column-Column1" />
+            <col class="TableStyle-_Standard-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-_Standard-Head-Header1">
+                    <td class="TableStyle-_Standard-HeadE-Column1-Header1">Column</td>
+                    <td class="TableStyle-_Standard-HeadE-Column1-Header1">Definition</td>
+                    <td class="TableStyle-_Standard-HeadE-Column1-Header1">Notes</td>
+                    <td class="TableStyle-_Standard-HeadD-Column1-Header1">Example</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-_Standard-Body-Body1">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">Date (required)</td>
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">DD/MM/YYYY</td>
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">
+                        <p>A message with an invalid date (incorrectly formatted, or a date in the past) will not import.</p>
+                        <p>If you use Microsoft Excel to edit the CSV, you can enforce DD/MM/YYYY formatting as follows: Select the column, right-click <b>Format Cells</b>. In the <b>Number</b> tab, <b>Category:</b> field, select <b>Custom</b>. In the <b>Type:</b> field, enter <code>mm/dd/yyyy</code> and click <b>OK</b>.</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body1">08/15/2012</td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body2">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">Time (required)</td>
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">HH:MM AM/PM</td>
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">
+                        <p>Time the message is published, in 5-minute intervals. In time zone of the user who performs the upload.</p>
+                        <p>If you use Microsoft Excel to edit the CSV, Excel may reformat the time entries. To ensure entries are retained exactly as entered: Select the column, right-click <b>Format Cells</b>. In the <b>Number</b> tab, <b>Category</b> field, select <b>Text</b>, and click <b>OK</b>.</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body2">08:05 AM</td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body1">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">Name</td>
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">Title of the message, as it appears in <MadCap:variable name="Spredfast.prod_full" />.</td>
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">If left blank, <MadCap:variable name="Spredfast.prod_acro" /> creates a name using the first four non-link terms in the message. </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body1">New Widget version 1</td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body2">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">Content</td>
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">Text of the message, as it will be published on the social channel.</td>
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">You can include links (http:// is not required). You cannot include images.</td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body2">We’re excited to announce the latest version of our product!</td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body1">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">Preview Link </td>
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">
+                        <p>Facebook, Google+, LinkedIn only. If you include this field and import to a Twitter or Weibo account, the field is ignored. </p>
+                        <p>The URL must include http:// </p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body1">http://www.spredfast.com</td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body2">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">Draft</td>
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">Message state when imported. Set to “yes,” to create the message in “Draft” state. Set to “no” to create the message in Pending Publication state.</td>
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">
+                        <p>The following rules apply to message status upon import: </p>
+                        <p>If field is left blank, and there is valid content: Pending Publication</p>
+                        <p>If field is left blank, and no content is provided: Draft</p>
+                        <p>If field is left blank, and there is an issue with the content or preview link (the published parts of the message, not <MadCap:variable name="Spredfast.prod_acro" /> processing fields) such as the content exceeds character limits on the social channel: Draft </p>
+                        <p>The field is set to “no” and there is an issue with the content or preview link (the published parts of the message, not <MadCap:variable name="Spredfast.prod_acro" /> processing fields) such as the content exceeds character limits on the social channel: Draft</p>
+                        <p>The field is set to any state (yes, no, or blank) but no account has been selected: Draft </p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body2">yes</td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body1">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">Labels </td>
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">Provide labels, separated by commas. If the labels do not already exist in <MadCap:variable name="Spredfast.prod_full" />, they are created during the import process (unless <MadCap:variable name="Spredfast.prod_acro" /> has been configured to allow creation only from the <b>Labels</b> tab).</td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body1">promotion</td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body2">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">Assignee</td>
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">Email address of assignee</td>
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body2">username@company.com </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body1">
+                    <td class="TableStyle-_Standard-BodyB-Column1-Body1">Note</td>
+                    <td class="TableStyle-_Standard-BodyB-Column1-Body1">Content will be added as the first Note on the message</td>
+                    <td class="TableStyle-_Standard-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-_Standard-BodyA-Column1-Body1">Remember to specify available color options once they’ve been decided by Product</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Import Messages into <MadCap:variable name="Spredfast.prod_full" />:</h2>
+        <ol>
+            <li>Create a CSV file in the required format, containing messages to be published from the same channel. To obtain a template, open the Message Importer (<MadCap:variable name="Spredfast.SP_nav" /> &gt; <b>Publish</b> &gt; <b>Message Importer</b> icon), and select <b>Download spredfast-message-importer.csv</b>.</li>
+            <li>When the CSV file is ready, click the <b>Message Importer</b> icon. </li>
+            <li>Click <b>Import Messages</b>.</li>
+            <li>Select a <b>Channel</b> from the drop-down menu.</li>
+            <li>(Optional) In the <b>Accounts</b> pane, select the accounts (or select all accounts) through which to publish the messages. All messages in the CSV file will be scheduled to be sent the account(s) chosen from the list. If no accounts are chosen, the message is imported in Draft state. </li>
+            <li>In the <b>File</b> area, click <b>Browse</b>, and select the CSV file.</li>
+            <li>Click <b>Upload</b>. The messages are evaluated by <MadCap:variable name="Spredfast.prod_full" />. </li>
+            <li>On the <b>Validation</b> page, review the messages. Ones that are incorrectly formatted or have other errors are identified. </li>
+        </ol>
+        <p class="caution"><b>Correct Invalid Messages Before Committing</b>
+            <br />If validation errors are found, we recommend you cancel the import, fix the errors in the CSV, then import the corrected CSV into <MadCap:variable name="Spredfast.prod_full" />. If you import a partial CSV (import just the valid messages), then correct the errors in the CSV and re-import it, the valid messages that have already been imported will be duplicated in <MadCap:variable name="Spredfast.prod_full" />.</p>
+        <p>Use the checkboxes to include messages to import. Click <b>Commit Messages</b> to finish uploading them in to <MadCap:variable name="Spredfast.prod_full" />.</p>
+        <p>From the <b>Confirmation</b> screen, you can view see a specific message in the Agenda (in a new tab) or <b>Start a New Import</b>. </p>
+        <h2>Non-English and Special Characters in Excel</h2>
+        <p>If there are non-English or special characters in your posts, Microsoft Excel may save the CSV file using text encoding that is incompatible with the Message Importer. To avoid this, we recommend that you use another spreadsheet application (such as Google Docs spreadsheet) or a text editor, such as Notepad to create your CSV file. If you want to use Google Docs along with the Message Importer template, do the following:</p>
+        <ol>
+            <li>Download the template from <MadCap:variable name="Spredfast.prod_full" /> to your desktop, but do not open it.</li>
+            <li>From within Google, click <b>Documents</b>.</li>
+            <li>Select <b>Create</b> &gt; <b>Spreadsheet.</b>.</li>
+            <li>From the (Untitled) spreadsheet, select <b>File</b> &gt; <b>Import</b>, click <b>Browse</b> and select the template.</li>
+            <li>Click <b>Import</b> (Import Action: Create New Spreadsheet, Separator character: Comma)</li>
+            <li>Click <b>Open now</b>.</li>
+            <li>Modify the formatting for the <b>Date</b> and <b>Time</b> columns. (Select a column, then choose <b>Format</b> &gt; <b>Number</b> &gt; <b>Plain text</b>). Ensure the time is formatted properly (HH:MM AM/PM). Note that Google Docs may convert the time to 24-hour time immediately upon importing the file. </li>
+            <li>Complete the spreadsheet.</li>
+            <li>Save the file to your desktop. Select <b>File</b> &gt; <b>Download as</b> &gt; <b>CSV</b> (current sheet). Do not use Excel to open the spreadsheet.</li>
+        </ol>
+        <p>Do not open or save the CSV in Excel, as the encoding may be impacted</p>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1840" MadCap:lastWidth="1533">
+    <head>
+        <link href="../../../Resources/Stylesheets/Spredfast.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Link Tagging</h1>
+        <p>General link tracking is configured when you integrate your Google Analytics or Omniture accounts in <MadCap:variable name="Spredfast.prod_full" />. Use these <b>Link Tagging</b> screens to create custom link tags for special purposes, or to integrate with Coremetrics or other analysis software. You should be familiar with the general terms and concepts of link tagging before creating custom tags. For assistance with custom link tag creation, contact Support.<MadCap:keyword term="Link tagging: custom" /> </p>
+        <h2>Create Tag Templates</h2>
+        <p>Create a Tag Template before creating specific tags. </p>
+        <ol>
+            <li>From <b>Initiative Settings</b> &gt; <b>Link Tagging</b>, click <b>Add Template</b>.</li>
+            <li>In the <b>Add Tag Template</b> screen, complete the following: <ul><li><b>Name</b>—Name for the template.</li><li><b>Variable</b>—The variable supported by your service that you want to use, such as utp_campaign or utm_term. </li><li><b>Value</b>—Leave this field blank; it will be populated later when you assign values to the tag.</li></ul></li>
+        </ol>
+        <ol MadCap:continue="true">
+            <li>In the <b>Variable Parameters</b> section, <b>Separator</b> menu: According to the syntax used by your analytics service, select the character that acts as a value separator. </li>
+            <li>If you need to add a parameter, click <b>Add Parameter</b>. In the <b>Add Parameter</b> screen, provide: <ul><li><b>Name</b>—A name for the parameter.</li><li><b>Values</b>—Select from:</li><li><b>Static List</b>—If you want to define a specific list of values, provide list items, separated by commas.</li><li><b>Auto from Channel</b>—If you want to use different values based on social site, enter them here.</li><li><b>Auto from Account Set</b>—If you want to use different values based on the Account Set used to publish the activity, identify them here.</li><li><b>Auto from Account</b>—If you want to use different values based on the account associated with the Initiative, enter them here. </li><li><b>Auto from Labels</b>—If you want to use all <MadCap:variable name="Spredfast.prod_full" /> labels that have been applied to the message before publishing time. Select a Separator from the menu that will be used in between labels. Note that all of the labels will be visible in the link tag. </li><li><b>Unique ID</b>—If you want the system to assign a unique value to each post that contains the link. </li></ul></li>
+        </ol>
+        <ol MadCap:continue="true">
+            <li>Click <b>Add Parameter</b>. </li>
+        </ol>
+        <h2>Tags</h2>
+        <p class="note">Create a tag template before creating tags.</p>
+        <h3>Create a Custom Link Tag</h3>
+        <ol>
+            <li>From <b>Initiative Settings</b> &gt; <b>Link Tagging</b> &gt; select <b>Add Tag</b>.</li>
+            <li>In the <b>Add Tag</b> screen, <b>Type</b> menu, choose either Standard or a saved Tag Template. </li>
+            <li>Depending on the template type, provide the variable and value parameters. </li>
+            <li>If you want to use this tag consistently in your links, click <b>Use by default</b>, and the tag appears as the “selected” tag when you choose tags to apply to a link. </li>
+            <li>Click <b>Add Tag</b>.</li>
+        </ol>
+        <div MadCap:conditions="Spredfast.admin content">
+            <h3>Add a CMP Tag</h3>
+            <ol>
+                <li>From <b>Settings</b> &gt; <b>Link Tagging</b> &gt; <b>Tags</b>, click <b>Add</b>.</li>
+                <li>In the <b>Name</b> field, select Standard.</li>
+                <li>In the <b>Variable</b> field, enter <code>CMP</code>.</li>
+                <li>In the <b>Value</b> field, enter <code>101AR&amp;ct=101AR12W&amp;cr=stgsocial&amp;csr=power&amp;cm=h&amp;ccy=us&amp;cpb=stg&amp;S_TACT=101AR12W*</code></li>
+                <li>Click <b>Use by default</b>.</li>
+                <li>Click <b>Save</b>.</li>
+            </ol>
+        </div>
+        <h2>Domains to Tag</h2>
+        <p>Automatically ask users if they want to append a tag whenever activity is posted to the domains listed in this section, such as all your business domains. </p>
+        <ol>
+            <li>To identify domains for which users are asked if they want to add a tag: </li>
+            <li>From <b>Initiative Settings</b> &gt; <b>Link Tagging</b>, select <b>Add Domain</b>.</li>
+            <li>Enter the URL. It doesn’t have to be well-formed; you can use example.com instead of http://www.example.com. </li>
+            <li>Click <b>Add Domain</b>. </li>
+        </ol>
+        <h2>Import Custom Tags Created in Another Iniative</h2>
+        <ol>
+            <li>From <b>Initiative Settings</b> &gt; <b>Link Tagging</b> &gt; <b>Import Tags</b>.</li>
+            <li>Select the Initiative from which to import tags.</li>
+            <li>If the selected (source) Initiative uses tag templates that include Account Sets as variables, provide variables for this Initiative’s Account Sets.</li>
+            <li>Click <b>Import</b>. </li>
+        </ol>
+    </body>
+</html>

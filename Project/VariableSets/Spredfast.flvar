@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultVariableSet>
+  <Variable
+    Name="prod_full">Spredfast Conversations</Variable>
+  <Variable
+    Name="CompanyName_full">Spredfast</Variable>
+  <Variable
+    Name="SP_nav">Main Navigation Pane</Variable>
+  <Variable
+    Name="prod_acro">Conversations</Variable>
+  <Variable
+    Name="experiences">Experiences</Variable>
+  <Variable
+    Name="iPhone App">Mobile App</Variable>
+  <Variable
+    Name="spark">Spark</Variable>
+  <Variable
+    Name="intelligence">Intelligence</Variable>
+  <Variable
+    Name="new_analytics">Company Analytics</Variable>
+  <Variable
+    Name="init_dashboard">Initiative Dashboard</Variable>
+  <Variable
+    Name="company_analytics">Company Analytics</Variable>
+  <Variable
+    Name="init_explorer">Initiative Explorer</Variable>
+  <Variable
+    Name="message_explorer">Message Explorer</Variable>
+  <Variable
+    Name="Confidential_Internal">(Internal Use Only. Do Not Distribute.)</Variable>
+  <Variable
+    Name="DocTitle_Internal">Internal Administrator Guide</Variable>
+  <Variable
+    Name="DocVersion">2015-xx</Variable>
+  <Variable
+    Name="Date_Time"
+    Comment=""
+    Type="DateTime"
+    LastUpdated="2015-06-04T12:11:44.4968103-05:00">dd MMMM yyyy</Variable>
+  <Variable
+    Name="DocTitle_External"
+    Comment="">Conversations User Guide</Variable>
+  <Variable
+    Name="Confidential_External"
+    Comment="">Licensed Customer Use Only</Variable>
+  <Variable
+    Name="Copyright_Date"
+    Comment=""
+    Type="DateTime"
+    LastUpdated="2015-06-04T12:26:31.0617570-05:00">yyyy</Variable>
+</CatapultVariableSet>

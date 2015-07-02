@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1295.667" MadCap:lastWidth="1184">
+    <head>
+        <link href="../../../Resources/TableStyles/_Standard.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/Stylesheets/Spredfast.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Search Streams</h1>
+        <p>
+            <MadCap:keyword term="Streams: search" />Search streams allow you to find content on social media channels based on simple or complex terms or phrases. Search streams are the only type of stream that can be edited. </p>
+        <ol>
+            <li>From the <b>Stream Library</b> menu, select <b>Create Streams</b>.</li>
+            <li>From the drop-down menu, select <b>Search-Based</b>. </li>
+            <li>Enter terms, separated by commas, in the <b>Search for all these words</b> field. Terms are not case-sensitive. Do not use wildcards or special characters.</li>
+            <li>To create a more complex search, click the <b>Advanced Search</b> checkbox. Enter search terms separated by commas. Search types are described in the table below. Not all channels support advanced search functions; if the channel does not support the search criteria, the checkbox for the channel is disabled. You may be able to work around the issue, though, by using a wider search, and then filtering the results within the stream. <br />Facebook searches are limited to two keywords. Facebook search always interprets an “AND” operator between keywords; if you want an “OR” search, you must create a separate stream for each keyword. If you want to monitor multiple terms, you might want to create a separate stream for each, then put them into a Collection. </li>
+            <li>Select channels to search. When you choose multiple channels, a separate stream is created for each channel. Some channels provide additional field parameters. Click the <b>Supplemental Channel Search</b> checkbox, and complete the fields per channel as described below: </li>
+        </ol>
+        <ul>
+            <li><b>Facebook</b>—Choose Facebook accounts whose friends’ accounts you want to include in the search.</li>
+            <li><b>Flickr</b>—Specify photos, screenshots, other items, or a combination of these. Limit the content to a specific User ID. </li>
+            <li><b>Social Mention</b>—Select a category (blogs, microblogs, comments, and the like) and specify a Location (City and State/Province). </li>
+            <li><b>Twitter</b>—Limit the search to a specific hashtag, or specify a Location (address) and distance from it to search. You must click <b>Apply location</b> for the system to include the place. When you create a Twitter search stream, <MadCap:variable name="Spredfast.prod_full" /> returns results both from the content of the tweet, as well as the metadata for the tweet, such as the username, the application from which it was posted, and the URL. When looking at stream items, it may appear that there are no search terms present; the item is likely part of the tweet’s metadata.</li>
+        </ul>
+        <ol MadCap:continue="true">
+            <li>Each Twitter search-based stream must be associated with an authenticated Twitter account. By default, the stream is assigned to the account that has the fewest streams already associated with it. To change the assignment, click <b>Change account</b> and select it from the drop-down menu. Note that the number of search streams allowed for each Twitter account is limited, see <MadCap:xref href="Info.htm">Info</MadCap:xref> and <MadCap:xref href="campaign-twitter-streams.htm">Twitter-Based Streams</MadCap:xref>. </li>
+            <li>Click <b>Add</b>. </li>
+            <li>When you have added all the streams you want, click <b>Done</b>. </li>
+        </ol>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/_Standard.css');margin-left: 0;margin-right: auto;caption-side: top;" class="TableStyle-_Standard" cellspacing="0">
+            <caption valign="top" style="padding-bottom: 6pt;">Advanced Search Rules</caption>
+            <col class="TableStyle-_Standard-Column-Column1" />
+            <col class="TableStyle-_Standard-Column-Column1" />
+            <col class="TableStyle-_Standard-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-_Standard-Head-Header1">
+                    <td class="TableStyle-_Standard-HeadE-Column1-Header1">
+                        <p>Field</p>
+                    </td>
+                    <td class="TableStyle-_Standard-HeadE-Column1-Header1">
+                        <p>Builds streams that contain...</p>
+                    </td>
+                    <td class="TableStyle-_Standard-HeadD-Column1-Header1">
+                        <p>Results for Example: new movie releases</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-_Standard-Body-Body1">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">
+                        <p>Search for all these words</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">
+                        <p>Each word in the field, regardless of order</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body1">
+                        <p>Items appear in the stream that have all three words, in any order.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body2">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">
+                        <p>One or more of these words</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">
+                        <p>Any or all of the words in the field</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body2">
+                        <p>Items that have any or all of new, movie, and/or releases</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body1">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">
+                        <p>None of these words</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">
+                        <p>All the conditions specified, but explicitly exclude the words in this field</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body1">
+                        <p>If you specified DVD in this field, the results would leave out any content that mentions DVDs. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body2">
+                    <td class="TableStyle-_Standard-BodyB-Column1-Body2">
+                        <p>This exact phrase</p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyB-Column1-Body2">
+                        <p>The phrase exactly as entered (no quotes needed) </p>
+                    </td>
+                    <td class="TableStyle-_Standard-BodyA-Column1-Body2">
+                        <p>Only items that contain new movie releases, in this order, appear in the stream.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

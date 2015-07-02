@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1882" MadCap:lastWidth="811">
+    <head>
+        <link href="../../../Resources/Stylesheets/Spredfast.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Twitter Admin Settings</h1>
+        <p>Configure the maximum number of search-based streams and Twitter Users (@handle) streams permitted for each Twitter account, as well as the types of Retweet users can publish in <MadCap:variable name="Spredfast.prod_full" />.<MadCap:keyword term="Twitter: set number of streams per account" /></p>
+        <p class="note"><b>Changing the Number of Allowed Streams</b>
+            <br />Compliance with the values set in this screen is checked whenever new streams are added to an account. When you change the values set here, the system does not go through and immediately enforce the new value on all of your currently configured accounts. Any new accounts you add will be subject to the new limit. </p>
+        <p>For example, if you change the number of streams per account from six to three, and an account already has six streams associated with it at the time you make the change, the system does not immediately require you to remove or reallocate three of the current streams from the account. Instead, the system will continue to operate using all six streams, until you try to add a new one. </p>
+        <h2>Twitter Stream/Account Association </h2>
+        <p>Each Twitter search-based and Twitter Users (@handle) stream must be associated with an authenticated Twitter account for stream data to be obtained from Twitter. For each type of stream, set the maximum number of streams that can be associated with each authenticated Twitter account. Allowing fewer streams can help you avoid rate limits. Search-based streams cannot exceed 50 per account. @Twitter user streams cannot exceed 15 per account. </p>
+        <h2>Retweet Type</h2>
+        <p><MadCap:variable name="Spredfast.prod_full" /> supports two types of Twitter retweets: Editable Retweet and ‘native’ Retweet. Editable retweets consist of the text of the original tweet, with the text RT @handle prepended to it. Users can edit the text of these tweets before publishing. Retweet is similar to clicking the “Retweet” button on the Twitter platform. The original text is published exactly; no edits can be made. Select which type(s) of retweet are available to users in your company. If both types are allowed, select the default type that appears when the Retweet button is clicked from the item in the Social Inbox. Users can switch types in the publishing window. </p>
+        <p MadCap:conditions="Spredfast.tooltips" class="note">Engagement metrics are not available for ‘native’ Retweets published through <MadCap:variable name="Spredfast.prod_full" />.</p>
+        <p class="note"><b>No Engagement Metrics for Native Retweets</b>
+            <br />Though “native” Retweets posted through <MadCap:variable name="Spredfast.prod_full" /> are counted as publishing activity in <MadCap:variable name="Spredfast.prod_full" />, engagement metrics are not available for them. (From Twitter’s perspective, a native Retweet is an additional instance of the original tweet, not a separate tweet that can have independent, measurable engagement. Any engagement on the Retweet would be credited to the original Tweet.) </p>
+        <p>So if you post a “native” Retweet using <MadCap:variable name="Spredfast.prod_full" />, and other people engage with the retweet, that engagement is not counted. Consequently, Average Engagement ratios may be skewed. If you must have engagement metrics on all retweets published through <MadCap:variable name="Spredfast.prod_full" />, limit users to Editable Retweets only. </p>
+        <h2>Configure Twitter Admin Settings (Stream/Account Association and Retweet Types) </h2>
+        <ol>
+            <li>From <b>your name</b> &gt; <b>My Company</b>, click the <b>Info</b> tab. </li>
+            <li>In the <b>Maximum number of Search-based streams per Twitter account</b> field, use the drop-down menu to select a value, or type a number. </li>
+            <li>In the <b>Maximum number of @Twitter user streams per Twitter account</b> field, use the drop-down menu to select a value.</li>
+            <li>In the <b>Retweet Type</b> menu, select the type of retweets your users may publish.</li>
+            <li>If both types are permitted, select the <b>Default Retweet</b> type (the type that appears when the user clicks <b>Retweet</b> from the Inbox).</li>
+            <li>Click <b>Save</b>. </li>
+        </ol>
+    </body>
+</html>

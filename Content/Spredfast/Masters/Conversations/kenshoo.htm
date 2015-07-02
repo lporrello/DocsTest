@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1414.667" MadCap:lastWidth="1286">
+    <head>
+        <link href="../../../Resources/TableStyles/_Standard.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/Stylesheets/Spredfast.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Third-Party Apps<MadCap:keyword term="Third-party Integrations:Kenshoo; Third-party Integrations: Salesforce" /></h1>
+        <h2>Kenshoo</h2>
+        <p>When enabled, <MadCap:variable name="Spredfast.prod_full" /> automatically wraps all links published from designated Initiatives in Kenshoo tags. To use Kenshoo tagging for an Initiative, you must provide a Kenshoo Server Number (ks#) and associate a Kenshoo Profile number (profile#) with the <MadCap:variable name="Spredfast.prod_full" /> Initiative. Contact your Kenshoo representative to obtain the Server Number and Profile numbers for your organization.<MadCap:keyword term="Kenshoo (link tagging); Link tagging: Kenshoo" /></p>
+        <p MadCap:conditions="Spredfast.admin content">Kenshoo integration must be enabled on the Admin panel. See <MadCap:xref href="Per_Company_Configuration.htm">Per-Company Configurations—Admin Panel</MadCap:xref>.</p>
+        <h2>Kenshoo Link Format</h2>
+        <p class="example">http://[ks#].xg4ken.com/media/redir.php?prof=[profile#]&amp;affcode=uc|partner|{Campign_Name}|{Adgroup_Name}|{Keword}|{Match_Type}&amp;url=http%3A%2F%2Fwww.website.com</p>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/_Standard.css');margin-left: 0;margin-right: auto;caption-side: top;" class="TableStyle-_Standard" cellspacing="0">
+            <caption valign="top" style="padding-bottom: 6pt;">
+                Kenshoo Link Parameter Definitions
+            </caption>
+            <col class="TableStyle-_Standard-Column-Column1" />
+            <col class="TableStyle-_Standard-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-_Standard-Head-Header1">
+                    <td class="TableStyle-_Standard-HeadE-Column1-Header1">Parameter</td>
+                    <td class="TableStyle-_Standard-HeadD-Column1-Header1">Definition</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-_Standard-Body-Body1">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">ks#</td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body1">Kenshoo Server Number</td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body2">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">profile#</td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body2">Kenshoo Profile Number</td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body1">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">affcode=us|channel</td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body1">
+                        <p>Channel—one of the following:</p>
+                        <p>    Spredfast_Facebook</p>
+                        <p>    Spredfast_Twitter</p>
+                        <p>    Spredfast_LinkedIn</p>
+                        <p>    Spredfast_YouTube</p>
+                        <p>    Spredfast_GooglePlus</p>
+                        <p>    Spredfast_WordPress</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body2">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">Campaign_name</td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body2">Name of the <MadCap:variable name="Spredfast.prod_full" /> Initiative</td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body1">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body1">Adgroup_Name</td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body1">(Internal) <MadCap:variable name="Spredfast.prod_full" /> message name</td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body2">
+                    <td class="TableStyle-_Standard-BodyE-Column1-Body2">Keyword</td>
+                    <td class="TableStyle-_Standard-BodyD-Column1-Body2">(Internal) <MadCap:variable name="Spredfast.prod_full" /> Post ID</td>
+                </tr>
+                <tr class="TableStyle-_Standard-Body-Body1">
+                    <td class="TableStyle-_Standard-BodyB-Column1-Body1">Match_Type</td>
+                    <td class="TableStyle-_Standard-BodyA-Column1-Body1">“broad”—always set to this value</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="note"><b>Link Shortening and Kenshoo Integration</b>
+            <br />When Kenshoo link tagging is used for an Initiative, all links published through that Initiative must be shortened; users will not have the option to deselect <b>Shorten on Publish</b> when adding links to messages. </p>
+        <h2>Tag Using Kenshoo Links </h2>
+        <ol>
+            <li>Select <b>[Your name]</b> &gt; <b>My Company</b> &gt; <b>Third-Party Apps</b> &gt; <b>Kenshoo</b>.</li>
+            <li>In the <b> Kenshoo Server Number</b> field, enter your company’s Kenshoo server number, and then click <b>Save</b>. </li>
+            <li>To use Kenshoo link tagging for a specific Initiative, you must associate the Initiative with a Kenshoo profile number. Click <b>Add profile</b>.</li>
+            <li>In the <b>Add Kenshoo Profile</b> dialog box, enter a Profile Number, and use the checkboxes to select <MadCap:variable name="Spredfast.prod_full" /> Initiatives to associate with the Profile. All links published from the selected Initiative(s) will be wrapped in Kenshoo tags. If a selected Initiative already has a Profile Number, it will be updated with the new number when you save.</li>
+            <li>Click <b>Add Profile</b>. The Profile/Initiative association appears on the <b>Kenshoo</b> page. To edit the profile number, click the pen icon (Edit). To delete the association, click the trash icon (Delete). </li>
+        </ol>
+    </body>
+</html>

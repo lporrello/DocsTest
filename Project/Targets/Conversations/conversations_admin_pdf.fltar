@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="PDF Target"
+  Type="PDF"
+  Destinations=""
+  DisableAutoSync="true"
+  MasterStylesheet="/Content/Resources/Stylesheets/Spredfast.css"
+  MakeFileLowerCase="true"
+  ExcludeUnreferencedContent="true"
+  MoveOutputContentToRoot="true"
+  MasterToc="/Project/TOCs/Conversations/conversations.fltoc"
+  UseDeviceWidth="false"
+  TabletBreakpoint="600"
+  GenerateWebSafeImages="false"
+  ReplaceSpacesWithUnderscores="true"
+  InsertMOTW="true"
+  ConditionTagExpression="exclude[Default.HTML or Spredfast.draft or Spredfast.tooltips or &quot;Spredfast.user front matter&quot;] "
+  PartialWordSearch="true"
+  InjectEmptyPages="false"
+  PatchHeadingLevels="true"
+  MasterPageLayout="/Content/Resources/PageLayouts/Body.flpgl">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="false"
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false" />
+  <Glossaries />
+  <DocumentProperties
+    Author="Leonard Porrello"
+    Title="Spredfast Conversations Admin Guide" />
+  <PDF
+    PageLayout="SinglePage"
+    ShowUsedBookmarks="false"
+    CollapsedBookmarks="true"
+    TitleBar="DocumentTitle"
+    InitialMagnification="0" />
+  <Variables>
+    <Variable
+      Name="Spredfast/DocVersion">2015-27</Variable>
+  </Variables>
+</CatapultTarget>

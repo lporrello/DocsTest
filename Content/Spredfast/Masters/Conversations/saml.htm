@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="7" MadCap:lastHeight="4008" MadCap:lastWidth="920">
+    <head>
+        <link href="../../../Resources/Stylesheets/Spredfast.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Security Settings</h1>
+        <p>If a company administrator makes changes on this screen, an email is automatically sent to inform the other company administrators. </p>
+        <p>All <MadCap:variable name="Spredfast.prod_full" /> activity must take place over https; SSL is required.</p>
+        <h2>Password Authentication Settings<MadCap:keyword term="Password: requirements" /></h2>
+        <p><b>Set Password expiration</b>—Set the frequency at which users must change their passwords. Click the <b>Set Password Expiration</b> checkbox, enter a number in the field, and select Months or Days. When a user’s password expires, the user must set a new one the next time log-in is attempted. </p>
+        <p><b>Enforce strong passwords</b>—In addition to requirements set within industry standard algorithms for password strength, the following are enforced: minimum of eight alphanumeric characters, at least one special character, at least one number, at least one uppercase letter, at least one lowercase letter, cannot match previous four passwords, and cannot resemble an English word or a simple pattern (for example, 12345678 or 09876543).</p>
+        <p><b>Customize CAPTCHA Thereshold</b>—By default, after five unsuccessful log in attempts, a CAPTCHA response is required. The CAPTCHA feature presents an image containing a text string the user must enter correctly before accessing the application. To change the number of attempts permitted, click the checkbox, and set the number of unsuccessful login attempts at which a “CAPTCHA” confirmation is required. The CAPTCHA feature presents an image containing a text string the user must enter correctly before accessing the application.</p>
+        <p><b>Enable bad password lockout</b>—This control enables you to define how may attempts users get to log in to <MadCap:variable name="Spredfast.prod_acro" /> and how long they'll be locked out if they fail to log in in the permitted number of attempts. Before a user reaches the maximum number of permitted log-in attempts, <MadCap:variable name="Spredfast.prod_full" /> will display a warning. Once a user is locked out, red text appears that tells the user that he has been locked out and what to do to reset his password.</p>
+        <div MadCap:conditions="Spredfast.admin content">
+            <h2>(Deprecated)&#160;Single Sign-On Using SAML</h2>
+            <p>When SAML is configured, companies can allow (or require) their employees to access <MadCap:variable name="Spredfast.prod_full" /> with their single sign-on credentials using the Security Assertion Markup Language (SAML) 2.0 standard. The feature relies on a valid certificate from an external identity provider (IDP); three months prior to certificate expiration, <MadCap:variable name="Spredfast.prod_full" /> sends an email notification to all company administrators.<MadCap:keyword term="Password: single sign-on; SAML; Single sign-on" /> </p>
+            <p class="note"><b>Single Sign-on and Company Owner</b>
+                <br />The user designated as the company owner is always able to log in to <MadCap:variable name="Spredfast.prod_full" /> without the IDP credentials, even when Single Sign-on has been made mandatory for all other users, so that there is always one person who can log in to the system if there is a problem with the provider or certificate. All users with Company Admin privileges can configure the Security tab and Single Sign-on, however. </p>
+            <p>Once SAML has been set up, administrators can choose to make it optional or mandatory for their users to log in via the IDP. If Single Sign-on is enabled, but not required, users can log in to <MadCap:variable name="Spredfast.prod_acro" /> using either the regular URL or the IDP. If Single Sign-on is required, users must log in through the IDP. </p>
+            <p>If Single Sign-on using SAML is mandatory, whenever new users are added to the system the invitation email contains the link to log in through the identity provider. Users should bookmark the login URL that contains the required token. If it is enabled, but not required, new users are sent the usual reset password link to access the system.</p>
+            <p>Similarly, when it is mandatory and (five) login attempts from the IDP fail, the user’s IP address is “locked” and a CAPTCHA confirmation is required. When it is enabled, but not required, and a log-in attempt through the regular URL fails, the user has the number of retries specified in the <b>Password Authentication Settings</b> panel of the <b>Security</b> tab. </p>
+            <p class="note"><b>iPhone Application</b>
+                <br />Single Sign-on is not supported from the <MadCap:variable name="Spredfast.prod_full" /> Mobile application. </p>
+            <h3>Email Assertion Requirements / Format</h3>
+            <p> <MadCap:variable name="Spredfast.prod_full" /> uses the value of the saml:NameID tag in the saml:Subject to identify the <MadCap:variable name="Spredfast.prod_full" /> user logging in. The following is an example of a sanitized, valid saml:Subject tag that logs into <MadCap:variable name="Spredfast.prod_full" /> as test-user@examplecompany.com:</p>
+            <p class="example"><code>&lt;saml:Subject &gt;<br />&lt;saml:NameID Format="urn:oasis:names:tc:SAML:2.0:nameid-format:transient" &gt; test-user@examplecompany.com&lt;/saml:NameID &gt;<br />&lt;saml:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer" &gt;<br />&lt;saml:SubjectConfirmationData NotOnOrAfter="..." Recipient="..." InResponseTo="..."/ &gt;<br />&lt;/saml:SubjectConfirmation &gt;<br />&lt;/saml:Subject &gt;</code>
+            </p>
+            <p><MadCap:variable name="Spredfast.prod_full" /> requires the customer certificate to validate the signature of their identity provider on the assertion. The <MadCap:variable name="Spredfast.prod_full" /> certificate chain can be accessed by the customer at the transport level via SSL.</p>
+            <h3>Configure Single Sign-on Authentication</h3>
+            <ol>
+                <li>From <b>your name</b> &gt; <b>My Company</b>, click the <b>Security</b> tab. </li>
+                <li>In the Single Sign-On Authentication section, click the <b>Yes</b> button.</li>
+                <li>Provide the following: <ul><li>Issuer URL</li><li>Login URL </li><li>Logout URL</li></ul></li>
+            </ol>
+            <ol MadCap:continue="true">
+                <li>(<b style="font-weight: normal;"><MadCap:variable name="Spredfast.prod_full" /></b> Admin only) Select SAML version. Version 2 (default) maps to SAML library version 1.11.0. Version 1 (legacy support) maps to SAML library version 1.8.2. </li>
+                <li>Click <b>Browse</b> and upload certificate The system checks the validity of the certificate. If the certificate is good, it displays “verified.”</li>
+                <li>Copy and paste the URLs to complete SAML setup with your IDP:<ul><li>Login URL</li><li>Logout URL</li><li>Consumer URL</li><li>Audience URL </li><li>Recipient URL</li></ul></li>
+            </ol>
+            <ol MadCap:continue="true">
+                <li>Click <b>Save</b>. The system displays the URLs necessary to implement single sign-on for users. </li>
+                <li>Complete any necessary testing.</li>
+                <li>(Optional) Click <b>Make Single Sign On Mandatory</b> to require all users to sign in using the IDP.</li>
+            </ol>
+        </div>
+        <h2>Restrict Login by IP</h2>
+        <p> Click the checkbox, and add IP or IP Range (using <a><a href="http://en.wikipedia.org/wiki/CIDR_notation">CIDR notation</a></a>) that will be allowed to access the application. This is a “white list”; include IPs or ranges that are permitted. </p>
+        <h2>Edit Inactivity Time-out</h2>
+        <p>By default, (when <b>NO</b> is selected) user sessions time out after 4 hours of inactivity. Activity initiated by <MadCap:variable name="Spredfast.prod_full" /> (such as updating streams in the Inbox) does not count as user activity. To change the inactivity time-out, click <b>Yes</b> and provide new values in the <b>Hours</b> and <b>Minutes</b> fields. Minimum amount of time is 15 minutes; maximum is 8 hours.<MadCap:keyword term="Time-out: inactivity" /> </p>
+        <p>Note that time spent logged in to <MadCap:variable name="Spredfast.prod_full" /> via a third-party app while using the Engage Button counts as user activity. </p>
+        <p>If a user is a member of multiple companies, the Inactivity and Absolute time-out values for the current company are used. When a user switches to a different company, the timers are set back to zero (minutes), and the new company’s time-out settings are used.</p>
+        <p class="note" MadCap:conditions="spredfast.admin content"><b>Known Issue with Inactivity Timeouts for Multiple Companies</b>
+            <br />At 7.0, the ability to honor the timeout values of the user’s current company was implemented. However, the app is enforcing the shortest timeout value among all Companies the user has access to, regardless of which company the user is in. This is a known issue. </p>
+        <h2>Configure Absolute Time-out</h2>
+        <p>User is logged out after the selected amount of time, regardless of user activity or system activity. A warning message appears five minutes before the user is logged out. If an Inactivity timeout has also been set, the Absolute Time-out value must be greater than the Inactivity Timeout value. To set an absolute timeout, click <b>Yes</b>, and provide values in the <b>Hours</b> and <b>Minutes</b> fields. When enabled, the default is 8 hours, and the upper limit is 12 hours.<MadCap:keyword term="Time-out: absolute" /></p>
+        <p>If the Company requires use of SAML to log-in, Absolute Time-out cannot be set in <MadCap:variable name="Spredfast.prod_full" />, because the timeout is managed by the third-party provider.</p>
+        <h2>Expire Passwords Immediately</h2>
+        <p>If you need to require all users to reset their passwords immediately (such as making changes to security settings), click the checkbox, then click <b>Save</b>.<MadCap:keyword term="Users: reset passwords for all; Password: reset for all users" /> </p>
+    </body>
+</html>

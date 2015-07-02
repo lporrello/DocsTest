@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="4774" MadCap:lastWidth="1021">
+    <head>
+        <link href="../../../Resources/Stylesheets/Spredfast.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>About Approvals</h1>
+        <p>Approval paths can be imposed at both the Initiative and message level. At the Company level, approval teams are created and arranged in the order they will review content (for example, you may want the Legal team to have final review of outgoing messages). You then assign approval teams to Account Sets within an Initiative. A supplemental Writer Approval path can be added for an Initiative to ensure content drafted by users at the Writer level is reviewed before entering the standard approval path for the Account Set. </p>
+        <p><b>The following applies to all use of approval teams and paths:</b>
+        </p>
+        <ul>
+            <li>A company can use multiple approval teams. </li>
+            <li>Approval team membership and review order is set in <b>My Company</b> &gt;  <b>Approvals</b>. (The group at the top of the list reviews first; the group at the bottom of the list reviews last.)</li>
+            <li>When creating a message, one can choose to require supplemental approval from teams <strong>in addition to</strong> those required by the Account Set; when creating a message, click <b>Workflow</b> and select from the configured teams. </li>
+        </ul>
+        <p class="note"><b>Making Changes to Supplemental Approval Teams</b>
+            <br />For individual microblog messages, you can make changes to the list of supplemental teams at any time.<br /><br />For microblog messages that are part of a Series, you can make changes to the list of supplemental approval teams, but you must make the change on each individual message in the series; making a change on one does not make the change on the rest of the messages in the series.<br /><br />For individual messages of other types (video, photo, presentation, discussion topic), you can make changes to the list of supplemental teams <strong>up until content for the message has been saved</strong>. Once you save content, you can no longer make changes to the list of supplemental teams, even if you change the schedule for the message. <br /><br />Similarly, for other message types (video, photo, presentation, discussion topic), that are on a repeating schedule (the <b>Repeat</b>/<b>Repeat every</b> fields are set), you can make changes to the list of supplemental teams up <strong>until the content for the original item is saved</strong>. Once content for the first item is saved, changes cannot be made to the list of supplemental teams for any of the following “repeats” of the message. </p>
+        <ul>
+            <li>All content to be published must be approved by one member of each approval team assigned to the Account Set that is publishing it. (Use <b>Initiative Settings</b> &gt; <b>Approval Setup</b> to select which teams to use for each Account Set within the Initiative.) When a message requires approval, the system sends an email to each member of the approval team. When one member of the team approves the content, the system sends an email to all members of the next approval team. If one member of a team approves a message (even outside of the established order), the message is considered approved by the entire team. </li>
+            <li>If a member of the approval team rejects the message, it is returned to the assignee listed on the message for editing and must repeat the entire approval process again. </li>
+            <li>If anyone edits the message content, publishing accounts (Account Sets, credentials, retweet credentials), approvals list, or schedule, the message must repeat the entire approval process. (A user can edit the title, assignee, labels, and notes without restarting the approval process for the message.)</li>
+            <li>If a user is a member of multiple approval teams, her approval “counts” for all the teams she is on. For example, a company uses three approval teams (A, B, and C) and user Joan is a member of teams A and C. If she approves a message sent to team A, the message then requires approval only from team B to be published; it is considered approved by team C as well as team A. </li>
+            <li>After the scheduled publishing time has passed, a message will be published immediately once it receives all required approvals. </li>
+        </ul>
+        <p>Approval and publishing of a microblog message through multiple Account Sets varies depending on whether the company uses a “centralized” or “hub and spoke” model (also called Message Delegation) of publishing.<MadCap:keyword term="Message Delegation: described" /> </p>
+        <h2>Companies that Use the “Centralized” Model of Publishing</h2>
+        <p>If a microblog message is slated for publishing through multiple Account Sets, each with multiple approval teams, the message must receive approval from <b>all </b>teams before it can be published by <b>any</b> of the individual Account Sets. </p>
+        <p>For example: a message is to be posted on Facebook through Account Set 1, and posted to a different Facebook account through Account Set 2. A member of the approval team for Account Set 1 approves the message, but a member of the approval team for Account Set 2 rejects it. The message cannot be posted through Account Set 1 until it has received approval from Account Set 2.</p>
+        <h3>Default Process—No Message Delegation</h3>
+        <p style="text-align: left;">
+            <img src="../../Images/Conversations/5_12.jpg" style="width: 512.6304px;height: 616.6694px;padding-top: 0px;" />
+        </p>
+        <h3>Approval Process, with Publishing Statuses</h3>
+        <p>
+            <img src="../../Images/Conversations/5_26.jpg" style="width: auto;height: 650px;" />
+        </p>
+        <h2>Companies that Use the “Hub and Spoke” Publishing Model (Message Delegation)</h2>
+        <p>If a microblog message is slated for publishing through multiple Account Sets, each with multiple approval teams, a separate instance (copy) of the message is created for each Account Set, so that the message can be published, edited or rejected by approval teams associated with the Account Set, regardless of what happens to other instances of the message within the other Account Sets. </p>
+        <p>For example, a message is to be posted on Facebook through Account Set 1 and posted to a different Facebook account through Account Set 2. Upon creation, separate instances (copies) of the message are created; one for Account Set 1 and one for Account Set 2. The approval team for Account Set 1 approves the message as written, and it published according to schedule. A member of the approval team for Account Set 2 rejects the message. The assignee edits the message and resubmits it for approval. The edited message follows the approval path associated with Account Set 2, and is posted on schedule. </p>
+        <p class="note"><b>Assigning Messages in Message Delegation</b>
+            <br />When using Message Delegation, the user creating the messages will likely want to leave the source (original) message <strong>unassigned</strong> (that is, “assigned to me” by default) until all of the Account Sets are selected and the multiple instances of the message are created. That way, each instance of a message can be assigned to the appropriate writer (or manager, who can then reassign it to the appropriate writer). </p>
+        <h3>Message Delegation</h3>
+        <p style="text-align: left;">
+            <img src="../../Images/Conversations/5_68.jpg" style="width: 616.3085px; height: 556.0781px;" />
+        </p>
+        <p><b>For Reposts</b>—When the hub and spoke model (message delegation) is used, and Repost is selected, separate instances of the original post are created for each Account Set, and follow the required approval path for each individual Account Set. Because Repost messages cannot be edited once they have been published, approval paths are not required for each subsequent time the message is posted. <MadCap:keyword term="Message Delegation: for reposted messages" /></p>
+        <p><b>For Series</b>—When the hub and spoke model (message delegation) is used and a Series is created, placeholders for the messages are put on the Agenda as usual, but because Account Sets/accounts have not been chosen yet, the system cannot copy the message into separate instances for each Account Set. Consequently, the “copying” of the message cannot occur until after the message in the series is edited, and Account Sets/accounts are assigned. At that time, the message is copied into the appropriate number (one for each Account Set) and each one follows its required approval path.<MadCap:keyword term="Message Delegation: for series messages; Series messages: and Message Delegation" /> </p>
+        <p>Each instance of the message is tracked as a separate event in the system; it receives its own Message Details pane and appears independently in the All Activity and Recent Engagement streams. </p>
+    </body>
+</html>

@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="7781" MadCap:lastWidth="959">
+    <head>
+        <link href="../../../Resources/Stylesheets/Spredfast.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Per-Company Configurations—Admin Panel</h1>
+        <p>These settings are enabled on a per-customer basis. In the <b>Admin</b> panel, <b>Companies</b> page.</p>
+        <ol>
+            <li>Find the company using the search feature.</li>
+            <li>Click the Company name.</li>
+            <li>Click <b>Edit Details</b>. A dialog will appear featuring the following options.</li>
+        </ol>
+        <h2><MadCap:variable name="Spredfast.CompanyName_full" /> Product Options<MadCap:keyword term="Spredfast Product Options (Admin Panel)" /></h2>
+        <ul>
+            <li><b><MadCap:variable name="Spredfast.experiences" /></b> <b>Enabled</b>—This item is OFF by default. Allows users to access login page for <MadCap:variable name="Spredfast.experiences" /> from the <MadCap:variable name="Spredfast.prod_acro" /> <MadCap:variable name="Spredfast.SP_nav" /> and the <MadCap:variable name="Spredfast.iPhone App" />.</li>
+            <li><b><MadCap:variable name="Spredfast.intelligence" /></b><b>Enabled</b>—This item is OFF by default. Allows users to access login page for <MadCap:variable name="Spredfast.intelligence" /> from the <MadCap:variable name="Spredfast.prod_acro" /> <MadCap:variable name="Spredfast.SP_nav" /> and the <MadCap:variable name="Spredfast.iPhone App" />.</li>
+        </ul>
+        <h2>(Depricated) SAML<MadCap:keyword term="Single-Sign On (Admin Panel)" /><MadCap:keyword term="SAML (Admin Panel)" /></h2>
+        <p>This item is OFF by default. Enables single-sign on using the Security Assertion Markup Language standard, v.2. <MadCap:variable name="Spredfast.prod_full" /> supports two library options, referred to as version 1 and version 2. Version 2 (default) maps to SAML library version 1.11.0. Version 1 (for legacy support) maps to SAML library version 1.8.2. See <MadCap:xref href="saml.htm">Security Settings</MadCap:xref>. </p>
+        <h2>API Access Enabled<MadCap:keyword term="API Access (Admin Panel)" /></h2>
+        <p>This item is ON by default. Gives the customer access to the <MadCap:variable name="Spredfast.prod_full" /> API to obtain metrics data. Though this configuration is enabled, the user still must obtain API keys and documentation prior to accessing the API. </p>
+        <h2>Mobile Access Enabled<MadCap:keyword term="API Access (Admin Panel)" /></h2>
+        <p>This item is OFF by default. Gives the customer access to the <MadCap:variable name="Spredfast.prod_full" /> iPhone app; once users have downloaded the application from the Apple store. </p>
+        <h2>Pinterest Integration<MadCap:keyword term="Pinterest: enabled  (Admin Panel)" /></h2>
+        <p>This item is ON by default. Enables company integration with Pinterest; allows authentication of accounts, publishing, collection of analytics. </p>
+        <h2>Weibo Integration<MadCap:keyword term="Weibo: enabled  (Admin Panel)" /></h2>
+        <p>This item is OFF by default. Enables company integration with Weibo; allows authentication of accounts, publishing, creation of streams, collection of analytics. </p>
+        <h2>Content Center Enabled<MadCap:keyword term="Content Center: Enable (Admin Panel)" /></h2>
+        <p>This item is ON by default. Enables the customer to use Content Center described here: <MadCap:xref href="ContentCenter.htm">Content Center</MadCap:xref>. </p>
+        <h2>LinkedIn Discussions Stream Enabled<MadCap:keyword term="LinkedIn Discussions Stream (Admin Panel)" /></h2>
+        <p>This item is ON by default. Enables LinkedIn Group authentication, so that LinkedIn Groups features (posts, discussion streams) can be used. See <MadCap:xref href="LinkedIn_Group_Stream.htm">LinkedIn Group Streams</MadCap:xref>.</p>
+        <h2>LinkedIn Company Integration<MadCap:keyword term="LinkedIn Company Integration (Admin Panel)" /></h2>
+        <p>This item is ON by default. Enables Company integration with LinkedIn, which allows publishing of Company updates, targeting Company updates, Company Activity stream, analytics.</p>
+        <h2>Bazaarvoice Enabled<MadCap:keyword term="Bazaarvoice Enabled (Admin Panel)" /></h2>
+        <p>This item is OFF by default. Enables Company integration with the Bazaarvoice API, which allows creation of Bazaarvoice review streams and amplification of Bazaarvoice reviews. You must provide a <MadCap:variable name="Spredfast.CompanyName_full" /> Key (Customer-specific Bazaarvoice API KEY, obtained from Bazaarvoice specifically for the <MadCap:variable name="Spredfast.CompanyName_full" /> integration; this is different from the key customers have received from Bazaarvoice for their own purposes) and a URL (Customer-specific API endpoint). The URL must be fully specified (using http://), and is validated upon import. If new Keys/ URLs added later, they override previously supplied ones. Only one URL/KEY combination is supported per company. If the customer has chosen to allow only Company Admins to add new labels, then the label AMPLIFY_BV must be created for the company so that it can be automatically appended to amplified content.</p>
+        <h2>Google+ Personal Account Enabled</h2>
+        <p>This item is OFF by default. When enabled, allows users to authenticate personal Google+ accounts in <MadCap:variable name="Spredfast.prod_full" />. For authenticated personal accounts, <MadCap:variable name="Spredfast.prod_acro" /> auto-imports posts, displays them on the Calendar, and collects metrics for them, which are aggregated with the other Google+ (Company page) data. No publishing to personal accounts is supported, and streams cannot be created in the Inbox.</p>
+        <h2>Smart Publishing Suggestions and Policies</h2>
+        <p>When enabled, this feature offers Inbox suggestions to users to prevent them from making serious social faux pas.</p>
+        <h2>Analytics 2.0<MadCap:keyword term="Analytics 2.0 (Admin Panel)" /></h2>
+        <p class="caution"><b>Do Not Change These Settings</b>
+            <br />You must have specific permission from <MadCap:variable name="Spredfast.CompanyName_full" /> Product Management to enable Analytics 2.0 for any customer.</p>
+        <p>This item is OFF by default. Enables integration of <MadCap:variable name="Spredfast.prod_full" /> analytics data with a third-party for rendering and reporting. When enabled, all of the Company-level analytics dashboards are enabled, as well as any custom dashboards created by <MadCap:variable name="Spredfast.CompanyName_full" /> Services. </p>
+        <h3>Enable <MadCap:variable name="Spredfast.new_analytics" /> for a Company:</h3>
+        <ol>
+            <li>Obtain permission from <MadCap:variable name="Spredfast.prod_full" /> Product Management. </li>
+            <li>From the Admin Panel, click <b>Companies</b>. </li>
+            <li>Locate the company in the list, and click <b>Edit Details.</b></li>
+            <li>In the <b>Analytics 2.0 Data Enabled</b> field, click <b>Yes</b>. Data begins to be sent to the analytics platform. Depending on the amount of data available for the company, this can take up to couple of hours.</li>
+            <li>When the data is available, <b>Analytics</b> button in the masthead converts to a drop-down menu for viewers who are <MadCap:variable name="Spredfast.prod_full" /> admins. </li>
+            <li>Confirm presence of data in Message Explorers and Social Performance Dashboards. When the display and data content is acceptable, you can enable the feature for customers.</li>
+            <li>In the <b>Analytics 2.0 Admin Only/All Users</b>field, select <b>All Users</b>. The Analytics drop-down becomes available to customer users.</li>
+        </ol>
+        <p>Do not adjust the following settings without specific DEV permission:</p>
+        <ul>
+            <li><b>Analytics 2.0 Force Data Sync</b>: Runs a full ETL (Extract/Transform/Load) data sync. Demo Project allows addition of a second analytics project to the UI without other integration; used for demo purposes. </li>
+        </ul>
+        <p class="note"><b>Demo Projects in the UI</b>
+            <br />When creating a new demo project, a special tag must be added at GoodData before the project will appear in the <MadCap:variable name="Spredfast.prod_full" /> UI. To request that this tag be added to your new project, send an email to <a style="color: #000000;"><a href="mailto:cep-analytics@spredfast.com">cep-analytics@spredfast.com</a></a>.</p>
+        <h2>Shorten Links by Default</h2>
+        <p>This item is ON by default. When set to OFF, links published through <MadCap:variable name="Spredfast.prod_full" /> are not automatically shortened before publishing. If the customer has Kenshoo Enabled, you cannot turn this setting OFF, because links must be shortened for the Kenshoo tags to be added. This setting does not affect messages sent from the Mobile app; those links are always shortened. See <MadCap:xref href="labels_1.htm">Compose</MadCap:xref>.</p>
+        <h2>Message Delegation Enabled<MadCap:keyword term="Message Delegation (Admin Panel)" /></h2>
+        <p>This item is OFF by default. The message delegation feature allows a company to use a “hub and spoke” model for microblog message creation and publishing, instead of the default “centralized” model. It affects both message creation and approval path functionality.<MadCap:keyword term="Message Delegation: configuring for a company" /></p>
+        <p>In the default state (OFF, or the “centralized” model), a single instance of a micro-blog message is created, follows the approval paths configured for the Account Sets associated with it, and must receive approval from all associated Account Sets in order to be published through any of the Account Sets. </p>
+        <p>When enabled (turned ON, or the “hub and spoke” model), multiple instances of a message are created, one for each Account Set, and the message must receive approval only from the approval teams associated with that individual Account Set before being published. The instance of the message can be published as it was written, edited, or rejected regardless of what action is taken on the other instances of the message within the other Account Sets.</p>
+        <p>For more information, see <MadCap:xref href="About_Approvals.htm">About Approvals</MadCap:xref>.</p>
+        <h2>Financial Export Photo Comments Fetching<MadCap:keyword term="Financial Export Photo Comments Fetching (Admin Panel)" /></h2>
+        <p>This item is OFF by default. This setting must be enabled (set to YES) for any customer receiving SFTP export data or SMTP (email) export. This feature allows collection of third-party comments data for Facebook photos that have been published through <MadCap:variable name="Spredfast.prod_full" />. </p>
+        <h2>Grant SalesForce<MadCap:keyword term="Grant SalesForce (Admin Panel)" /></h2>
+        <p>This item is OFF by default. Enables integration with SalesForce. To integrate, the customer must have an enterprise account with SalesForce. A single login, password, and security token are used for the integration, which uses the web services API. Integration is enabled company--wide, and for all Initiatives. See <MadCap:xref href="SalesForce.htm">SalesForce</MadCap:xref>. </p>
+        <h2>Kenshoo Enabled<MadCap:keyword term="Kenshoo Enabled (Admin Panel)" /></h2>
+        <p>This item is OFF by default. Enables integration with Kenshoo, so that links published through <MadCap:variable name="Spredfast.prod_full" /> for selected Initiatives will be wrapped in proprietary Kenshoo tags. To integrate, the customer must have an account with Kenshoo, and access to the Kenshoo Server Number (KS#) and Kenshoo profile (profile#) values. See <MadCap:xref href="kenshoo.htm">Third-Party Apps</MadCap:xref>.</p>
+        <h2>Promoted Content Enabled<MadCap:keyword term="Facebook Promoted Content Enabled (Admin Panel)" /></h2>
+        <p>This item is OFF by default. Enables paid promotion of selected Facebook messages to the Newsfeed in published Facebook Pages. See <MadCap:xref href="facebookPagePromotion.htm">Content Promotion</MadCap:xref> and <MadCap:xref href="publishing-promote.htm">Promotion</MadCap:xref>. Note that when this setting is changed to OFF for a customer that had been using the feature, all components of the feature are immediately removed from the user interface. Status messages for running promotions will be hidden, and all credential mapping (accounts to pages, etc.) will be hidden--when resumed, it become visible, but users must re-authenticate the applicable ad accounts.</p>
+        <h2>App Builder Enabled</h2>
+        <p>This item is OFF by default. Once paid for and enabled for an organization, allows all <MadCap:variable name="Spredfast.prod_full" /> users access to an app/promotion builder, located in Tools &gt; App Builder from the masthead. Create contests, sweepstakes, and other promotions on Facebook and other channels. You must provide a Company Name. See <MadCap:xref href="Tools.htm">App Builder</MadCap:xref>. </p>
+        <p class="note"><MadCap:variable name="Spredfast.prod_full" style="font-weight: bold;" /><b> App Builder</b>
+            <br />The App Builder enabled in this setting is a third-party, white label product from Votigo. The former <MadCap:variable name="Spredfast.prod_full" /> App Builder has been deprecated as of 5.0.</p>
+        <h2>Partner Applications</h2>
+        <p>These items are OFF by default. For customers who use partner applications that have access to Publishing and Content Center APIs. Once the partner application has been configured, it appears in this list as available. </p>
+        <h2>Sysomos Activation</h2>
+        <p>Sysomos accounts and streams are created through the back end. The customer should verify that the Sysomos API is enabled for them. They need to retrieve their token and its expiration date from their Sysomos Account Manager (or Enterprise Client Success Manager). Direct the customer to file a ticket with <MadCap:variable name="Spredfast.CompanyName_full" /> Support.</p>
+        <p>In addition, <MadCap:variable name="Spredfast.CompanyName_full" /> Support needs to gather the <MadCap:variable name="Spredfast.CompanyName_full" /> Company ID, Initiative ID and Account Set ID (persona_id), and the Sysomos token, user name and heartbeat ID. Using this information, Support runs a zfcli commands and initiates an Ops ticket. Support follows up with the customer when this process is complete.</p>
+        <h3>Enable Sysomos</h3>
+        <ol>
+            <li>From the <b>Admin Panel</b>, <b>Miscellaneous</b> menu, click<b> Create Listening Stream</b>. </li>
+            <li>Use the <b>Vendor</b> drop-down to select <b>Sysomos</b>.</li>
+            <li>Under <b>Vendor Shared Fields</b>, Enter the Spredfast <b>Campaign (Initiative) ID</b> and <b>Persona (Account Set) ID</b> in the appropriate fields.</li>
+            <li>Enter the authentication token from the vendor in the <b>Token</b> field.</li>
+            <li>Enter the username in the Vendor’s platform in the <b>Username</b> field.</li>
+            <li>Under <b>Sysomos Specific Fields</b>, enter the Sysomos <b>Heartbeat ID</b>.</li>
+            <li>Click <b>Submit</b>.</li>
+        </ol>
+        <h2>Synthesio Activation</h2>
+        <p>Synthesio accounts and reports are created through the back end. The customer should verify that the Synthesio API is enabled for them. They need to retrieve their token and its expiration date from their Synthesio Account Manager (or Enterprise Client Success Manager). Direct the customer to file a ticket with <MadCap:variable name="Spredfast.CompanyName_full" /> Support for enablement.</p>
+        <p>In addition, <MadCap:variable name="Spredfast.CompanyName_full" /> Support needs to gather the <MadCap:variable name="Spredfast.CompanyName_full" /> Company ID, Initiative ID and Account Set ID (persona_id), and the Synthesio token, user name and report ID. Using this information, Support runs a zfcli commands and initiates an Ops ticket. Support follows up with the customer when this process is complete.</p>
+        <h3>Enable Synthesio</h3>
+        <ol>
+            <li>From the <b>Admin Panel</b>, <b>Miscellaneous</b> menu, click <b>Create Listening Stream</b>. </li>
+            <li>Use the <b>Vendor</b> drop-down to select <b>Synthesio</b>.</li>
+            <li>Under <b>Vendor Shared Fields</b>, Enter the Spredfast <b>Campaign (Initiative) ID</b> and <b>Persona (Account Set) ID</b> in the appropriate fields. </li>
+            <li>Enter the authentication token from the vendor in the <b>Token</b> field.</li>
+            <li>Enter the username in the Vendor’s platform in the <b>Username</b> field.</li>
+            <li>Under <b>Synthesio Specific Fields</b>, enter the Synthesio <b>User ID</b> and <b>Report ID</b>.</li>
+            <li>Click <b>Submit</b>.</li>
+        </ol>
+        <h2>Brandwatch Activation</h2>
+        <p>The customer should verify that the Brandwatch API is enabled for them. They need to retrieve their Client ID, Project ID and Query ID, as well as their token and its expiration date from their Brandwatch Account Manager. Direct the customer to file a ticket with <MadCap:variable name="Spredfast.CompanyName_full" /> Support with this information.</p>
+        <h3>Enable Brandwatch</h3>
+        <ol>
+            <li>From the <b>Admin Panel</b>, <b>Miscellaneous</b> menu, click <b>Create Listening Stream</b>. </li>
+            <li>Use the<b>Vendor</b> drop-down to select Brandwatch.</li>
+            <li>Under <b>Vendor Shared Fields</b>, Enter the Spredfast <b>Campaign (Initiative) ID</b> and <b>Persona (Account Set) ID</b> in the appropriate fields. </li>
+            <li>Enter the authentication token from the vendor in the <b>Token</b> field.</li>
+            <li>Enter the username in the Vendor’s platform in the <b>Username</b> field.</li>
+            <li>Under <b>Brandwatch Specific Fields</b>, enter the Brandwatch <b>Client ID</b>, <b>Project ID</b>, and <b>Query ID</b>.</li>
+            <li>Click <b>Submit</b>.</li>
+        </ol>
+        <h2>Suspend an Initiative</h2>
+        <p>You must suspend an Initiative before you can delete it.</p>
+        <ol>
+            <li>From the Admin panel, find the company entry. </li>
+            <li>In the <b>Initiatives</b> section, (scroll down beneath the Users) locate the Initiative and click <b>Suspend</b>. The Initiative displays with a red background. </li>
+            <li>To reactivate the Initiative, click the <b>Activate</b> link. </li>
+        </ol>
+        <h2><a name="Branded"></a>Branded Applications</h2>
+        <p class="note"><b>Twitter Message Level Branding</b>
+            <br />As of May 2012, Message Level Branding is no longer available on Twitter accounts. Current customer accounts that use Message Level Branding will be transitioned off by CST, and this feature will be removed from the UI at a later date. </p>
+        <p class="note"><b>Facebook Message Level Branding for Pages Deprecated by Facebook</b>
+            <br />As of December 18, 2012, Message Level Branding is no longer available on Facebook Page accounts. </p>
+        <p>Prior to configuring branded applications, read <MadCap:xref href="Add_a_New_Company.htm">Add a New Company</MadCap:xref> for information on Facebook apps configured for each new company after the 4.05 release. </p>
+        <ol>
+            <li>Select <b>Admin Panel</b> &gt; <b>Companies</b>, and then choose a company.</li>
+            <li>Go to <b>Branded Applications</b>  &gt; <b>Add Application</b>, and then complete the <b>Add Branded App</b> dialog box.</li>
+            <li>Click <b>Save</b>.</li>
+            <li>Within each Initiative that will use the branded application, select <b>Account Sets</b> &gt; <b>Authenticate a new social media site</b></li>
+            <li>Select the type from the drop-down.</li>
+            <li>Select the site from the drop-down, and then click <b>Authenticate</b>.</li>
+            <li>Click <b>Allow</b>.</li>
+        </ol>
+    </body>
+</html>

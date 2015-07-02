@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="890" MadCap:lastWidth="959">
+    <head>
+        <link href="../../../Resources/Stylesheets/Spredfast.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Companies</h1>
+        <p>You can use this functionality to create new companies.</p>
+        <h2>Per-Company Facebook Apps</h2>
+        <p class="note"><b>Per-Company Facebook Apps</b>
+            <br />Prior to the 4.05 release (April 2012), the vast majority of companies configured in the system published to Facebook using <MadCap:variable name="Spredfast.CompanyName_full" />’s own Facebook application. Exceptions were white label clients who were given a custom branded application—this appears as the “via company name” text that follows a post on Facebook.over time, using a shared Facebook app became problematic; one company’s “spamminess” could impact the rate limits imposed on other companies, for example. Post 4.05, each new company can be configured using its own Facebook app. Before creating a company, you must first obtain a Facebook App Name, App ID, and App Secret. To obtain a Facebook API key and secret, go to the Facebook Developer App. Click <b>Set Up New Application</b>. Provide a name and agree to the terms. For Connect URL, enter http://[your primary domain]. The next page provides the API key and secret.</p>
+        <h3>Create a New Company in <MadCap:variable name="Spredfast.prod_full" />:</h3>
+        <ol>
+            <li>From the <b>Admin Panel</b>, <b>Company</b> menu, click <b>Companies</b>. </li>
+            <li>Click <b>New Company</b>.</li>
+            <li>In the <b>Name</b> field, enter the company name. See <MadCap:xref href="Parent_Company.htm">Parent Company</MadCap:xref> for more information. </li>
+            <li>If the new company is associated with (a “child of”) a parent company, select the parent company from the drop-down menu. </li>
+            <li>Provide the <b>Facebook App Name</b>, <b>App ID</b>, and <b>Secret</b>. If these fields are left blank, the <MadCap:variable name="Spredfast.CompanyName_full" /> Facebook app will be used. If you complete one of these fields, all three become required in order to create the company. </li>
+            <li>Click <b>Save</b>. </li>
+        </ol>
+        <p>When authenticating an account, the Facebook App configured here is shown as the “default” app. If additional branded applications are created for the company, users must select the one to use when authenticating an account. See <MadCap:xref href="Per_Company_Configuration.htm#Branded">Branded Applications</MadCap:xref>.</p>
+    </body>
+</html>
